@@ -1,0 +1,15 @@
+[book]
+authors = ["Maximilian Blacher"]
+language = "en"
+multilingual = false
+src = "content"
+title = "Max's Knowledge Base"
+
+[output.html]
+no-section-label = true
+additional-css = ["custom.css"]
+default-theme = "light"
+preferred-dark-theme = "coal"
+git-repository-url = "https://github.com/3ng7n33r/KnowledgeBase"
+git-repository-icon = "fa-github"
+site-url = "/KnowledgeBase/"
