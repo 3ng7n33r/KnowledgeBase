@@ -1,7 +1,7 @@
 # Summary
 
 [Intro](index.md)
-[Acknowledgments](./acknowledgments.md)
+[Acknowledgments](./acknowledgmentsdex](index.md)
 - [Web Development](./webdevelopment/webdevelopment.md)
     - [Back-End](./webdevelopment/backend/backend.md)
       - [Database](./webdevelopment/backend/database/database.md)
@@ -58,3 +58,6 @@
     - [Auto-Entrpreneur](./organisational/business/autoentrepreneur.md)
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTYzOTY5NjU4Ml19
+-->
