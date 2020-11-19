@@ -167,7 +167,114 @@
                     <main>
                         <h1><a class="header" href="#chapter-1" id="chapter-1">Chapter 1</a></h1>
 <p>Find a new name for this section</p>
-
+<h2><a class="header" href="#commands" id="commands">commands</a></h2>
+<h3><a class="header" href="#rtfm" id="rtfm">RTFM</a></h3>
+<p>$ man man - manual page about how to use manual pages</p>
+<p>$ man -f /command/ - shows all entries for command, if there are multiple, the first manpage will be opened by default. Open other sections by putting thee number before the command $ man 2 mkdir</p>
+<p>$ man -k /keyword/ - searches for a keyword inside the man pages</p>
+<h3><a class="header" href="#random-stuff" id="random-stuff">random stuff</a></h3>
+<p>ctrl + r - reverse search (look through history of commands)</p>
+<p>history - see former commands</p>
+<p>cp (file) (destination) - copy files to destination, uses regex for files (*.jpg, [cf]at.exe …)</p>
+<p>mv - move (same syntax as cp)</p>
+<p>rm - remove (-f force, -i -r (dangerous!))</p>
+<p>rmdir - remove directory</p>
+<p>man (command) - show manual of command (whatis works too)</p>
+<p>alias name = “command” - give extra name to command</p>
+<p>cat - <a href="https://www.tecmint.com/13-basic-cat-command-examples-in-linux/">can do a lot of things</a></p>
+<p>$ ln -s filename linkname - creates shortcut (softlink) to filename</p>
+<p>$ ln filename hardlinkname - creates hardlink, a linked copy of the file, it has the same inode number and is therefore identical, changes on one change both, however, one can be deleted uniquely, reducing the files link count. An inode only gets deleted when the link count is zero and the og file gets deleted</p>
+<p>pstree -p - shows tree of running processes</p>
+<p>$ strace /command/ - In the simplest case strace runs the specified command until it exits. It intercepts and records the system calls which are called by a process and the signals which are received by a process.</p>
+<p>$ lsmod - lists currently loaded kernel modules</p>
+<p>echo Hi &gt; xyz.txt - creates xyz and writes Hi into, if exists it overwrites the data</p>
+<p>echo Hi &gt;&gt; xyz.txt - creates xyz and writes Hi into, if exists it appends the data</p>
+<p>&lt; - redirect stdin (cat &lt; peanuts.txt &gt; banana.txt writes peanuts into banana)</p>
+<p>2&gt; - writes contents of error stream into destination (0 stdin, 1 stdout, 2 stderr)</p>
+<p>ls /fake/directory &gt; peanuts.txt 2&gt;&amp;1 - writes stderr and stdout into peanuts.txt</p>
+<p>ls /fake/directory &amp;&gt; peanuts.txt - (same as line before)</p>
+<p>tail -f /var/log/syslog - tail shows last lines of file, -f is follow flag means in this context that it monitors the end of the file, syslog is the system log file, with this command we can create a terminal that tracks all system acitvity</p>
+<p>env | grep -i user - grep searches files for patterns, i is the insensitive flag, this command takes the ouptut of the environment variables and searches it for the word user, grep accepts regular expressions</p>
+<p>$ dd if=/home/pete/backup.img of=/dev/sdb bs=1024M count=2 - copies 2048Mbyte of backup.img to /dev/sdb</p>
+<h3><a class="header" href="#list-devices" id="list-devices">list devices</a></h3>
+<p>$ lsusb - Listing USB Devices</p>
+<p>$ lspci - Listing PCI Devices</p>
+<p>$ lsscsi - Listing SCSI Devices</p>
+<h3><a class="header" href="#ownership-and-permissions" id="ownership-and-permissions">Ownership and permissions</a></h3>
+<p>ls -l /etc/shadow - shows permissions of shadow file (where passwords are stored) ( r - read, w - write, e - execute, s - <a href="https://www.linuxnix.com/suid-set-suid-linuxunix/">SUID</a> Set user id allows to inherit user permission from a program</p>
+<p>$ chmod 755 myfile - changes permissions to myfile to read(4)/write(2)/execute(1)(=7) for active user - read execute (5) for current group and read execute for everyone else, a leading 4 (4755) adds user Suid permission (s), adds group SGID 2755 (s in group field), 1 adds sticky (only owner and root can delete 1755)(t))</p>
+<p>sudo chmod u+s myfile - adds Suid permission for user to myfile (SGID is the group equivalent g+s)</p>
+<p>$ sudo chown patty myfile - changes owner of myfile to patty</p>
+<p>sudo chgrp whales myfile - changes owning group to whales</p>
+<p>$ sudo chown patty:whales myfile - changes owner of myfile to patty and group to whales</p>
+<p>$ umask 021 - takes away permissions, none from user, write from group and execute from others</p>
+<p>watch -n 1 &quot;ps aux | grep passwd&quot; - not completely sure what it does yet, monitors UID’s?</p>
+<h3><a class="header" href="#processes" id="processes">Processes</a></h3>
+<p>ps aux- creates and shows snapshot of processes (-a all processes, -u shows more details, -x shows processes without tty (controlling terminal) aka deamon processes)</p>
+<p>top - monitors running processes</p>
+<h2><a class="header" href="#flags" id="flags">flags</a></h2>
+<p>-a all (good with show files (dir or ls))</p>
+<p>-r recursive (repeat until not possible to repeat anymore)</p>
+<p>-i interactive (give prompts for example when overwriting files)</p>
+<p>-l long (gives more details for example in the ps command)</p>
+<h3><a class="header" href="#background" id="background">Background</a></h3>
+<p>&amp; - at the end of command runs process is Background ( to send a running process to the background, stop it with ctrl + z and enter $ bg)</p>
+<p>$ fg JOBID to return the job with JOBID to the foreground, if no JOBID is given, the last job started will return to the foreground</p>
+<h2><a class="header" href="#uid" id="uid">UID</a></h2>
+<p>There’s three types of UID’s, effective, real and saved.</p>
+<p>Effective is the UID of the process owner, used for example if an application with SUID rights is executed, effective UID is the UID of the user that launched the process. If no process with SUID permissions is launched, these UID’s are the same, there is also the saved UID which allows a process to swtich between effective and real</p>
+<h2><a class="header" href="#processes-1" id="processes-1">Processes</a></h2>
+<p>PPID - Parent process id - when a process is called, an existing process is cloned and run as a child (With its own Process ID). The original, now parent process has an PPID. PPID 1 is the init process that handles the os. It is the first process created by the kernel when the system boots up and can only be terminated by a system shutdown</p>
+<p>_exit is the system call to terminate a process. After it is invoked, the system will wait for the exit status (mostly 0 for success) and then wait until the process is terminated and the space is free again. If the parent process terminates before the child, the child process is now an orphan process that will be handled by init (the mother of all processes)</p>
+<p>When a child process terminates without the wait having been called on the parent, this process becomes a zombie. It does not use ressources anymore but it’s still on the process table and as space there is limited, zombies should be avoided (a few are ok). Zombies terminate after the parent process called wait (if there’s no parent, it’s init)</p>
+<p>Processes communicate using Signals</p>
+<p>kill PID - Sends terminate signal to given process id (find with $ps | grep NAME)</p>
+<p>kill -9 PID - the actual kill command. kills process without wait or cleanup</p>
+<p>Only one process can use the cpu at once. This is called a time slice. The kernel manages when each process can use the cpu. Processes can tell the kernel how much they need the cpu with a value called niceness. A high niceness value means the process let’s less nice processes use the cpu before. The value can be negative.</p>
+<p>with the $ nice command the niceness of a new process can be set, $ renice sets the niceness of an existing process</p>
+<p>Everything in linux is a file and so are processes. Process information is stored in /proc</p>
+<p>Find out more about the status of a process with cat /proc/(PID)/status. This is how the kernel sees the system.</p>
+<h2><a class="header" href="#packages" id="packages">Packages</a></h2>
+<p>$ gzip file - zips file into archive file.gz</p>
+<p>$ gunzip file.gz - reverses zip</p>
+<p>$ tar cvf archive.tar file1 file2 - tar can zip multiple files the flags are (create, verbose, filename (filename comes after this flag, archive here))</p>
+<p>$ tar xvf archive.tar - x is the extract flag</p>
+<p>A common technique is to bundle files with tar and then zip them into an archive.tar.gz. Tar lets you use the z flag to automatically zip or unzip an archive</p>
+<p>$ tar czf myfile.tar.gz</p>
+<p>$ tar xzf file.tar</p>
+<p>$ dpkg X filename - debian package manager, X can be i for install, r for remove or l for list</p>
+<p>$ apt install - install package</p>
+<p>$ apt remove - remove package</p>
+<p>$ apt update - update the package repository</p>
+<p>$ apt upgrade - upgrade installed packages if possible</p>
+<p>$ apt show packagename - show information about packagename</p>
+<h3><a class="header" href="#compile-from-sourcecode" id="compile-from-sourcecode">Compile from sourcecode</a></h3>
+<p>follow this <a href="https://linuxjourney.com/lesson/compile-source-code">guide</a> (!Attention - use checkinstall )</p>
+<h2><a class="header" href="#partitions" id="partitions">partitions</a></h2>
+<p>$ sudo parted -l - shows system partitions</p>
+<p>$ sudo parted - starts the command line partition program (gparted for GUI)</p>
+<p>(parted) select /dev/sda1 - selects device named /dev/sda1</p>
+<p>(parted) print - shows partition table of selected device</p>
+<p>(parted) mkpart [part-type name fs-type] start end - creates a primary partition (MBR) from start point 123 to end point 456</p>
+<p>$ fsck /name/ - filesystem check, make sure /name/ is unmounted</p>
+<p>$ df -h - show info about mounted devices</p>
+<p>$ df -i - show info about inodes</p>
+<p>$ ls -li - shows inode numbers of current directory</p>
+<p>$ du -h - shows disk usage of current folder</p>
+<p>$ sudo blkid | grep “UUID”- show UUID of mounted devices</p>
+<p>devices mounted at startup are collected in /etc/fstab (filesystem table) show with $ cat /etc/ fstab, explanation of values <a href="https://linuxjourney.com/lesson/etc-fstab-file-system-table">here</a></p>
+<h2><a class="header" href="#terminology" id="terminology">Terminology</a></h2>
+<p>Process - A process is an instance of a running program, defined by allocated memory, cpu and I/O</p>
+<p>Master Boot Record MBR - Used to be standard partition table (BIOS), can have a max of four primary partitions, if more are needed 1 single extended partition can be created and inside the extended partition, there can be logical partitions limited by the alphabet for windows and to 63 for linux.</p>
+<p>GPT - (GUID(Global unique id) Partition Table) new standard (UEFI instead of BIOS)</p>
+<p>Screenshot of Laptop file system (sudo parted -l):</p>
+<p><img src="https://lh5.googleusercontent.com/xaSEHOExmOaMuei9bkGsJiBRlor497-kvgV2xG6qCr4N5Nesrrw2nm7W_HLUOsO2Hu9QSnLU1PXaEQ0OPrO-7naTvfRfQ-GUA60Cgfy_zDJuEKYm77rk0pRboe6nSq88QTT7yIA1" alt="" /></p>
+<p>Inodes - Index nodes, the inode table is the database of the filesystem, collecting all information about a file including the location in the memory, more info <a href="https://linuxjourney.com/lesson/inodes">here</a></p>
+<p>Kernel modules - are modules that get added to the kernel. they can be loaded during runtime or added to modprobe to run them during startup. See <a href="https://linuxjourney.com/lesson/kernel-modules">here</a></p>
+<p>udev - a deamon that dynamically creates and removes device files according to the rules in etc/udev/rules.d the devices can be found in the dev folder and can be checked with the $ udevadm info --query=all --name=/dev/sda command</p>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI2NzExMzI2MF19
+-->
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
