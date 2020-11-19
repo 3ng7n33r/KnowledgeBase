@@ -58,3 +58,6 @@
     - [Auto-Entrpreneur](./organisational/business/autoentrepreneur.md)
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTYzOTY5NjU4Ml19
+-->
