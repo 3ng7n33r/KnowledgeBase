@@ -1,7 +1,7 @@
 # Summary
 
 [Intro](index.md)
-[Acknowledgments](./acknowledgments.md)
+[Acknowledgments](acknowledgments.md)
 - [Web Development](./webdevelopment/webdevelopment.md)
     - [Back-End](./webdevelopment/backend/backend.md)
       - [Database](./webdevelopment/backend/database/database.md)
