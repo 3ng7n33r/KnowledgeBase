@@ -8,8 +8,9 @@ This section is a collection of all the little coding projects projects I partic
  - Advent of Code 2020
  - Personal surf website
  - Personal portfolio website
+ - Ka
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTYwODk0NDQsLTUyMDYxOTExLC0xOD
-g2NTA1MDI4LC0xMzQ0MDI4MDc3XX0=
+eyJoaXN0b3J5IjpbMzE3MDc2OTU3LC0xNDE2MDg5NDQ0LC01Mj
+A2MTkxMSwtMTg4NjUwNTAyOCwtMTM0NDAyODA3N119
 -->
