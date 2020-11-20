@@ -1,7 +1,7 @@
 # Intro
 
 Hi, I'm Max,
-I'm a former mechanical engineer now on my way to becoming a professional developer. I realized that I'm starting to lose track of all the little bits and pieces of knowledge necessary on this path and therefore decided to create this database. It will be a personal collection of notes that might or might not make sense to anyone else but I thought I might as well make it public just in case it might help someone else.
+I'm a former mechanical engineer now on my way to becoming a professional developer. I realized that I'm starting to lose track of all the little bits and pieces of knowledge necessary on this path and therefore decided to create this database. It will be a personal collection of notes that might or might not make sense to anyone else but I thought I might as well make it public just in case someone could find it useful.
 
 If you have corrections or suggestions, don't hesitate to create a pull request in the corresponding [GitHub repo](https://github.com/3ng7n33r/KnowledgeBase). 
 
@@ -11,5 +11,5 @@ Best Regards!
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxODgxNjUxNyw4MTQyMzAwNTVdfQ==
+eyJoaXN0b3J5IjpbNjc2NDE2MDY4LDgxNDIzMDA1NV19
 -->
