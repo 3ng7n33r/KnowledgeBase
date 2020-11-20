@@ -169,7 +169,61 @@
 
                 <div id="content" class="content">
                     <main>
-                        
+                        <h1><a class="header" href="#git" id="git">Git</a></h1>
+<p>git init /make a directory a git</p>
+<p>git add /add to staging</p>
+<p>git commit -m &quot;comment&quot; /commit staged files, -m skips editor and writs comment directly --amend(alter most recent commit, add files to stage if you want to change/include them)</p>
+<p>git diff (show uncommitted changes)</p>
+<p>git status</p>
+<p>git log -w --oneline -p /shows history -w (whitespace) -oneline summarizes (works also for show) -p (patch) shows details, --graph shows branches neatly, --all shows all branches)</p>
+<p>git show</p>
+<p>git diff (shows difference of uncommitted files)</p>
+<p>git tag -a ….. ,,, (-a=annotated (more info), … tag identifier, ,,,, SHA identifier (w/o it tags most recent), -d = delete,-D override delete)</p>
+<p>git branch name (creates branch name, w/o name command lists branches, -d flag deletes branch)</p>
+<p>git checkout name (switch to branch name, creates new branch with -b flag)</p>
+<p>git merge name (merges the name branch)</p>
+<p>git revert SHA (reverse something a commit has done by creating a new commit reversing it)</p>
+<p>git reset (deletes commits and their content, HEAD~1 or HEAD^ resets last commit to working directory (--soft toStage --hard to trash))</p>
+<p>git reflog (undeletes git reset commands)</p>
+<p>Globbing lets you use special characters to match patterns/characters. In the .gitignore file, you can use the following:</p>
+<ul>
+<li>
+<p>blank lines can be used for spacing</p>
+</li>
+<li>
+<p># - marks line as a comment</p>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>matches 0 or more characters</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>? - matches 1 character</p>
+</li>
+<li>
+<p>[abc] - matches a, b, <em>or</em> c</p>
+</li>
+<li>
+<p>** - matches nested directories - a/**/z matches</p>
+</li>
+<li>
+<p>a/z</p>
+</li>
+<li>
+<p>a/b/z</p>
+</li>
+<li>
+<p>a/b/c/z</p>
+</li>
+</ul>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDA4NjYxNTU0XX0=
+-->
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
