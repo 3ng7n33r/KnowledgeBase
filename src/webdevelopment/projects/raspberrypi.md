@@ -31,6 +31,8 @@ crontab -e
 
 0 3 * * * cd Surf-forecast-rennes && git push -q origin master && cd
 
+
+
   
   
   
@@ -50,5 +52,5 @@ view privileges:
 
 -   select user, host from mysql.user where host <> 'localhost'
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTQ5ODU5MjFdfQ==
+eyJoaXN0b3J5IjpbMTA5NjA2NDc5NV19
 -->
