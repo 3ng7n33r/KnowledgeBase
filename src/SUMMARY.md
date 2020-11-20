@@ -30,6 +30,7 @@
       - [REST](./webdevelopment/web/rest.md)
       - [SSH](./webdevelopment/web/ssh.md)
       - [SSL](./webdevelopment/web/ssl.md)
+      - [Regular Expressions](./webdevelopment/web/regex.md)
     - [Security](./webdevelopment/security/security.md)
     - [Testing](./webdevelopment/testing/testing.md)
     - [Projects](./webdevelopment/projects/projects.md)
