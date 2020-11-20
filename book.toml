@@ -14,3 +14,5 @@ preferred-dark-theme = "navy"
 git-repository-url = "https://github.com/3ng7n33r/KnowledgeBase"
 git-repository-icon = "fa-github"
 site-url = "/KnowledgeBase/"
+output.html.fold.enable = true
+output.html.fold.level = 0
