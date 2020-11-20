@@ -9,10 +9,11 @@ If you would like to create a base like this yourself, shoot me a message and I'
 
 Best Regards!
 P.s.: I will leave a Hemingway quote here which I found motivational:
+"There is nothing noble in being superior to your fellow man. True nobility is being superior to your former self"
 ![Hemingway quote background](https://raw.githubusercontent.com/3ng7n33r/KnowledgeBase/master/src/static/20201120_Hemingway_quote_bk.png)
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMjMwNzIxNiw2NzY0MTYwNjgsODE0Mj
+eyJoaXN0b3J5IjpbMTI4MTg0MTY5Miw2NzY0MTYwNjgsODE0Mj
 MwMDU1XX0=
 -->
