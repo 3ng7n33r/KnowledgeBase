@@ -4,3 +4,13 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Knowledge Base"
+
+[rust]
+edition = "2018"
+
+[output.html]
+additional-css = ["style.css"]
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/3ng7n33r/KnowledgeBase"
+git-repository-icon = "fa-github"
+site-url = "/KnowledgeBase/"
