@@ -5,7 +5,7 @@ I'm on my way to becoming a professional developer. I realized that I'm starting
 If you have corrections or suggestions, don't hesitate to create a pull request in the corresponding [GitHub repo](https://github.com/3ng7n33r/KnowledgeBase). 
 If you would like to create a base like this yourself, shoot me a message and I'll happily guide you through the process (it's essentially an [mdbook](https://rust-lang.github.io/mdBook/format/summary.html), being build by a [GitHub action](https://github.com/peaceiris/actions-gh-pages#getting-started), linked to a [StackEdit](https://stackedit.io/) Markdown editor)
 
-
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4ODU0Nzc5NF19
+eyJoaXN0b3J5IjpbLTE3MzYxNjk1MzBdfQ==
 -->
