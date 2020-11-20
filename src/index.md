@@ -8,8 +8,11 @@ If you have corrections or suggestions, don't hesitate to create a pull request 
 If you would like to create a base like this yourself, shoot me a message and I'll happily guide you through the process (it's essentially an [mdbook](https://rust-lang.github.io/mdBook/format/summary.html), being built by a [GitHub action](https://github.com/peaceiris/actions-gh-pages#getting-started), linked to a [StackEdit](https://stackedit.io/) Markdown editor, I'm working on writing a quick HowTo).
 
 Best Regards!
+P.s.: I will leave a Hemingway quote her which I found motivational:
+![enter image description here](https://raw.githubusercontent.com/3ng7n33r/KnowledgeBase/master/src/static/20201120_Hemingway_quote_bk.png)
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc2NDE2MDY4LDgxNDIzMDA1NV19
+eyJoaXN0b3J5IjpbMjgwMDM3ODIxLDY3NjQxNjA2OCw4MTQyMz
+AwNTVdfQ==
 -->
