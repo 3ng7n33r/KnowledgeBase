@@ -1,10 +1,9 @@
 ## Json automation for surf
 
+### Automate update of Surf json file with cron
 crontab -l
-
 crontab -e
 
-  
 
 1.  Fetch Github parent repo -   02:00
     
@@ -13,32 +12,13 @@ crontab -e
 3.  JSON Handler -   02:40
     
 4.  push dist repo to github -   03:00
-    
 
+![enter image description here](https://raw.githubusercontent.com/3ng7n33r/KnowledgeBase/master/src/static/20201120_rasppi_cron.PNG)
 
-
-\# m h dom mon dow command
-
-0 2 * * * cd Surf-forecast-rennes && git pull -q origin master && cd
-
-30 2 * * * cd Surf-forecast-rennes/py_scripts && python3 API_handler.py && cd
-
-40 2 * * * cd Surf-forecast-rennes/py_scripts && python3 JSON_handler.py && cd
-
-50 2 * * * cd Surf-forecast-rennes && git add . && cd
-
-55 2 * * * cd Surf-forecast-rennes && git commit . -m “data_update” && cd
-
-0 3 * * * cd Surf-forecast-rennes && git push -q origin master && cd
-
-
-
-  
-  
   
 
 ## access mariadb
-
+S
   
 
 /etc/mysql/my.cnf:
@@ -52,5 +32,5 @@ view privileges:
 
 -   select user, host from mysql.user where host <> 'localhost'
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NjA2NDc5NV19
+eyJoaXN0b3J5IjpbLTE4MzI2MjQyNTMsMTA5NjA2NDc5NV19
 -->
