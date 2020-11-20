@@ -9,10 +9,10 @@ If you would like to create a base like this yourself, shoot me a message and I'
 
 Best Regards!
 P.s.: I will leave a Hemingway quote her which I found motivational:
-![enter image description here](https://raw.githubusercontent.com/3ng7n33r/KnowledgeBase/master/src/static/20201120_Hemingway_quote_bk.png)
+![Hemingway quote background](https://raw.githubusercontent.com/3ng7n33r/KnowledgeBase/master/src/static/20201120_Hemingway_quote_bk.png)
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgwMDM3ODIxLDY3NjQxNjA2OCw4MTQyMz
-AwNTVdfQ==
+eyJoaXN0b3J5IjpbLTE0MzU3NjgyNzksNjc2NDE2MDY4LDgxND
+IzMDA1NV19
 -->
