@@ -18,7 +18,7 @@ crontab -e
   
 
 ## access mariadb
-S
+Settings to make raspberry pi MariaDB listen to connections
   
 
 /etc/mysql/my.cnf:
@@ -32,5 +32,5 @@ view privileges:
 
 -   select user, host from mysql.user where host <> 'localhost'
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzI2MjQyNTMsMTA5NjA2NDc5NV19
+eyJoaXN0b3J5IjpbNzU4MDgzOTAsMTA5NjA2NDc5NV19
 -->
