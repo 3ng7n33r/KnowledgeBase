@@ -1,7 +1,12 @@
 ## Projects
 This section is a collection of all the little coding projects projects I participate in. 
 
+ - Codingame
+ - Project Euler
+ - Advent of Code 2020
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA0MjQzNjMxLC0xMzQ0MDI4MDc3XX0=
+eyJoaXN0b3J5IjpbLTE4ODY1MDUwMjgsLTEzNDQwMjgwNzddfQ
+==
 -->
