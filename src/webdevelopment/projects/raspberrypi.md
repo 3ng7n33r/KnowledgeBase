@@ -6,27 +6,18 @@ crontab -e
 
   
 
-1.  Fetch Github parent repo
+1.  Fetch Github parent repo -   02:00
     
-2.  Api Handler
+2.  Api Handler -   02:30
     
-3.  JSON Handler
+3.  JSON Handler -   02:40
     
-4.  push dist repo to github
-    
-
--   02:00
-    
--   02:30
-    
--   02:40
-    
--   03:00
+4.  push dist repo to github -   03:00
     
 
-  
 
-# m h dom mon dow command
+
+\# m h dom mon dow command
 
 0 2 * * * cd Surf-forecast-rennes && git pull -q origin master && cd
 
@@ -59,5 +50,5 @@ view privileges:
 
 -   select user, host from mysql.user where host <> 'localhost'
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTk1ODU0NTddfQ==
+eyJoaXN0b3J5IjpbLTE1NTQ5ODU5MjFdfQ==
 -->
