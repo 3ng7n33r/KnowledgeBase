@@ -33,7 +33,7 @@
     - [Security](./webdevelopment/security/security.md)
     - [Testing](./webdevelopment/testing/testing.md)
     - [Projects](./webdevelopment/projects/projects.md)
-      - [Raspberry Pi](.\webdevelopment\projects\raspberrypi.md)
+      - [Raspberry Pi](./webdevelopment/projects/raspberrypi.md)
 - [System Knowledge](./system/system.md)
   - [Hardware](./system/hardware/hardware.md)
   - [Software](./system/software/software.md)
