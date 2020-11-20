@@ -1,6 +1,5 @@
-# Heading
+# Projects
 
- Projects
 This section is a collection of all the little coding projects projects I participate in. 
 
  - Codingame
@@ -11,6 +10,7 @@ This section is a collection of all the little coding projects projects I partic
  - Kaggle
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NTYyODI2MCwtMTQxNjA4OTQ0NCwtNT
-IwNjE5MTEsLTE4ODY1MDUwMjgsLTEzNDQwMjgwNzddfQ==
+eyJoaXN0b3J5IjpbLTgxMTk0MzgyOCwxOTU1NjI4MjYwLC0xND
+E2MDg5NDQ0LC01MjA2MTkxMSwtMTg4NjUwNTAyOCwtMTM0NDAy
+ODA3N119
 -->
