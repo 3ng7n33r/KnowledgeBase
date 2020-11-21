@@ -1,5 +1,6 @@
 # History of computing
 
+
 ## Early computing
 
 The earliest device used for computing was the Abacus which makes calculations easier by having beads in rows, each representing a different power of 10
@@ -15,7 +16,7 @@ One of the first computers to use electrical parts and punch cards was Herman Ho
 
   
 
-## 02 - electronic computers
+## Electronic computers
 
 ### Harvard mark 2
 
@@ -28,9 +29,6 @@ Because of the physical mass of the relay arm, the speed of it is limited, with 
 Mark 1
 
 ![](https://lh3.googleusercontent.com/PF7l5cjwb-uYAwdboDd3G1GLjvxb3ee68COp-cZ0Pv6cGuwntZse4WwXfiSjYSXdsSdTS01JSbdsfFekCAuOu34q3LgwWLRIBffpG9jP_pHB4MJbeEvWRQ3Ad0MiUZpRzN-2rnFT)
-
-  
-
 ### Vacuum tube
 
 One of the first vacuum tubes was called the thermionic valve. It houses 2 electrodes in a vacuum tube and used thermionic emission. One electrode could be heated and would emit electrodes which would be attracted by the other electrode but only if it was positively charged. In this case, a current would flow from one electrode to the other.
@@ -43,7 +41,7 @@ In 1906, Lee de Forest would add a third electrode which would act as a switch b
 
 This marked the switch from electromechanical to electrical computing. The colossus mark 1 was the first fully functional and programmable electrical computer containing 1600 vacuum tubes. 10 of them were built to decipher Nazi code during the second world war.
 
-This was a massive improvement but the types of calculations were still limited. The first general purpose, programmable, electronic computer would then be the ENIAC at the university of pennsylvania.
+This was a massive improvement but the types of calculations were still limited. The first general purpose, programmable, electronic computer would then be the ENIAC at the university of Pennsylvania.
 
 Colossus mark I![](https://lh4.googleusercontent.com/5o1LwKi7Xf2tamkbIubNQuNaKLVZf7a_IfgGm_dgLZqZJc3bPCVfU6_9pJFwg5U2PYtoYsRZ3TyUJVzbxqb0RZZvhi4dDVEKT8uEB3QawIQdTRdZudKnsQLLHkDhHReKf7NCWy52)
 
@@ -56,7 +54,7 @@ ENIAC
 
 ### The transistor
 
-In 1947 it was invented at Bell laboratories. It used semiconductors and was able to switch more than 10.000 times per second. Mainly, transistors were sturdy, not using fragile materials like glass and could therefore almost immediately be miniaturised. In 1957, the first fully transistor powered, commercially available computer came out, containing around 3000 transistors. One of the inventors, William Shockley, therefore created his own company which would later become Intel.
+In 1947 it was invented at Bell laboratories. It used semiconductors and was able to switch more than 10.000 times per second. Mainly, transistors were sturdy, not using fragile materials like glass and could therefore almost immediately be miniaturized. In 1957, the first fully transistor powered, commercially available computer came out, containing around 3000 transistors. One of the inventors, William Shockley, therefore created his own company which would later become Intel.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMzExMzAwMyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTY0NTc2MTE5OSw3MzA5OTgxMTZdfQ==
 -->
