@@ -37,6 +37,7 @@
       - [Raspberry Pi](./\webdevelopment/\projects/\raspberrypi.md)
 - [System Knowledge](./system/system.md)
   - [Hardware](./system/hardware/hardware.md)
+	  - [History](./system/hardware/history.md)
   - [Software](./system/software/software.md)
     - [Collaboration](./system/software/collaboration/collaboration.md)
       - [Discord](./system/software/collaboration/discord.md)
@@ -61,5 +62,6 @@
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjk0NTIyNzYsMTYzOTY5NjU4Ml19
+eyJoaXN0b3J5IjpbODI2OTE5NjMwLC0yMTI5NDUyMjc2LDE2Mz
+k2OTY1ODJdfQ==
 -->
