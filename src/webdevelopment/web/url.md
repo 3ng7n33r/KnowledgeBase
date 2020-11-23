@@ -11,13 +11,14 @@ Tells the browser which protocol to use. Most common are [http](https://3ng7n33r
 
 ### Domain Name ("www.example.com")
 The domain name indicates which web server is being requested. If it is a string, a [DNS](https://3ng7n33r.github.io/KnowledgeBase/webdevelopment/web/dns.html)  server is contacted to translate it into an [IP](https://3ng7n33r.github.io/KnowledgeBase/webdevelopment/web/ip.html) address.
-#
+### Port (":80")
+Indicates the gate where the web server should be accessed. If the standard gates are contacted (80 fot http, 443 for https
 
 ## Sources
 
  - [MDN](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNzA1MDU2NCwtMzgwMTE3NTg5LDIwOT
+eyJoaXN0b3J5IjpbMTY1MTE0MTU0MCwtMzgwMTE3NTg5LDIwOT
 U5Mjg0NDVdfQ==
 -->
