@@ -22,6 +22,7 @@
       - [VueJs](./webdevelopment/frontend/vue.md)
       - [Nuxt](./webdevelopment/frontend/nuxt.md)
     - [Web](./webdevelopment/web/web.md)
+      - [API](./webdevelopment/web/api.md)
       - [DNS](./webdevelopment/web/dns.md)
       - [Docker](./webdevelopment/web/docker.md)
       - [Email](./webdevelopment/web/email.md)
