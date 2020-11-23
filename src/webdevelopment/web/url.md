@@ -19,7 +19,7 @@ Is the path to the resource on the web server
 
 ### Parameters ("?key1=value1&key2=value2")
 A list of key/value pairs provided to the web server, initiated with a question mark and separated with an ampersand. For example, they can be used to recall data from an [API](https://3ng7n33r.github.io/KnowledgeBase/webdevelopment/web/api.html) and are server specific. 
-Further
+Further info [here](https://idratherbewriting.com/learnapidoc/docapis_doc_parameters.html).
 
 ### Anchor ("#SomewhereInTheDocument")
 Initiated with a # (in this case called fragment identifier and not actually sent to the server with the request). The Anchor can be seen as a bookmark, either a spot in an HTML document or a timestamp in an video.
@@ -32,6 +32,6 @@ Initiated with a # (in this case called fragment identifier and not actually sen
 Any copyright is dedicated to the Public Domain. http://creativecommons.org/publicdomain/zero/1.0/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTI3NDg2NDgsNTI2OTI1NjM4LC0zOD
+eyJoaXN0b3J5IjpbLTEyNzU2MTc2ODcsNTI2OTI1NjM4LC0zOD
 AxMTc1ODksMjA5NTkyODQ0NV19
 -->
