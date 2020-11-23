@@ -18,13 +18,13 @@ Indicates the gate where the web server should be accessed. If the standard gate
 Is the path to the resource on the web server
 
 ### Parameters ("?key1=value1&key2=value2")
-A list of key/value pairs provided to the web server. 
+A list of key/value pairs provided to the web server, initiated with a question mark and separated with an ampersand. These can be used to recall 
 
 ## Sources
 
  - [MDN](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NjIwMTY3LC0zODAxMTc1ODksMjA5NT
-kyODQ0NV19
+eyJoaXN0b3J5IjpbLTE3ODY1NTM5NjksLTM4MDExNzU4OSwyMD
+k1OTI4NDQ1XX0=
 -->
