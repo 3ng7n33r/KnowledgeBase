@@ -15,13 +15,16 @@ The domain name indicates which web server is being requested. If it is a string
 Indicates the gate where the web server should be accessed. If the standard gates are contacted (80 for HTTP, 443 for HTTPS) then it can be omitted.
 
 ### Path ("/path/to/myfile.html")
+Is the path to the resource on the web server
 
+### Parameters ("?key1=value1&key2=value2")
+A list of key/value pairs provided to the web server. 
 
 ## Sources
 
  - [MDN](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQxMTk5NywtMzgwMTE3NTg5LDIwOT
-U5Mjg0NDVdfQ==
+eyJoaXN0b3J5IjpbMTM2NjIwMTY3LC0zODAxMTc1ODksMjA5NT
+kyODQ0NV19
 -->
