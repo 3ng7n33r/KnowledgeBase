@@ -20,13 +20,14 @@ Is the path to the resource on the web server
 ### Parameters ("?key1=value1&key2=value2")
 A list of key/value pairs provided to the web server, initiated with a question mark and separated with an ampersand. For example, they can be used to recall data from an [API](https://3ng7n33r.github.io/KnowledgeBase/webdevelopment/web/api.html) and are server specific.
 
-### Anchor ("#SomewhereInTheDocument`
+### Anchor ("#SomewhereInTheDocument")
+Initiated with a # (in this case called fragment identifier and not actually sent to the server with the request). The 
 
 ## Sources
 
  - [MDN](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5Mjk3NzQwNiwtMzgwMTE3NTg5LDIwOT
-U5Mjg0NDVdfQ==
+eyJoaXN0b3J5IjpbLTE3ODEwODY3MjEsLTM4MDExNzU4OSwyMD
+k1OTI4NDQ1XX0=
 -->
