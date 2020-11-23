@@ -27,7 +27,10 @@ Initiated with a # (in this case called fragment identifier and not actually sen
 
  - [MDN](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)
 
+
+Any copyright is dedicated to the Public Domain. http://creativecommons.org/publicdomain/zero/1.0/
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ2MjQxNTAwLC0zODAxMTc1ODksMjA5NT
+eyJoaXN0b3J5IjpbNTI2OTI1NjM4LC0zODAxMTc1ODksMjA5NT
 kyODQ0NV19
 -->
