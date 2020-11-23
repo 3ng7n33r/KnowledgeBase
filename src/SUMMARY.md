@@ -24,6 +24,8 @@
     - [Web](./webdevelopment/web/web.md)
       - [DNS](./webdevelopment/web/dns.md)
       - [Docker](./webdevelopment/web/docker.md)
+      - [Email](./webdevelopment/web/email.md)
+      - [Ftp](./webdevelopment/web/ftp.md)
       - [Http](./webdevelopment/web/http.md)
       - [Https](./webdevelopment/web/https.md)
       - [Markdown](./webdevelopment/web/markdown.md)
