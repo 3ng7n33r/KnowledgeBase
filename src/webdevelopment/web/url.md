@@ -1,6 +1,6 @@
 # URL
 Uniform Resource Locators are the mechanism used by browsers to retrieve any published resource on the web.
-A URL is composed of multiple parts, some mandatory, some optional. They can be absolute
+A URL is composed of multiple parts, some mandatory, some optional. They can be absolute or relative.
 
 ## Anatomy
 ```html
@@ -28,6 +28,6 @@ Initiated with a # (in this case called fragment identifier and not actually sen
  - [MDN](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ2MTE4NzU5LC0zODAxMTc1ODksMjA5NT
+eyJoaXN0b3J5IjpbMjQ2MjQxNTAwLC0zODAxMTc1ODksMjA5NT
 kyODQ0NV19
 -->
