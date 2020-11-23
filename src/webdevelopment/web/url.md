@@ -21,13 +21,13 @@ Is the path to the resource on the web server
 A list of key/value pairs provided to the web server, initiated with a question mark and separated with an ampersand. For example, they can be used to recall data from an [API](https://3ng7n33r.github.io/KnowledgeBase/webdevelopment/web/api.html) and are server specific.
 
 ### Anchor ("#SomewhereInTheDocument")
-Initiated with a # (in this case called fragment identifier and not actually sent to the server with the request). The 
+Initiated with a # (in this case called fragment identifier and not actually sent to the server with the request). The Anchor can be seen as a bookmark, either a spot in an HTML document or a timestamp in an video.
 
 ## Sources
 
  - [MDN](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODEwODY3MjEsLTM4MDExNzU4OSwyMD
-k1OTI4NDQ1XX0=
+eyJoaXN0b3J5IjpbNDA0ODcxMjEwLC0zODAxMTc1ODksMjA5NT
+kyODQ0NV19
 -->
