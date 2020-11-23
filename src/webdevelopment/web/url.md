@@ -10,13 +10,13 @@ http://www.example.com:80/path/to/myfile.html?key1=value1&key2=value2#SomewhereI
 Tells the browser which protocol to use. Most common are [http](https://3ng7n33r.github.io/KnowledgeBase/webdevelopment/web/http.html) and [https](https://3ng7n33r.github.io/KnowledgeBase/webdevelopment/web/https.html) but others like [mailto](https://3ng7n33r.github.io/KnowledgeBase/webdevelopment/web/email.html) and [ftp](https://3ng7n33r.github.io/KnowledgeBase/webdevelopment/web/ftp.html) are possible.
 
 ### Domain Name ("www.example.com")
-The domain name indicates which web server is being requested. If it is a string, a [DNS](https://3ng7n33r.github.io/KnowledgeBase/webdevelopment/web/dns.html)  server is contacted to translate it 
+The domain name indicates which web server is being requested. If it is a string, a [DNS](https://3ng7n33r.github.io/KnowledgeBase/webdevelopment/web/dns.html)  server is contacted to translate it into an IP adress
 
 ## Sources
 
  - [MDN](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDU4MzQ3OTksLTM4MDExNzU4OSwyMD
-k1OTI4NDQ1XX0=
+eyJoaXN0b3J5IjpbLTYzMDYyMzk3LC0zODAxMTc1ODksMjA5NT
+kyODQ0NV19
 -->
