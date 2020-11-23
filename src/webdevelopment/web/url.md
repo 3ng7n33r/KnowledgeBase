@@ -18,13 +18,15 @@ Indicates the gate where the web server should be accessed. If the standard gate
 Is the path to the resource on the web server
 
 ### Parameters ("?key1=value1&key2=value2")
-A list of key/value pairs provided to the web server, initiated with a question mark and separated with an ampersand. These can be used to recall data from an API and are server sp
+A list of key/value pairs provided to the web server, initiated with a question mark and separated with an ampersand. For example, they can be used to recall data from an [API](https://3ng7n33r.github.io/KnowledgeBase/webdevelopment/web/api.html) and are server specific.
+
+### Anchor ("#SomewhereInTheDocument`
 
 ## Sources
 
  - [MDN](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NTE0OTg4MywtMzgwMTE3NTg5LDIwOT
+eyJoaXN0b3J5IjpbMjA5Mjk3NzQwNiwtMzgwMTE3NTg5LDIwOT
 U5Mjg0NDVdfQ==
 -->
