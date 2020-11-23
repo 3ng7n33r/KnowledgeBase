@@ -28,6 +28,7 @@
       - [Ftp](./webdevelopment/web/ftp.md)
       - [Http](./webdevelopment/web/http.md)
       - [Https](./webdevelopment/web/https.md)
+      - [IP](./webdevelopment/web/ip.md)
       - [Markdown](./webdevelopment/web/markdown.md)
       - [REST](./webdevelopment/web/rest.md)
       - [SSH](./webdevelopment/web/ssh.md)
