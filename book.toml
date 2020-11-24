@@ -9,7 +9,7 @@ title = "Knowledge Base"
 edition = "2018"
 
 [output.html]
-additional-css = ["style.css"]
+theme = "src/theme"
 preferred-dark-theme = "navy"
 git-repository-url = "https://github.com/3ng7n33r/KnowledgeBase"
 git-repository-icon = "fa-github"
