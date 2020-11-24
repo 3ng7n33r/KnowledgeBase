@@ -3,7 +3,7 @@
 [Intro](index.md)
 [Acknowledgments](acknowledgments.md)
 - [Web Development](./webdevelopment/webdevelopment.md)
-    - [Front-End](./webdevelopment/frontend/frontend.md)
+    - [Front-end](./webdevelopment/frontend/frontend.md)
       - [CSS](./webdevelopment/frontend/css.md)
       - [HTML](./webdevelopment/frontend/html.md)
       - [Javascript](./webdevelopment/frontend/js.md)
@@ -68,6 +68,6 @@
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDE5ODYwNzksODI2OTE5NjMwLC0yMT
+eyJoaXN0b3J5IjpbLTIxMzk1MDE4ODcsODI2OTE5NjMwLC0yMT
 I5NDUyMjc2LDE2Mzk2OTY1ODJdfQ==
 -->
