@@ -9,7 +9,7 @@
       - [Javascript](./webdevelopment/frontend/js.md)
       - [VueJs](./webdevelopment/frontend/vue.md)
       - [Nuxt](./webdevelopment/frontend/nuxt.md)
-    - [Back-End](./webdevelopment/backend/backend.md)
+    - [Back-end](./webdevelopment/backend/backend.md)
       - [Database](./webdevelopment/backend/database/database.md)
         - [SQL](./webdevelopment/backend/database/sql.md)
         - [NoSQL](./webdevelopment/backend/database/nosql.md)
@@ -21,7 +21,7 @@
       - [Django](./webdevelopment/backend/Django.md)
       - [DOM](./webdevelopment/backend/dom.md)
       - [Sustainability / Scalability](./webdevelopment/backend/sustainability.md)
-- [Web](./webdevelopment/web/web.md)
+    - [Web](./webdevelopment/web/web.md)
       - [API](./webdevelopment/web/api.md)
       - [DNS](./webdevelopment/web/dns.md)
       - [Docker](./webdevelopment/web/docker.md)
@@ -39,7 +39,7 @@
     - [Security](./webdevelopment/security/security.md)
     - [Testing](./webdevelopment/testing/testing.md)
     - [Projects](./webdevelopment/projects/projects.md)
-    - [Raspberry Pi](./webdevelopment/projects/raspberrypi.md)
+      - [Raspberry Pi](./webdevelopment/projects/raspberrypi.md)
 - [System Knowledge](./system/system.md)
   - [Hardware](./system/hardware/hardware.md)
 	  - [History](./system/hardware/history.md)
@@ -66,7 +66,3 @@
     - [Auto-Entrpreneur](./organisational/business/autoentrepreneur.md)
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTkzNTM1OTksLTIxMzk1MDE4ODcsOD
-I2OTE5NjMwLC0yMTI5NDUyMjc2LDE2Mzk2OTY1ODJdfQ==
--->
