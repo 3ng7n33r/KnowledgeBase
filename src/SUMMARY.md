@@ -21,7 +21,7 @@
       - [Django](./webdevelopment/backend/Django.md)
       - [DOM](./webdevelopment/backend/dom.md)
       - [Sustainability / Scalability](./webdevelopment/backend/sustainability.md)
-    - [Web](./webdevelopment/web/web.md)
+    - [Web Technologies](./webdevelopment/web/web.md)
       - [API](./webdevelopment/web/api.md)
       - [DNS](./webdevelopment/web/dns.md)
       - [Docker](./webdevelopment/web/docker.md)
