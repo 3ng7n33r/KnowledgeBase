@@ -25,6 +25,18 @@ code {
     font-size: 0.875em; /* please adjust the ace font size accordingly in editor.js */
 }
 
+h1 {
+    text-align: center;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: .33em;
+    border-bottom: 1px solid hsla(0,0%,50%,.33);
+  }
+
 /* Don't change font size in headers. */
 h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
     font-size: unset;
@@ -89,7 +101,12 @@ h4 a.header:target {
 .content ul { line-height: 1.45em; }
 .content a { text-decoration: none; }
 .content a:hover { text-decoration: underline; }
-.content img { max-width: 100%; }
+.content img { 
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+ }
 .content .header:link,
 .content .header:visited {
     color: var(--fg);
