@@ -21,8 +21,7 @@
       - [Django](./webdevelopment/backend/Django.md)
       - [DOM](./webdevelopment/backend/dom.md)
       - [Sustainability / Scalability](./webdevelopment/backend/sustainability.md)
-    - [eb](./webdevelopment/web/web.md)
-      - [](./webdevelopment/web/p.md)
+- [Web](./webdevelopment/web/web.md)
       - [API](./webdevelopment/web/api.md)
       - [DNS](./webdevelopment/web/dns.md)
       - [Docker](./webdevelopment/web/docker.md)
@@ -68,6 +67,6 @@
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzk1MDE4ODcsODI2OTE5NjMwLC0yMT
-I5NDUyMjc2LDE2Mzk2OTY1ODJdfQ==
+eyJoaXN0b3J5IjpbLTE0MTkzNTM1OTksLTIxMzk1MDE4ODcsOD
+I2OTE5NjMwLC0yMTI5NDUyMjc2LDE2Mzk2OTY1ODJdfQ==
 -->
