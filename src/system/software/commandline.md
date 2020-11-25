@@ -27,6 +27,8 @@ rmdir - remove directory
 man (command) - show manual of command (whatis works too)
 
 alias name = “command” - give extra name to command
+unalias name - removes that alias
+~/.bashrc is the default file to save alias
 
 cat - [can do a lot of things](https://www.tecmint.com/13-basic-cat-command-examples-in-linux/)
 
@@ -290,5 +292,5 @@ Kernel modules - are modules that get added to the kernel. they can be loaded du
 
 udev - a deamon that dynamically creates and removes device files according to the rules in etc/udev/rules.d the devices can be found in the dev folder and can be checked with the $ udevadm info --query=all --name=/dev/sda command
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NzExMzI2MF19
+eyJoaXN0b3J5IjpbLTczOTcyMzM5OSwxMjY3MTEzMjYwXX0=
 -->
