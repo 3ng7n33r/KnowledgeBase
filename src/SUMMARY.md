@@ -21,8 +21,7 @@
       - [Django](./webdevelopment/backend/Django.md)
       - [DOM](./webdevelopment/backend/dom.md)
       - [Sustainability / Scalability](./webdevelopment/backend/sustainability.md)
-    - [Web Technologies](./webdevelopment/web/web.md)
-      - [API](./webdevelopment/web/api.md)
+- [Web Technologies](./webdevelopment/web/web.md)
       - [DNS](./webdevelopment/web/dns.md)
       - [Docker](./webdevelopment/web/docker.md)
       - [Email](./webdevelopment/web/email.md)
@@ -66,3 +65,6 @@
     - [Auto-Entrpreneur](./organisational/business/autoentrepreneur.md)
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE0NzkzNjQ4MjJdfQ==
+-->
