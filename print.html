@@ -342,7 +342,9 @@ eyJoaXN0b3J5IjpbMTkyNDc3NTc0OV19
 <p>rm - remove (-f force, -i -r (dangerous!))</p>
 <p>rmdir - remove directory</p>
 <p>man (command) - show manual of command (whatis works too)</p>
-<p>alias name = “command” - give extra name to command</p>
+<p>alias name = “command” - give extra name to command
+unalias name - removes that alias
+~/.bashrc is the default file to save alias</p>
 <p>cat - <a href="https://www.tecmint.com/13-basic-cat-command-examples-in-linux/">can do a lot of things</a></p>
 <p>$ ln -s filename linkname - creates shortcut (softlink) to filename</p>
 <p>$ ln filename hardlinkname - creates hardlink, a linked copy of the file, it has the same inode number and is therefore identical, changes on one change both, however, one can be deleted uniquely, reducing the files link count. An inode only gets deleted when the link count is zero and the og file gets deleted</p>
@@ -435,7 +437,7 @@ eyJoaXN0b3J5IjpbMTkyNDc3NTc0OV19
 <p>Kernel modules - are modules that get added to the kernel. they can be loaded during runtime or added to modprobe to run them during startup. See <a href="https://linuxjourney.com/lesson/kernel-modules">here</a></p>
 <p>udev - a deamon that dynamically creates and removes device files according to the rules in etc/udev/rules.d the devices can be found in the dev folder and can be checked with the $ udevadm info --query=all --name=/dev/sda command</p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NzExMzI2MF19
+eyJoaXN0b3J5IjpbLTczOTcyMzM5OSwxMjY3MTEzMjYwXX0=
 --><h1><a class="header" href="#git" id="git">Git</a></h1>
 <p>git init /make a directory a git</p>
 <p>git add /add to staging</p>
