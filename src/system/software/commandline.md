@@ -27,9 +27,14 @@ rmdir - remove directory
 man (command) - show manual of command (whatis works too)
 
 alias name = “command” - give extra name to command
+
 unalias name - removes that alias
+
 ~/.bashrc is the default file to save aliases permanently. This file checks for the existence of .bash_aliases and if it exists will load those instead.
-If you want to chain or pipe commands in an alias you have to create a function within the alias. with $
+If you want to chain or pipe commands in an alias you have to create a function within the alias. with $1 you can also pass parameters. I added this shortcut to quickly upload to github:
+
+    alias gitupload='_gitupload(){ git add . ; git commit . -m "$1" ; git push; }; _gitupload'
+
 
 cat - [can do a lot of things](https://www.tecmint.com/13-basic-cat-command-examples-in-linux/)
 
@@ -293,5 +298,5 @@ Kernel modules - are modules that get added to the kernel. they can be loaded du
 
 udev - a deamon that dynamically creates and removes device files according to the rules in etc/udev/rules.d the devices can be found in the dev folder and can be checked with the $ udevadm info --query=all --name=/dev/sda command
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzI4NDUxNjcsMTI2NzExMzI2MF19
+eyJoaXN0b3J5IjpbLTQwODA1NTM5OCwxMjY3MTEzMjYwXX0=
 -->
