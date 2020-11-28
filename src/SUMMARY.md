@@ -5,6 +5,7 @@
 - [Web Development](./webdevelopment/webdevelopment.md)
     - [Front-end](./webdevelopment/frontend/frontend.md)
       - [CSS](./webdevelopment/frontend/css.md)
+      - [Design](./webdevelopment/frontend/design.md)     
       - [HTML](./webdevelopment/frontend/html.md)
       - [Javascript](./webdevelopment/frontend/js.md)
       - [VueJs](./webdevelopment/frontend/vue.md)
@@ -20,8 +21,8 @@
         - [NGINX](./webdevelopment/backend/server/nginx.md)
       - [Django](./webdevelopment/backend/django/django.md)
         -[Models](./webdevelopment/backend/django/model.md)
-        -[Views](./webdevelopment/backend/django/view.md)
-      - [DOM](./webdevelopment/backend/dom.md)
+        -[Views](./webdevelopment/backend/django/viewDjango.md)
+      - [DOM](./webdevelopment/backend/.md)
       - [Sustainability / Scalability](./webdevelopment/backend/sustainability.md)
 - [Web Technologies](./webdevelopment/web/web.md)
       - [DNS](./webdevelopment/web/dns.md)
@@ -68,5 +69,6 @@
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzkzNjQ4MjJdfQ==
+eyJoaXN0b3J5IjpbLTIwNjE3ODExMTIsLTE0NzkzNjQ4MjJdfQ
+==
 -->
