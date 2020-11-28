@@ -22,6 +22,7 @@ From [Don't make me think](https://en.wikipedia.org/wiki/Don%27t_Make_Me_Think):
 - Use bulleted lists
 - Happy talk must die
 - Instructions must die
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAzMTgxOTAwXX0=
+eyJoaXN0b3J5IjpbLTEzNTA2MzIzMjZdfQ==
 -->
