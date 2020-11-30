@@ -262,6 +262,17 @@ eyJoaXN0b3J5IjpbLTU3ODMxOTU4Ml19
 <p><img src="https://lh6.googleusercontent.com/leXbijnhTg_FBNKPeC_oLT1ugYTUO5-kKpbGJxo3mZMfARy6IIv4BKmD5dXjur3bQ2E_VbGrevbRvr57JvCUCjnCNn_zcVAzCSE27PaZKlnQ6tWaMxSVYaQEStmmgUcvwOKn_aQ8" alt="" /></p>
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE2MDM1NjU0MDVdfQ==
+--><h1><a class="header" href="#sql" id="sql">SQL</a></h1>
+<p>Structured Query Language</p>
+<p>Create <a href="https://dev.mysql.com/doc/refman/8.0/en/example-auto-increment.html">Table</a>:</p>
+<pre><code class="language-sql">CREATE TABLE animals (
+     id MEDIUMINT NOT NULL AUTO_INCREMENT,
+     name CHAR(30) NOT NULL,
+     PRIMARY KEY (id)
+);
+</code></pre>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQwMTYzNDk5MV19
 --><h1><a class="header" href="#server" id="server">Server</a></h1>
 <ul>
 <li>Run local testing server with Python (<a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server">Link</a>)</li>
@@ -282,8 +293,13 @@ eyJoaXN0b3J5IjpbMzk3ODMxNjgzXX0=
 <p><img src="https://lh6.googleusercontent.com/KRMBVkwTlL-ZNgeq_ttfixxfQHd09Efzkbs1a-N6QEQ7Ncz18-rbMCPlHf3BhzIfsOzNd0yNtscv6AGv9zPDmeqW-ewec81JoZtnPHD0NGbri7qkTE_VEaEfhnz5ZUnzDddkqr67" alt="" /></p>
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMzc4MzY1MDczXX0=
---><p>Find a new name for this section</p>
-<h1><a class="header" href="#security" id="security">Security</a></h1>
+--><h1><a class="header" href="#web-technologies" id="web-technologies">Web Technologies</a></h1>
+<h3><a class="header" href="#packet-switching" id="packet-switching">Packet switching</a></h3>
+<p>In <a href="https://en.wikipedia.org/wiki/Telecommunication" title="Telecommunication">telecommunications</a>, <strong>packet switching</strong> is a method of grouping <a href="https://en.wikipedia.org/wiki/Data_(computing)" title="Data (computing)">data</a> that is transmitted over a digital <a href="https://en.wikipedia.org/wiki/Telecommunications_network" title="Telecommunications network">network</a> into <a href="https://en.wikipedia.org/wiki/Network_packet" title="Network packet">packets</a>. Packets are made of a <a href="https://en.wikipedia.org/wiki/Header_(computing)" title="Header (computing)">header</a> and a <a href="https://en.wikipedia.org/wiki/Payload_(computing)" title="Payload (computing)">payload</a>. Data in the header is used by networking hardware to direct the packet to its destination, where the payload is extracted and used by <a href="https://en.wikipedia.org/wiki/Application_software" title="Application software">application software</a>. 
+You can check your nodes along the way with either $ tracepath or $ traceroute6:</p>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTgxNTkxNTI2XX0=
+--><h1><a class="header" href="#security" id="security">Security</a></h1>
 <ul>
 <li><a href="https://academy.hoppersroppers.org/">Hoppers Roppers</a> 
 <img src="https://lh4.googleusercontent.com/03amj_c2yLG2PGZmj0av8L1EzUGZLFNgUvp18Tps7HrWo62J6ZDdt8k3-Ert8ZCVb_n8p3Gf1UsaW22pb1d8yUo_fd0YdmleN-D_aQQNt6Lx0W5p4Mp_gHw1cVE36Vd8CM4Hm9R_" alt="" /></li>
@@ -366,9 +382,24 @@ Charles Babbage theorized the analytical engine, a mechanical computer that woul
 <p>ENIAC</p>
 <p><img src="https://lh6.googleusercontent.com/ml1Svzq2wmR47fzfwo2XcxD0rZcqaT44tDotRIW6SeXg-ORmIJjLaO3m02mqUMaeffrDCzxD1fiVDHWRe1MMaJ_0TAO6KZCocT76BdB-nwwVn0eifC0UNzhXZDhZS5br5PGVOu-b" alt="" /></p>
 <h3><a class="header" href="#the-transistor" id="the-transistor">The transistor</a></h3>
-<p>In 1947 it was invented at Bell laboratories. It used semiconductors and was able to switch more than 10.000 times per second. Mainly, transistors were sturdy, not using fragile materials like glass and could therefore almost immediately be miniaturized. In 1957, the first fully transistor powered, commercially available computer came out, containing around 3000 transistors. One of the inventors, William Shockley, therefore created his own company which would later become Intel.</p>
+<p>In 1947 it was invented at Bell laboratories by three US physicists: John Bardeen (1908–1991), Walter Brattain (1902–1987), and William Shockley (1910–1989). It used semiconductors and was able to switch more than 10.000 times per second. Mainly, transistors were sturdy, not using fragile materials like glass and could therefore almost immediately be miniaturized. In 1957, the first fully transistor powered, commercially available computer came out, containing around 3000 transistors.</p>
+<h3><a class="header" href="#logic-levels" id="logic-levels">Logic levels</a></h3>
+<p><a href="https://learn.sparkfun.com/tutorials/logic-levels">Read</a>
+A majority of systems we use rely on either 3.3V or 5 V TTL Levels. TTL is an acronym for Transistor-Transistor Logic. It relies on circuits built from bipolar transistors to achieve switching and maintain logic states. Transistors are basically fancy-speak for electrically controlled switches. For any logic family, there are a number of threshold voltage levels to know. Below is an example for standard 5V/3,3V TTL levels:</p>
+<p>VOH -- Minimum OUTPUT Voltage level a TTL device will provide for a HIGH signal (2,7 V/2,4V)</p>
+<p>VIH -- Minimum INPUT Voltage level to be considered a HIGH (2 V/2V)</p>
+<p>VOL -- Maximum OUTPUT Voltage level a device will provide for a LOW signal (0,4 V/0,5V)</p>
+<p>VIL -- Maximum INPUT Voltage level to still be considered a LOW (0,8 V/0,8)</p>
+<p>Therefore, every voltage in between 0,8 V and 2 V  is considered invalid. This also shows that 5V and 3,3 V TTLs are compatible, though the higher voltage may damage the 3,3V parts so a voltage divider might be necessary.</p>
+<h3><a class="header" href="#data-storage" id="data-storage">Data Storage</a></h3>
+<p><a href="https://www.dataversity.net/brief-history-data-storage/#">Read</a></p>
+<h3><a class="header" href="#arpanet" id="arpanet">ARPANET</a></h3>
+<p>The first wide area, packet switching network using the TCP/IP protocol. Established by ARPA of the US Department of Defense.
+Initiated in 1966 and deemed operational in 1975. </p>
+<h3><a class="header" href="#p" id="p">P</a></h3>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTc2MTE5OSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTI2NDI3NzA1MSwtNjQ1NzYxMTk5LDczMD
+k5ODExNl19
 --><h1><a class="header" href="#os" id="os">OS</a></h1>
 <p><img src="https://lh3.googleusercontent.com/zi_iYBrrd_vzS5wBNNql7OIOMh9mwJoFGflztfBGKw-PhB5DCVMQ5D-Kbt5N01WIWfBvcmSUfrN9PA-c6suFEmrBLdFtfRX3xzON3WPOXuqepfIYXXNp6O8lgFXzR5_omvuyOEhx" alt="" /></p>
 <!--stackedit_data:
