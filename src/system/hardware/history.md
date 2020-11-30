@@ -54,7 +54,32 @@ ENIAC
 
 ### The transistor
 
-In 1947 it was invented at Bell laboratories. It used semiconductors and was able to switch more than 10.000 times per second. Mainly, transistors were sturdy, not using fragile materials like glass and could therefore almost immediately be miniaturized. In 1957, the first fully transistor powered, commercially available computer came out, containing around 3000 transistors. One of the inventors, William Shockley, therefore created his own company which would later become Intel.
+In 1947 it was invented at Bell laboratories by three US physicists: John Bardeen (1908–1991), Walter Brattain (1902–1987), and William Shockley (1910–1989). It used semiconductors and was able to switch more than 10.000 times per second. Mainly, transistors were sturdy, not using fragile materials like glass and could therefore almost immediately be miniaturized. In 1957, the first fully transistor powered, commercially available computer came out, containing around 3000 transistors.
+
+### Logic levels
+[Read](https://learn.sparkfun.com/tutorials/logic-levels)
+A majority of systems we use rely on either 3.3V or 5 V TTL Levels. TTL is an acronym for Transistor-Transistor Logic. It relies on circuits built from bipolar transistors to achieve switching and maintain logic states. Transistors are basically fancy-speak for electrically controlled switches. For any logic family, there are a number of threshold voltage levels to know. Below is an example for standard 5V/3,3V TTL levels:
+
+VOH -- Minimum OUTPUT Voltage level a TTL device will provide for a HIGH signal (2,7 V/2,4V)
+
+VIH -- Minimum INPUT Voltage level to be considered a HIGH (2 V/2V)
+
+VOL -- Maximum OUTPUT Voltage level a device will provide for a LOW signal (0,4 V/0,5V)
+
+VIL -- Maximum INPUT Voltage level to still be considered a LOW (0,8 V/0,8)
+
+Therefore, every voltage in between 0,8 V and 2 V  is considered invalid. This also shows that 5V and 3,3 V TTLs are compatible, though the higher voltage may damage the 3,3V parts so a voltage divider might be necessary.
+
+### Data Storage
+[Read](https://www.dataversity.net/brief-history-data-storage/#)
+
+### ARPANET
+The first wide area, packet switching network using the TCP/IP protocol. Established by ARPA of the US Department of Defense.
+Initiated in 1966 and deemed operational in 1975. 
+
+### P
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTc2MTE5OSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTI2NDI3NzA1MSwtNjQ1NzYxMTk5LDczMD
+k5ODExNl19
 -->
