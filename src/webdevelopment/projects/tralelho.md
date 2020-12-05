@@ -2,11 +2,15 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/3ng7n33r/TraLELHo)
 
 ## Tasks
+### Next
+- [ ] Create virtualenv for Django
+- [ ] Container it
+
 ### Data Handling
  - [ ] Create map of current data structure
   -   [ ] Evaluate necessary modifications to data structure
-  -   [ ] Choose Database
-  -   [ ] Create Database and implement updated data structure
+  -   [x] Choose Database - none, using po files, maybe db for po collection later
+  -   [x] Create Database and implement updated data structure
   -  [ ]  Scrape data and fill database
   -   [ ] Verify that the data has been correctly transferred and adapted 
 ### DevOps
@@ -35,5 +39,5 @@
   -  [ ] Decide on license
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY4MTg1OTczLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTEwNTkwMTY2NTYsNzMwOTk4MTE2XX0=
 -->
