@@ -27,7 +27,7 @@
     - [Projects](./webdevelopment/projects/projects.md)
       - [Raspberry Pi](./webdevelopment/projects/raspberrypi.md)   
       - [Tralelho](./webdevelopment/projects/tralelho.md)         
-	- [Web Technologies](./webdevelopment/web/web.md)
+    - [Web Technologies](./webdevelopment/web/web.md)
       - [DNS](./webdevelopment/web/dns.md)
       - [Docker](./webdevelopment/web/docker.md)
       - [Email](./webdevelopment/web/email.md)
