@@ -24,7 +24,10 @@
         -[Views](./webdevelopment/backend/django/viewDjango.md)
       - [DOM](./webdevelopment/backend/.md)
       - [Sustainability / Scalability](./webdevelopment/backend/sustainability.md)
-- [Web Technologies](./webdevelopment/web/web.md)
+    - [Projects](./webdevelopment/projects/projects.md)
+      - [Raspberry Pi](./webdevelopment/projects/raspberrypi.md)   
+      - [Tralelho](./webdevelopment/projects/tralelho.md)         
+	- [Web Technologies](./webdevelopment/web/web.md)
       - [DNS](./webdevelopment/web/dns.md)
       - [Docker](./webdevelopment/web/docker.md)
       - [Email](./webdevelopment/web/email.md)
@@ -40,8 +43,6 @@
       - [Regular Expressions](./webdevelopment/web/regex.md)
     - [Security](./webdevelopment/security/security.md)
     - [Testing](./webdevelopment/testing/testing.md)
-    - [Projects](./webdevelopment/projects/projects.md)
-      - [Raspberry Pi](./webdevelopment/projects/raspberrypi.md)
 - [System Knowledge](./system/system.md)
   - [Hardware](./system/hardware/hardware.md)
 	  - [History](./system/hardware/history.md)
@@ -69,6 +70,6 @@
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjE3ODExMTIsLTE0NzkzNjQ4MjJdfQ
+eyJoaXN0b3J5IjpbLTE3MTQ2NjAyNzEsLTE0NzkzNjQ4MjJdfQ
 ==
 -->
