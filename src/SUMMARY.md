@@ -42,6 +42,7 @@
 	      - [URL](./webdevelopment/web/url.md)
 	      - [Regular Expressions](./webdevelopment/web/regex.md)
     - [Security](./webdevelopment/security/security.md)
+	    - [Vulnerabilities](./webdevelopment/security/vulnerabilities.md)
     - [Testing](./webdevelopment/testing/testing.md)
 - [System Knowledge](./system/system.md)
   - [Hardware](./system/hardware/hardware.md)
@@ -70,6 +71,6 @@
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODIzNjM0NTUsLTE0NzkzNjQ4MjJdfQ
+eyJoaXN0b3J5IjpbLTExNDYyODk2NzQsLTE0NzkzNjQ4MjJdfQ
 ==
 -->
