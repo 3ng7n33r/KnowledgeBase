@@ -179,7 +179,7 @@
             <div id="content" class="content">
                 <main>
                     <h1><a class="header" href="#django" id="django">Django</a></h1>
-<p>Start the project:</p>
+<p><strong>Start the project:</strong></p>
 <pre><code>$ django-admin startproject mysite
 </code></pre>
 <p>Start the app</p>
@@ -188,8 +188,23 @@
 <p>Make migrations (even if you're not using a database, you need to populate Django's sqlite file)</p>
 <pre><code>$ python manage.py migrate
 </code></pre>
+<p>add app and template directory to settings.py: </p>
+<blockquote>
+<p>INSTALLED_APPS = [
+'myapp.apps.MyappConfig',
+...
+]
+TEMPLATES = [{
+'BACKEND': 'django.template.backends.django.DjangoTemplates',
+'DIRS': [BASE_DIR / 'templates'],
+...
+},]</p>
+</blockquote>
+<p><strong>Create an admin page</strong></p>
+<pre><code>$ python manage.py createsuperuser
+</code></pre>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2OTIxODIxOCwzOTc4MzE2ODNdfQ==
+eyJoaXN0b3J5IjpbLTI5ODA4ODg3NCwzOTc4MzE2ODNdfQ==
 -->
                 </main>
 
