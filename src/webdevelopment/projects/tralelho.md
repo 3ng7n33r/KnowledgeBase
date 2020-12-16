@@ -3,8 +3,8 @@
 
 ## Tasks
 ### Next
-- [ ] Create virtualenv for Django
-- [ ] Container it
+- [x] Create virtualenv for Django
+- [x] Put it in requirements.txt
 
 ### Data Handling
  - [ ] Create map of current data structure
@@ -39,5 +39,5 @@
   -  [ ] Decide on license
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTkwMTY2NTYsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTEzMzA1MjM4NSw3MzA5OTgxMTZdfQ==
 -->
