@@ -1,7 +1,10 @@
 # Git
 
 ### Squash rebase etc.
-[here](https://thoughtbot.com/blog/git-interactive-rebase-squash-amend-rewriting-history)
+[here](https://thoughtbot.com/blog/git-interactive-rebase-squash-amend-rewriting-history) and [here](https://blog.carbonfive.com/always-squash-and-rebase-your-git-commits/) 
+
+git rebase -i HEAD~(number of commits)
+
 
 git init /make a directory a git
 
@@ -68,5 +71,5 @@ Globbing lets you use special characters to match patterns/characters. In the .g
     
 -   a/b/c/z
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDQ4NzcyNDYsNDA4NjYxNTU0XX0=
+eyJoaXN0b3J5IjpbMjQwNDczNzI4LDQwODY2MTU1NF19
 -->
