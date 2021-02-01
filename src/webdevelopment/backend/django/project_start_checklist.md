@@ -14,9 +14,12 @@ urlpatterns = [
 ]
 ```
 
- - [ ] create admin:
+ - [ ] create admin: $ python manage.py createsuperuser
+ - [ ] create models, views etc.
+ - [ ] register models in admin.py
+ - [ ] migrate with: $ python manage.py makemigrations and $ ... m
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NzQxMDk1OSwxNjAwNzA5MTkzLDEyOT
+eyJoaXN0b3J5IjpbLTQ1MDA5ODMxOCwxNjAwNzA5MTkzLDEyOT
 kxMzUzNjNdfQ==
 -->
