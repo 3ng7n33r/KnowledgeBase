@@ -14,7 +14,9 @@ urlpatterns = [
 ]
 ```
 
+ - [ ] create admin:
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTcxODY1NTMsMTYwMDcwOTE5MywxMj
-k5MTM1MzYzXX0=
+eyJoaXN0b3J5IjpbMTU3NzQxMDk1OSwxNjAwNzA5MTkzLDEyOT
+kxMzUzNjNdfQ==
 -->
