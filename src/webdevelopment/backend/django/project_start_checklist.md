@@ -1,8 +1,9 @@
- - [ ] create virtualenvironment: $ virtualenv projectname
- - [ ] $ conda deactivate -> source projectname/bin/activate
+ - [ ] create virtualenvironment: $ virtualenv envprojectname
+ - [ ] $ conda deactivate -> source envprojectname/bin/activate
  - [ ] pip install django
+ - [ ] django-admin startproject projectname
  - [ ] 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODAxMzU0MTZdfQ==
+eyJoaXN0b3J5IjpbMTI5OTEzNTM2M119
 -->
