@@ -14,8 +14,8 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	The implementation can be checked in the django shell by importing the serializer and calling *$ print(repr(Serializername()))*
 
-2. Just like the Serializer often has similar tasks, the API IO is also normally fairly similar. Therefore, the view necess
+2. Just like the Serializer often has similar tasks, the API IO is also normally fairly similar. Therefore, the view necessary to make the api connect with the outer world, can be simplified using generic class based views. An API that retrieves all elements of a database with a get request can be implemented like this:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMzIzOTA2LC0yMDM1MjcxODg5XX0=
+eyJoaXN0b3J5IjpbNjM5MjcyODkzLC0yMDM1MjcxODg5XX0=
 -->
