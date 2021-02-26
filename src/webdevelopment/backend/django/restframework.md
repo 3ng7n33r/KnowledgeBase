@@ -1,6 +1,10 @@
 Rest - Representational state transfer
 Api - application programming interface
 
+```
+pip install djangorestframework
+```
+
 1. The rest framework needs a serializer. The serializer explains how to format the db data into formats like json etc. in a get request or how to format a post request for data that goes into the db. 
 The normal serializer class is written the same way as the model class with special methods to handle requests (get, post etc.). Because of these similarities in structure and API duties, the class can be simplified with Modelserializers. This can be as simple as: 
 	```python
@@ -30,7 +34,7 @@ The normal serializer class is written the same way as the model class with spec
 	    queryset = App.objects.all()
 	    serializer_class = AppSerializer
 	```
-	More about generic views can be found here
+	More about generic views can be found [here](https://www.django-rest-framework.org/api-guide/generic-views/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM3MjYzMzI3LC0yMDM1MjcxODg5XX0=
+eyJoaXN0b3J5IjpbNTI0OTIxODE0LC0yMDM1MjcxODg5XX0=
 -->
