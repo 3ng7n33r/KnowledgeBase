@@ -45,8 +45,9 @@ The normal serializer class is written the same way as the model class with spec
 		permission_classes = [permissions.IsAuthenticatedOrReadOnly,
 		IsOwnerOrReadOnly]
 	```
-	In this example, "IsownerOrReadOnly" is a custom method defined in a permissions.py file
+	In this example, "IsownerOrReadOnly" is a custom method defined in a permissions.py file. Documentation can be found [here](https://www.django-rest-framework.org/tutorial/4-authentication-and-permissions/#object-level-permissions)
+	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA1ODkwNjM4LDM4MzgwNzIwMywtMTQ2OT
-Y5NTY5Niw1MjQ5MjE4MTQsLTIwMzUyNzE4ODldfQ==
+eyJoaXN0b3J5IjpbLTE4MjkzMjk1MTYsMzgzODA3MjAzLC0xND
+Y5Njk1Njk2LDUyNDkyMTgxNCwtMjAzNTI3MTg4OV19
 -->
