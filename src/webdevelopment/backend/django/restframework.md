@@ -14,7 +14,8 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	The implementation can be checked in the django shell by importing the serializer and calling *$ print(repr(Serializername()))*
 
+2. Just like the Serializer often has similar tasks, the API IO is also normally fairly similar. Therefore, the view necess
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MDkxMDMyNiwtMjAzNTI3MTg4OV19
+eyJoaXN0b3J5IjpbMTczMzIzOTA2LC0yMDM1MjcxODg5XX0=
 -->
