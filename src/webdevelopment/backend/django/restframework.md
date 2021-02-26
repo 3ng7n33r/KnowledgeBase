@@ -39,8 +39,13 @@ The normal serializer class is written the same way as the model class with spec
 	```python 
 	urlpatterns = format_suffix_patterns(urlpatterns)
 	```
-	3. Permissions can be handled with the permission classes in the generic views
+	3. Permissions can be handled with the [permission classes](https://www.django-rest-framework.org/api-guide/permissions/#api-reference) in the generic views:
+	```python
+	class  SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
+		permission_classes = [permissions.IsAuthenticatedOrReadOnly,
+		IsOwnerOrReadOnly]
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgzODA3MjAzLC0xNDY5Njk1Njk2LDUyND
-kyMTgxNCwtMjAzNTI3MTg4OV19
+eyJoaXN0b3J5IjpbLTQ3NjIxNzI1NCwzODM4MDcyMDMsLTE0Nj
+k2OTU2OTYsNTI0OTIxODE0LC0yMDM1MjcxODg5XX0=
 -->
