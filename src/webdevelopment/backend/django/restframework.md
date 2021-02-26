@@ -45,7 +45,8 @@ The normal serializer class is written the same way as the model class with spec
 		permission_classes = [permissions.IsAuthenticatedOrReadOnly,
 		IsOwnerOrReadOnly]
 	```
+	In this example, "IsownerOrReadOnly" is a custom method defined in a permissions.py file
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NjIxNzI1NCwzODM4MDcyMDMsLTE0Nj
-k2OTU2OTYsNTI0OTIxODE0LC0yMDM1MjcxODg5XX0=
+eyJoaXN0b3J5IjpbOTA1ODkwNjM4LDM4MzgwNzIwMywtMTQ2OT
+Y5NTY5Niw1MjQ5MjE4MTQsLTIwMzUyNzE4ODldfQ==
 -->
