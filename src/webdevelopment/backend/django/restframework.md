@@ -2,7 +2,7 @@ Rest - Representational state transfer
 Api - application programming interface
 
 1. The rest framework needs a serializer. The serializer explains how to format the db data into formats like json etc. in a get request or how to format a post request for data that goes into the db. 
-
+The normal serializer class is written the same way as the model class with special methods to handle requests (get, post etc.). Because of these similarities and because most of the times serialisation
 It can be as simple as: 
 ```python
 from rest_framework import serializers
@@ -15,5 +15,5 @@ class  AppSerializer(serializers.ModelSerializer):
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ4MzYwMTQ3LC0yMDM1MjcxODg5XX0=
+eyJoaXN0b3J5IjpbLTQ1MzU2MDc1MywtMjAzNTI3MTg4OV19
 -->
