@@ -35,8 +35,8 @@ The normal serializer class is written the same way as the model class with spec
 	    serializer_class = AppSerializer
 	```
 	More about generic views can be found [here](https://www.django-rest-framework.org/api-guide/generic-views/).
-	Note
+	Note: in the urls file, class based views need the .asview method attached. To be able to use api suffixes (.json, .ap
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTQxNDUwMiw1MjQ5MjE4MTQsLTIwMz
+eyJoaXN0b3J5IjpbMTUwMzU0OTUzMCw1MjQ5MjE4MTQsLTIwMz
 UyNzE4ODldfQ==
 -->
