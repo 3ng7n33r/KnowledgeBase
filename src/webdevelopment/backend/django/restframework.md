@@ -35,6 +35,8 @@ The normal serializer class is written the same way as the model class with spec
 	    serializer_class = AppSerializer
 	```
 	More about generic views can be found [here](https://www.django-rest-framework.org/api-guide/generic-views/).
+	Note
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI0OTIxODE0LC0yMDM1MjcxODg5XX0=
+eyJoaXN0b3J5IjpbLTEyNTQxNDUwMiw1MjQ5MjE4MTQsLTIwMz
+UyNzE4ODldfQ==
 -->
