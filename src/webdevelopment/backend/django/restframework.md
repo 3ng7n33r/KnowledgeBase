@@ -12,8 +12,9 @@ The normal serializer class is written the same way as the model class with spec
 			model = App
 			fields = ['id', 'title', 'other', 'important', 'fields']
 	```
-	
+	The implementation can be checked in the django shell by importing the serializer and calling *$ print(repr(serializer))*
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMjUyODYwMCwtMjAzNTI3MTg4OV19
+eyJoaXN0b3J5IjpbLTg5MDY4Mjc4LC0yMDM1MjcxODg5XX0=
 -->
