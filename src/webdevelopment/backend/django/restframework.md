@@ -26,10 +26,11 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	and an API that retrieves, stores or deletes a single db entry:
 	```python
-	class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
-	    queryset = Snippet.objects.all()
-	    serializer_class = SnippetSerializer
+	class AppDetail(generics.RetrieveUpdateDestroyAPIView):
+	    queryset = App.objects.all()
+	    serializer_class = AppSerializer
 	```
+	More about generic views can be found here
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUwMjQwNTc1LC0yMDM1MjcxODg5XX0=
+eyJoaXN0b3J5IjpbMzM3MjYzMzI3LC0yMDM1MjcxODg5XX0=
 -->
