@@ -1,6 +1,9 @@
 # VSCode
 ## Shortcuts
 
+> Ctrl + Shift + P  - Show all commands
+> 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NDI2ODc0OF19
+eyJoaXN0b3J5IjpbOTg1NDIyMDU4XX0=
 -->
