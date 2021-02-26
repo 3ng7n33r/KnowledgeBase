@@ -17,14 +17,19 @@ The normal serializer class is written the same way as the model class with spec
 2. Just like the Serializer often has similar tasks, the API IO is also normally fairly similar. Therefore, the view necessary to make the api connect with the outer world, can be simplified using generic class based views. An API that retrieves all elements of a database with a get request can be implemented like this:
 	```python
 	from App.models import Modelname
-	from snippets.serializers import SnippetSerializer
+	from app.serializers import AppSerializer
 	from rest_framework import generics
 	
 	class SnippetList(generics.ListCreateAPIView):
-	   queryset = Snippet.objects.all()
-	   serializer_class = SnippetSerializer
+	   queryset = App.objects.all()
+	   serializer_class = AppSerializer
 	```
-
+	and an API that retrieves, stores or deletes a single db entry:
+	```python
+	class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
+	    queryset = Snippet.objects.all()
+	    serializer_class = SnippetSerializer
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMjY2NDIyMiwtMjAzNTI3MTg4OV19
+eyJoaXN0b3J5IjpbNDUwMjQwNTc1LC0yMDM1MjcxODg5XX0=
 -->
