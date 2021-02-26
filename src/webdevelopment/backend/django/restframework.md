@@ -39,8 +39,8 @@ The normal serializer class is written the same way as the model class with spec
 	```python 
 	urlpatterns = format_suffix_patterns(urlpatterns)
 	```
-	
+	3. Permissions can be handled with the permission classes in the generic views
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMD
-M1MjcxODg5XX0=
+eyJoaXN0b3J5IjpbMzgzODA3MjAzLC0xNDY5Njk1Njk2LDUyND
+kyMTgxNCwtMjAzNTI3MTg4OV19
 -->
