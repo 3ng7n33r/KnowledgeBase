@@ -52,10 +52,9 @@ The normal serializer class is written the same way as the model class with spec
 	    path('anypath/', include('rest_framework.urls')),
 	]
 	```
-	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and add the ```
-HyperlinkedModelSerializer
+	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwODU4NTU5MCwtMTA4ODMzNjkzMiwzOD
+eyJoaXN0b3J5IjpbMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzOD
 M4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1Mjcx
 ODg5XX0=
 -->
