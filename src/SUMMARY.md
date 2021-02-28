@@ -21,9 +21,9 @@
         - [NGINX](./webdevelopment/backend/server/nginx.md)
       - [Django](./webdevelopment/backend/django/django.md)
 		- [Models](./webdevelopment/backend/django/model.md)
-        - [Views](./webdevelopment/backend/django/viewDjango.md)
+        - [Views](./webdevelopment/backend/django/view.md)
         - [Rest Framework](./webdevelopment/backend/django/restframework.md)
-        - [Setup](./webdevelopment/backend/django/.md)
+        - [Setup](./webdevelopment/backend/django/project_start_checklist.md)
       - [DOM](./webdevelopment/backend/.md)
       - [Sustainability / Scalability](./webdevelopment/backend/sustainability.md)
     - [Projects](./webdevelopment/projects/projects.md)
@@ -73,6 +73,6 @@
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMjQwODkxOSwtMTE0NjI4OTY3NCwtMT
+eyJoaXN0b3J5IjpbLTMwNzg1MjMwNywtMTE0NjI4OTY3NCwtMT
 Q3OTM2NDgyMl19
 -->
