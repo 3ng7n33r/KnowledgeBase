@@ -178,43 +178,8 @@
 
             <div id="content" class="content">
                 <main>
-                    <ul>
-<li><input disabled="" type="checkbox"/>
-create virtualenvironment: $ virtualenv envprojectname</li>
-<li><input disabled="" type="checkbox"/>
-$ conda deactivate -&gt; source envprojectname/bin/activate</li>
-<li><input disabled="" type="checkbox"/>
-pip install django</li>
-<li><input disabled="" type="checkbox"/>
-Create project: $ django-admin startproject projectname</li>
-<li><input disabled="" type="checkbox"/>
-Create app: $ python manage.py startapp appname</li>
-<li><input disabled="" type="checkbox"/>
-Register app in settings.py - &gt; INSTALLED_APPS = ['appname.apps.AppnameConfig', ]</li>
-<li><input disabled="" type="checkbox"/>
-add app to urls.py </li>
-</ul>
-<pre><code>from django.urls import include
+                    <h1 id="setup"><a class="header" href="#setup">Setup</a></h1>
 
-urlpatterns = [
-    path('catalog/', include('catalog.urls')),
-    ...
-]
-</code></pre>
-<ul>
-<li><input disabled="" type="checkbox"/>
-create admin: $ python manage.py createsuperuser</li>
-<li><input disabled="" type="checkbox"/>
-create models, views, templates, statics, fixtures etc.</li>
-<li><input disabled="" type="checkbox"/>
-register models in admin.py</li>
-<li><input disabled="" type="checkbox"/>
-migrate with: $ python manage.py makemigrations and $ ... migrate</li>
-</ul>
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM2NjM1OTk4LDE2MDA3MDkxOTMsMTI5OT
-EzNTM2M119
--->
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
