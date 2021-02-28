@@ -1,7 +1,7 @@
  - [ ] create virtualenvironment: $ virtualenv envprojectname
  - [ ] $ conda deactivate -> source envprojectname/bin/activate
  - [ ] pip install django
- - [ ] Create project: $ django-admin startproject projectname
+ - [ ] Create project: $ django-admin startproject projectname (use . after projectname to initialise in current folder)
  - [ ] Create app: $ python manage.py startapp appname
  - [ ] Register app in settings.py - > INSTALLED_APPS = ['appname.apps.AppnameConfig', ]
  - [ ] add app to urls.py 
@@ -20,5 +20,5 @@ urlpatterns = [
  - [ ] migrate with: $ python manage.py makemigrations and $ ... migrate
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM2NjM1OTk4XX0=
+eyJoaXN0b3J5IjpbLTE1OTEyMDEzOTRdfQ==
 -->
