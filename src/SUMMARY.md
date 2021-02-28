@@ -23,7 +23,7 @@
 		- [Models](./webdevelopment/backend/django/model.md)
         - [Views](./webdevelopment/backend/django/view.md)
         - [Rest Framework](./webdevelopment/backend/django/restframework.md)
-        - [Setup](./webdevelopment/backend/django/project_start_checklist.md)
+        - [Setup](./webdevelopment/backend/django/projectstartchecklist.md)
       - [DOM](./webdevelopment/backend/.md)
       - [Sustainability / Scalability](./webdevelopment/backend/sustainability.md)
     - [Projects](./webdevelopment/projects/projects.md)
@@ -73,6 +73,6 @@
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNzg1MjMwNywtMTE0NjI4OTY3NCwtMT
-Q3OTM2NDgyMl19
+eyJoaXN0b3J5IjpbLTEzMTU1OTg0MjUsLTExNDYyODk2NzQsLT
+E0NzkzNjQ4MjJdfQ==
 -->
