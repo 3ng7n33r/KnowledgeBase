@@ -5,20 +5,29 @@
  - [ ] Create app: $ python manage.py startapp appname
  - [ ] Register app in settings.py - > INSTALLED_APPS = ['appname.apps.AppnameConfig', ]
  - [ ] add app to urls.py 
-```
-from django.urls import include
+	```
+	from django.urls import include
 
-urlpatterns = [
-    path('catalog/', include('catalog.urls')),
-    ...
-]
-```
+	urlpatterns = [
+	    path('catalog/', include('catalog.urls')),
+	    ...
+	]
+	```
  - [ ] create boilerplate app -> urls.py
+	```
+	from django.urls import path
+	from api import views
+
+	urlpatterns = [
+	path('/', views.index),
+	]
+	```
  - [ ] create admin: $ python manage.py createsuperuser
  - [ ] create models, views, templates, statics, fixtures etc.
  - [ ] register models in admin.py
  - [ ] migrate with: $ python manage.py makemigrations and $ ... migrate
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MzYwMzc3NywtMTU5MTIwMTM5NF19
+eyJoaXN0b3J5IjpbLTIxMjQyNDY1MzEsLTE1OTEyMDEzOTRdfQ
+==
 -->
