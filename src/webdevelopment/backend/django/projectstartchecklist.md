@@ -13,12 +13,12 @@ urlpatterns = [
     ...
 ]
 ```
-
+ - [ ] create boilerplate app -> urls.py
  - [ ] create admin: $ python manage.py createsuperuser
  - [ ] create models, views, templates, statics, fixtures etc.
  - [ ] register models in admin.py
  - [ ] migrate with: $ python manage.py makemigrations and $ ... migrate
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTEyMDEzOTRdfQ==
+eyJoaXN0b3J5IjpbMTM1MzYwMzc3NywtMTU5MTIwMTM5NF19
 -->
