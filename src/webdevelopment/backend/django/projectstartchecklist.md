@@ -17,20 +17,20 @@
  - [ ] create boilerplate app -> urls.py
 	```
 	from django.urls import path
-	from api import views
+
+	from . import views
 
 	urlpatterns = [
-	path('', views.index),
+	    path('', views.index),
 	]
 	```
  - [ ] create boilerplate app -> views.py
 	```
-	from django.shortcuts import render
 	from django.http import HttpResponse
 
-	def  index(request):
-		html = "<html><body>It is now %s.</body></html>" % now
-		return HttpResponse(html)
+
+	def index(request):
+	    return HttpResponse("Hello, world")
 	```	
  - [ ] migrate	
  - [ ] create admin: $ python manage.py createsuperuser
@@ -39,6 +39,6 @@
  - [ ] migrate with: $ python manage.py makemigrations and $ ... migrate
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0ODk3MzMyOSwtMTAzMDQ4NzUzMSwtMj
-EyNDI0NjUzMSwtMTU5MTIwMTM5NF19
+eyJoaXN0b3J5IjpbLTE2ODc5NzM2MjMsLTEwMzA0ODc1MzEsLT
+IxMjQyNDY1MzEsLTE1OTEyMDEzOTRdfQ==
 -->
