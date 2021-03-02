@@ -192,8 +192,7 @@ Create app: $ python manage.py startapp appname</li>
 <li><input disabled="" type="checkbox"/>
 Register app in settings.py - &gt; INSTALLED_APPS = ['appname.apps.AppnameConfig', ]</li>
 <li><input disabled="" type="checkbox"/>
-add app to urls.py </li>
-</ul>
+add app to urls.py 
 <pre><code>from django.urls import include
 
 urlpatterns = [
@@ -201,9 +200,17 @@ urlpatterns = [
     ...
 ]
 </code></pre>
-<ul>
+</li>
 <li><input disabled="" type="checkbox"/>
-create boilerplate app -&gt; urls.py</li>
+create boilerplate app -&gt; urls.py
+<pre><code>from django.urls import path
+from api import views
+
+urlpatterns = [
+path('/', views.index),
+]
+</code></pre>
+</li>
 <li><input disabled="" type="checkbox"/>
 create admin: $ python manage.py createsuperuser</li>
 <li><input disabled="" type="checkbox"/>
@@ -214,7 +221,8 @@ register models in admin.py</li>
 migrate with: $ python manage.py makemigrations and $ ... migrate</li>
 </ul>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MzYwMzc3NywtMTU5MTIwMTM5NF19
+eyJoaXN0b3J5IjpbLTIxMjQyNDY1MzEsLTE1OTEyMDEzOTRdfQ
+==
 -->
                 </main>
 
