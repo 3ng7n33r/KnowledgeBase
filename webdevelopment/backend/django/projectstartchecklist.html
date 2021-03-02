@@ -207,7 +207,7 @@ create boilerplate app -&gt; urls.py
 from api import views
 
 urlpatterns = [
-path('/', views.index),
+path('', views.index),
 ]
 </code></pre>
 </li>
@@ -223,6 +223,8 @@ def  index(request):
 </code></pre>
 </li>
 <li><input disabled="" type="checkbox"/>
+migrate	</li>
+<li><input disabled="" type="checkbox"/>
 create admin: $ python manage.py createsuperuser</li>
 <li><input disabled="" type="checkbox"/>
 create models, views, templates, statics, fixtures etc.</li>
@@ -232,8 +234,8 @@ register models in admin.py</li>
 migrate with: $ python manage.py makemigrations and $ ... migrate</li>
 </ul>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5MjI2NTYsLTIxMjQyNDY1MzEsLTE1OT
-EyMDEzOTRdfQ==
+eyJoaXN0b3J5IjpbLTEwMzA0ODc1MzEsLTIxMjQyNDY1MzEsLT
+E1OTEyMDEzOTRdfQ==
 -->
                 </main>
 

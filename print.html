@@ -461,7 +461,7 @@ create boilerplate app -&gt; urls.py
 from api import views
 
 urlpatterns = [
-path('/', views.index),
+path('', views.index),
 ]
 </code></pre>
 </li>
@@ -477,6 +477,8 @@ def  index(request):
 </code></pre>
 </li>
 <li><input disabled="" type="checkbox"/>
+migrate	</li>
+<li><input disabled="" type="checkbox"/>
 create admin: $ python manage.py createsuperuser</li>
 <li><input disabled="" type="checkbox"/>
 create models, views, templates, statics, fixtures etc.</li>
@@ -486,8 +488,8 @@ register models in admin.py</li>
 migrate with: $ python manage.py makemigrations and $ ... migrate</li>
 </ul>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5MjI2NTYsLTIxMjQyNDY1MzEsLTE1OT
-EyMDEzOTRdfQ==
+eyJoaXN0b3J5IjpbLTEwMzA0ODc1MzEsLTIxMjQyNDY1MzEsLT
+E1OTEyMDEzOTRdfQ==
 --><h1 id="dom"><a class="header" href="#dom">DOM</a></h1>
 <h1 id="sustainability--scalability"><a class="header" href="#sustainability--scalability">Sustainability / Scalability</a></h1>
 <p><img src="https://lh6.googleusercontent.com/KRMBVkwTlL-ZNgeq_ttfixxfQHd09Efzkbs1a-N6QEQ7Ncz18-rbMCPlHf3BhzIfsOzNd0yNtscv6AGv9zPDmeqW-ewec81JoZtnPHD0NGbri7qkTE_VEaEfhnz5ZUnzDddkqr67" alt="" /></p>
