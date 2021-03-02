@@ -6,11 +6,12 @@
  - [ ] Register app in settings.py - > INSTALLED_APPS = ['appname.apps.AppnameConfig', ]
  - [ ] add app to urls.py 
 	```
-	from django.urls import include
+	from django.contrib import admin
+	from django.urls import path, include
 
 	urlpatterns = [
-	    path('catalog/', include('catalog.urls')),
-	    ...
+		path('admin/', admin.site.urls),
+		path('', include('appname.urls')),
 	]
 	```
  - [ ] create boilerplate app -> urls.py
@@ -38,6 +39,6 @@
  - [ ] migrate with: $ python manage.py makemigrations and $ ... migrate
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzA0ODc1MzEsLTIxMjQyNDY1MzEsLT
-E1OTEyMDEzOTRdfQ==
+eyJoaXN0b3J5IjpbMjA0ODk3MzMyOSwtMTAzMDQ4NzUzMSwtMj
+EyNDI0NjUzMSwtMTU5MTIwMTM5NF19
 -->
