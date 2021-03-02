@@ -19,7 +19,7 @@
 	from api import views
 
 	urlpatterns = [
-	path('/', views.index),
+	path('', views.index),
 	]
 	```
  - [ ] create boilerplate app -> views.py
@@ -31,12 +31,13 @@
 		html = "<html><body>It is now %s.</body></html>" % now
 		return HttpResponse(html)
 	```	
+ - [ ] migrate	
  - [ ] create admin: $ python manage.py createsuperuser
  - [ ] create models, views, templates, statics, fixtures etc.
  - [ ] register models in admin.py
  - [ ] migrate with: $ python manage.py makemigrations and $ ... migrate
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5MjI2NTYsLTIxMjQyNDY1MzEsLTE1OT
-EyMDEzOTRdfQ==
+eyJoaXN0b3J5IjpbLTEwMzA0ODc1MzEsLTIxMjQyNDY1MzEsLT
+E1OTEyMDEzOTRdfQ==
 -->
