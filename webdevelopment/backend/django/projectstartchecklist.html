@@ -193,11 +193,12 @@ Create app: $ python manage.py startapp appname</li>
 Register app in settings.py - &gt; INSTALLED_APPS = ['appname.apps.AppnameConfig', ]</li>
 <li><input disabled="" type="checkbox"/>
 add app to urls.py 
-<pre><code>from django.urls import include
+<pre><code>from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    path('catalog/', include('catalog.urls')),
-    ...
+	path('admin/', admin.site.urls),
+	path('', include('appname.urls')),
 ]
 </code></pre>
 </li>
@@ -234,8 +235,8 @@ register models in admin.py</li>
 migrate with: $ python manage.py makemigrations and $ ... migrate</li>
 </ul>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzA0ODc1MzEsLTIxMjQyNDY1MzEsLT
-E1OTEyMDEzOTRdfQ==
+eyJoaXN0b3J5IjpbMjA0ODk3MzMyOSwtMTAzMDQ4NzUzMSwtMj
+EyNDI0NjUzMSwtMTU5MTIwMTM5NF19
 -->
                 </main>
 
