@@ -205,21 +205,21 @@ urlpatterns = [
 <li><input disabled="" type="checkbox"/>
 create boilerplate app -&gt; urls.py
 <pre><code>from django.urls import path
-from api import views
+
+from . import views
 
 urlpatterns = [
-path('', views.index),
+    path('', views.index),
 ]
 </code></pre>
 </li>
 <li><input disabled="" type="checkbox"/>
 create boilerplate app -&gt; views.py
-<pre><code>from django.shortcuts import render
-from django.http import HttpResponse
+<pre><code>from django.http import HttpResponse
 
-def  index(request):
-	html = &quot;&lt;html&gt;&lt;body&gt;It is now %s.&lt;/body&gt;&lt;/html&gt;&quot; % now
-	return HttpResponse(html)
+
+def index(request):
+    return HttpResponse(&quot;Hello, world&quot;)
 ```	
 </code></pre>
 </li>
@@ -235,8 +235,8 @@ register models in admin.py</li>
 migrate with: $ python manage.py makemigrations and $ ... migrate</li>
 </ul>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0ODk3MzMyOSwtMTAzMDQ4NzUzMSwtMj
-EyNDI0NjUzMSwtMTU5MTIwMTM5NF19
+eyJoaXN0b3J5IjpbLTE2ODc5NzM2MjMsLTEwMzA0ODc1MzEsLT
+IxMjQyNDY1MzEsLTE1OTEyMDEzOTRdfQ==
 -->
                 </main>
 
