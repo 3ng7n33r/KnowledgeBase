@@ -9,6 +9,7 @@
       - [HTML](./webdevelopment/frontend/html.md)
       - [Javascript](./webdevelopment/frontend/js.md)
       - [VueJs](./webdevelopment/frontend/Vue/vue.md)
+	      - [Axios](./webdevelopment/frontend/Vue/axios.md)
       - [Nuxt](./webdevelopment/frontend/nuxt.md)
     - [Back-end](./webdevelopment/backend/backend.md)
       - [Database](./webdevelopment/backend/database/database.md)
@@ -73,6 +74,6 @@
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTcwMjI5MjgsLTEzMTU1OTg0MjUsLT
+eyJoaXN0b3J5IjpbLTEwMTM5MjQyNTYsLTEzMTU1OTg0MjUsLT
 ExNDYyODk2NzQsLTE0NzkzNjQ4MjJdfQ==
 -->
