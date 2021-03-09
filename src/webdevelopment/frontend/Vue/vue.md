@@ -94,8 +94,10 @@ app.component('component-name', {
 
 ```bash 
 npm install -g @vue/cli
+vue create 
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgxNjQ1NjQ4LDE5MDcwMDE5MDksLTE1OT
-I5OTk1NjddfQ==
+eyJoaXN0b3J5IjpbMTc3NDE2NzkyMiw4ODE2NDU2NDgsMTkwNz
+AwMTkwOSwtMTU5Mjk5OTU2N119
 -->
