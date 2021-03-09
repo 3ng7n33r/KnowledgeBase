@@ -36,9 +36,10 @@
  - [ ] create admin: $ python manage.py createsuperuser
  - [ ] create models, views, templates, statics, fixtures etc.
  - [ ] register models in admin.py
+ - [ ] set Time_Zone in settings.py
  - [ ] migrate with: $ python manage.py makemigrations and $ ... migrate
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODc5NzM2MjMsLTEwMzA0ODc1MzEsLT
-IxMjQyNDY1MzEsLTE1OTEyMDEzOTRdfQ==
+eyJoaXN0b3J5IjpbOTcxNzk0NTkxLC0xNjg3OTczNjIzLC0xMD
+MwNDg3NTMxLC0yMTI0MjQ2NTMxLC0xNTkxMjAxMzk0XX0=
 -->
