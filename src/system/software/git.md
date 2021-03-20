@@ -5,8 +5,12 @@
 
 git rebase --root -i
 git push -f
-
 git rebase -i HEAD~(number of commits)
+
+### create branch and push upstream
+git checkout -b *b*
+
+
 
 
 git init /make a directory a git
@@ -74,5 +78,6 @@ Globbing lets you use special characters to match patterns/characters. In the .g
     
 -   a/b/c/z
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MTU5NTEyMSw0MDg2NjE1NTRdfQ==
+eyJoaXN0b3J5IjpbLTE0OTk5NTgxMDcsLTI3MTU5NTEyMSw0MD
+g2NjE1NTRdfQ==
 -->
