@@ -181,9 +181,14 @@
                     <h1 id="git"><a class="header" href="#git">Git</a></h1>
 <h2 id="squash-rebase-etc"><a class="header" href="#squash-rebase-etc">Squash rebase etc.</a></h2>
 <p><a href="https://thoughtbot.com/blog/git-interactive-rebase-squash-amend-rewriting-history">here</a> and <a href="https://blog.carbonfive.com/always-squash-and-rebase-your-git-commits/">here</a> </p>
-<p>git rebase --root -i
-git rebase -i HEAD~(number of commits)
-git push -f</p>
+<pre><code>git rebase --root -i
+</code></pre>
+<p>or</p>
+<pre><code>git rebase -i HEAD~(number of commits)
+</code></pre>
+<p>and to overwrite upstream</p>
+<pre><code>git push -f
+</code></pre>
 <h2 id="create-branch-and-push-upstream"><a class="header" href="#create-branch-and-push-upstream">create branch and push upstream</a></h2>
 <pre><code>git checkout -b *branchname*
 git push origin *branchname*
@@ -241,8 +246,8 @@ git push origin *branchname*
 </li>
 </ul>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY3NzM1OTY3LC0yNzE1OTUxMjEsNDA4Nj
-YxNTU0XX0=
+eyJoaXN0b3J5IjpbLTQ4NTM3NzY3NiwtMjcxNTk1MTIxLDQwOD
+Y2MTU1NF19
 -->
                 </main>
 
