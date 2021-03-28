@@ -484,9 +484,29 @@ eyJoaXN0b3J5IjpbMTMyODI5NDIyXX0=
 <ul>
 <li>Run local testing server with Python (<a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server">Link</a>)</li>
 </ul>
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU1NzgxNTM3XX0=
---><h1 id="django"><a class="header" href="#django">Django</a></h1>
+<h2 id="apply-updates"><a class="header" href="#apply-updates">apply updates</a></h2>
+<ol>
+<li>Pull and overwrite local changes</li>
+</ol>
+<pre><code class="language-bash">git add .
+git stash
+git pull
+</code></pre>
+<ol start="2">
+<li>compile static files</li>
+</ol>
+<pre><code class="language-bash">python manage.py collectstatic
+</code></pre>
+<ol start="3">
+<li>reload nginx and gunicorn</li>
+</ol>
+<pre><code class="language-bash">sudo systemctl reload nginx
+kill -HUP 944 #&lt;---944 = pid of Gunicorn main process/
+ps -aux | grep gunicorn #&lt;--- to find pid
+&lt;!--stackedit_data:
+eyJoaXN0b3J5IjpbMTk1NjIzODc1Nyw1NTU3ODE1MzddfQ==
+--&gt;</code></pre>
+<h1 id="django"><a class="header" href="#django">Django</a></h1>
 <p><strong>Start the project:</strong></p>
 <pre><code>$ django-admin startproject mysite
 </code></pre>
