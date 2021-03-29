@@ -185,8 +185,11 @@
 <pre><code>gunicorn --daemon --workers 3 --bind unix:/home/ubuntu/&lt;project_name&gt;/&lt;project_name&gt;.sock &lt;project_name&gt;.wsgi
 </code></pre>
 <p>--daemon</p>
+<p>-- workers : see <a href="https://docs.gunicorn.org/en/latest/design.html#how-many-workers">here</a> how to set the right amount of workers. The rule of thumb is (cores x 2) + 1</p>
+<p>--bind gunicorn to the unix socket configu</p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1Mzg4OTYwOCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTUzODE2OTE3MCwxODUzODg5NjA4LDczMD
+k5ODExNl19
 -->
                 </main>
 
