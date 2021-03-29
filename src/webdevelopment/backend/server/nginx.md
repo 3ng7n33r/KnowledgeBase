@@ -30,7 +30,10 @@ To enable the above file, create a link to the sites-enabled folder by running t
 Check the configuration file with:
 
     sudo nginx -t
+and run it with: 
+
+    sudo service nginx restart
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNTk5MTA0NSwzNTQyODQ4OF19
+eyJoaXN0b3J5IjpbMjY3NTQxNjExLDM1NDI4NDg4XX0=
 -->
