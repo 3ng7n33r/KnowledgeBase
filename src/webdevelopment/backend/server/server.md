@@ -19,6 +19,8 @@ python manage.py collectstatic
 sudo systemctl reload nginx
 kill -HUP 944 #<---944 = pid of Gunicorn main process/
 ps -aux | grep gunicorn #<--- to find pid
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NjIzODc1Nyw1NTU3ODE1MzddfQ==
+eyJoaXN0b3J5IjpbMTMzMTY4OTQ3MywxOTU2MjM4NzU3LDU1NT
+c4MTUzN119
 -->
