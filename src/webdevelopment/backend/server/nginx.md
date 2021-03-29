@@ -7,15 +7,15 @@
 cd /etc/nginx/sites-available/
 sudo nano #project-name <- create nginx config file there
 ```
-```
+```bash
 server {
     listen 80;
-    server_name 0.0.0.0;
+    server_name XXXXXXXX; #<--Server Ipv4 address
  
     location = /favicon.ico { access_log off; log_not_found off; }
  
     location /static/ {
-            root /path_to_project/<project_folder_name>;
+            root /path_to_project/<project_folder_name>; #<- folder containing static folder, normally same folder with manage.py 
     }
  
     location / {
@@ -23,7 +23,8 @@ server {
             proxy_pass http://unix:/path_to_project/<project_name>/<project_name>.sock;
     }
 }
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzE1MTc5MjIsMzU0Mjg0ODhdfQ==
+eyJoaXN0b3J5IjpbMTQxMTE2NzQ4OSwzNTQyODQ4OF19
 -->
