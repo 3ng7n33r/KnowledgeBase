@@ -185,11 +185,11 @@
 <pre><code>gunicorn --daemon --workers 3 --bind unix:/home/ubuntu/&lt;project_name&gt;/&lt;project_name&gt;.sock &lt;project_name&gt;.wsgi
 </code></pre>
 <p>The command has to be executed in the parent directory of the Django project (the directory that contains manage.py)</p>
-<p>--daemon: Maybe</p>
+<p>--daemon: Maybe unnecessary?</p>
 <p>-- workers : see <a href="https://docs.gunicorn.org/en/latest/design.html#how-many-workers">here</a> how to set the right amount of workers. The rule of thumb is (cores x 2) + 1</p>
 <p>--bind gunicorn to the unix socket set in the nginx configuration</p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3Mjc2NzcxOCwxODUzODg5NjA4LDczMD
+eyJoaXN0b3J5IjpbMTc5NDkwOTg0OSwxODUzODg5NjA4LDczMD
 k5ODExNl19
 -->
                 </main>
