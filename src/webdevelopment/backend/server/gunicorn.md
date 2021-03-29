@@ -9,7 +9,7 @@ Install gunicorn and run the daemon worker with this command:
 
 The command has to be executed in the parent directory of the Django project (the directory that contains manage.py)
 
-\-\-daemon: Maybe unnecessary?
+\-\-daemon: Leaves the process running in the background. Should be substituted by Supervisor?
 
 \-\- workers : see [here](https://docs.gunicorn.org/en/latest/design.html#how-many-workers) how to set the right amount of workers. The rule of thumb is (cores x 2) + 1
 
@@ -17,6 +17,6 @@ The command has to be executed in the parent directory of the Django project (th
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NDkwOTg0OSwxODUzODg5NjA4LDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbLTg0NDA4MzM0MywxNzk0OTA5ODQ5LDE4NT
+M4ODk2MDgsNzMwOTk4MTE2XX0=
 -->
