@@ -181,8 +181,12 @@
                     <h1 id="gunicorn"><a class="header" href="#gunicorn">GUnicorn</a></h1>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <h2 id="server-config"><a class="header" href="#server-config">Server config</a></h2>
+<p>Install gunicorn and run the daemon worker with this command:</p>
+<pre><code>gunicorn --daemon --workers 3 --bind unix:/home/ubuntu/&lt;project_name&gt;/&lt;project_name&gt;.sock &lt;project_name&gt;.wsgi
+</code></pre>
+<p>--daemon</p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjc5MTAzNTksNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTg1Mzg4OTYwOCw3MzA5OTgxMTZdfQ==
 -->
                 </main>
 

@@ -543,8 +543,12 @@ eyJoaXN0b3J5IjpbMjY3NTQxNjExLDM1NDI4NDg4XX0=
 --><h1 id="gunicorn"><a class="header" href="#gunicorn">GUnicorn</a></h1>
 <h2 id="description-1"><a class="header" href="#description-1">Description</a></h2>
 <h2 id="server-config-1"><a class="header" href="#server-config-1">Server config</a></h2>
+<p>Install gunicorn and run the daemon worker with this command:</p>
+<pre><code>gunicorn --daemon --workers 3 --bind unix:/home/ubuntu/&lt;project_name&gt;/&lt;project_name&gt;.sock &lt;project_name&gt;.wsgi
+</code></pre>
+<p>--daemon</p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjc5MTAzNTksNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTg1Mzg4OTYwOCw3MzA5OTgxMTZdfQ==
 --><h1 id="django"><a class="header" href="#django">Django</a></h1>
 <p><strong>Start the project:</strong></p>
 <pre><code>$ django-admin startproject mysite
