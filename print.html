@@ -547,12 +547,12 @@ eyJoaXN0b3J5IjpbMjY3NTQxNjExLDM1NDI4NDg4XX0=
 <pre><code>gunicorn --daemon --workers 3 --bind unix:/home/ubuntu/&lt;project_name&gt;/&lt;project_name&gt;.sock &lt;project_name&gt;.wsgi
 </code></pre>
 <p>The command has to be executed in the parent directory of the Django project (the directory that contains manage.py)</p>
-<p>--daemon: Maybe unnecessary?</p>
+<p>--daemon: Leaves the process running in the background. Should be substituted by Supervisor?</p>
 <p>-- workers : see <a href="https://docs.gunicorn.org/en/latest/design.html#how-many-workers">here</a> how to set the right amount of workers. The rule of thumb is (cores x 2) + 1</p>
 <p>--bind gunicorn to the unix socket set in the nginx configuration</p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NDkwOTg0OSwxODUzODg5NjA4LDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbLTg0NDA4MzM0MywxNzk0OTA5ODQ5LDE4NT
+M4ODk2MDgsNzMwOTk4MTE2XX0=
 --><h1 id="django"><a class="header" href="#django">Django</a></h1>
 <p><strong>Start the project:</strong></p>
 <pre><code>$ django-admin startproject mysite
