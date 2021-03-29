@@ -184,10 +184,24 @@
 <pre><code class="language-bash">cd /etc/nginx/sites-available/
 sudo nano #project-name &lt;- create nginx config file there
 </code></pre>
-<pre><code>
+<pre><code>server {
+    listen 80;
+    server_name 0.0.0.0;
+ 
+    location = /favicon.ico { access_log off; log_not_found off; }
+ 
+    location /static/ {
+            root /path_to_project/&lt;project_folder_name&gt;;
+    }
+ 
+    location / {
+            include proxy_params;
+            proxy_pass http://unix:/path_to_project/&lt;project_name&gt;/&lt;project_name&gt;.sock;
+    }
+}
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTcxMTAyMDMsMzU0Mjg0ODhdfQ==
+eyJoaXN0b3J5IjpbLTE1NzE1MTc5MjIsMzU0Mjg0ODhdfQ==
 --&gt;</code></pre>
 
                 </main>
