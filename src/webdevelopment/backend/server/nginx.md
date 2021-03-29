@@ -24,7 +24,10 @@ server {
     }
 }
 ```
+To enable the above file, run the code:
+
+    sudo ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMTE2NzQ4OSwzNTQyODQ4OF19
+eyJoaXN0b3J5IjpbLTIzNDkxMDc0OSwzNTQyODQ4OF19
 -->
