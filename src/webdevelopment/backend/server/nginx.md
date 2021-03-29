@@ -24,10 +24,13 @@ server {
     }
 }
 ```
-To enable the above file, run the code:
+To enable the above file, create a link to the sites-enabled folder by running the code below:
 
     sudo ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled
+Check the configuration file with:
+
+    sudo nginx -t
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNDkxMDc0OSwzNTQyODQ4OF19
+eyJoaXN0b3J5IjpbMTkwNTk5MTA0NSwzNTQyODQ4OF19
 -->
