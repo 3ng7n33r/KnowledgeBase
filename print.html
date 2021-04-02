@@ -584,6 +584,13 @@ eyJoaXN0b3J5IjpbLTI5ODA4ODg3NCwzOTc4MzE2ODNdfQ==
 Api - application programming interface</p>
 <pre><code>pip install djangorestframework
 </code></pre>
+<p>and add it to the Installed apps in settings.py:</p>
+<pre><code>INSTALLED_APPS = [
+     ....
+    'rest_framework',
+    ....
+]
+</code></pre>
 <ol>
 <li>
 <p>The rest framework needs a serializer. The serializer explains how to format the db data into formats like json etc. in a get request or how to format a post request for data that goes into the db. 
@@ -636,9 +643,9 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzOD
-M4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1Mjcx
-ODg5XX0=
+eyJoaXN0b3J5IjpbLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMT
+A4ODMzNjkzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIx
+ODE0LC0yMDM1MjcxODg5XX0=
 --><ul>
 <li><input disabled="" type="checkbox"/>
 create virtualenvironment: $ virtualenv envprojectname</li>
