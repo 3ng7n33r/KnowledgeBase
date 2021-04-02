@@ -5,6 +5,15 @@ Api - application programming interface
 pip install djangorestframework
 ```
 
+and add it to the Installed apps in settings.py:
+
+    INSTALLED_APPS = [
+         ....
+        'rest_framework',
+        ....
+    ]
+
+
 1. The rest framework needs a serializer. The serializer explains how to format the db data into formats like json etc. in a get request or how to format a post request for data that goes into the db. 
 The normal serializer class is written the same way as the model class with special methods to handle requests (get, post etc.). Because of these similarities in structure and API duties, the class can be simplified with Modelserializers. This can be as simple as: 
 	```python
@@ -54,7 +63,7 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzOD
-M4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1Mjcx
-ODg5XX0=
+eyJoaXN0b3J5IjpbLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMT
+A4ODMzNjkzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIx
+ODE0LC0yMDM1MjcxODg5XX0=
 -->
