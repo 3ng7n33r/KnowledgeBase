@@ -14,6 +14,7 @@ const apiClient = axios.create({
   }
 })
 
+export  default {
   getEvents() {
     return apiClient.get('/events')
   },
@@ -46,5 +47,5 @@ export default {
 </script>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzYxOTYyNDRdfQ==
+eyJoaXN0b3J5IjpbLTUwNTQxMDExMCwtMTMzNjE5NjI0NF19
 -->
