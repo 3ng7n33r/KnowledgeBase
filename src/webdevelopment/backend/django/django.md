@@ -1,10 +1,18 @@
 # Django
 
 **Start the project:**
+Prerequisite:
+sudo apt install python3-django
+
 
     $ django-admin startproject mysite 
     #add a . after the project name to use current directory
    Start the app
+   Prerequisite:
+
+       $ virtualenv env
+       $ source env/bin/activate
+       $ pip install django
 
     $ python manage.py startapp myapp
 Make migrations (even if you're not using a database, you need to populate Django's sqlite file)
@@ -28,5 +36,5 @@ add app and template directory to settings.py:
     $ python manage.py createsuperuser
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQ5MjU1MTQsMzk3ODMxNjgzXX0=
+eyJoaXN0b3J5IjpbLTE4NzA4NDQzMzgsMzk3ODMxNjgzXX0=
 -->
