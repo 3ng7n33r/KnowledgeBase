@@ -2,7 +2,8 @@
 
 **Start the project:**
 
-    $ django-admin startproject mysite
+    $ django-admin startproject mysite 
+    #add a . after the project name to use current directory
    Start the app
 
     $ python manage.py startapp myapp
@@ -27,5 +28,5 @@ add app and template directory to settings.py:
     $ python manage.py createsuperuser
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5ODA4ODg3NCwzOTc4MzE2ODNdfQ==
+eyJoaXN0b3J5IjpbLTIwNTQ5MjU1MTQsMzk3ODMxNjgzXX0=
 -->
