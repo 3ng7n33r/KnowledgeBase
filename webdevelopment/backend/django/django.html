@@ -179,12 +179,19 @@
             <div id="content" class="content">
                 <main>
                     <h1 id="django"><a class="header" href="#django">Django</a></h1>
-<p><strong>Start the project:</strong></p>
+<p><strong>Start the project:</strong>
+Prerequisite:
+sudo apt install python3-django</p>
 <pre><code>$ django-admin startproject mysite 
 #add a . after the project name to use current directory
 </code></pre>
-<p>Start the app</p>
-<pre><code>$ python manage.py startapp myapp
+<p>Start the app
+Prerequisite:</p>
+<pre><code>   $ virtualenv env
+   $ source env/bin/activate
+   $ pip install django
+
+$ python manage.py startapp myapp
 </code></pre>
 <p>Make migrations (even if you're not using a database, you need to populate Django's sqlite file)</p>
 <pre><code>$ python manage.py migrate
@@ -205,7 +212,7 @@ TEMPLATES = [{
 <pre><code>$ python manage.py createsuperuser
 </code></pre>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQ5MjU1MTQsMzk3ODMxNjgzXX0=
+eyJoaXN0b3J5IjpbLTE4NzA4NDQzMzgsMzk3ODMxNjgzXX0=
 -->
                 </main>
 
