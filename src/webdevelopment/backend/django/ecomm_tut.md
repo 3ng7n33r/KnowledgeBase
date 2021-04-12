@@ -92,8 +92,17 @@ and add media to settings.py:
 
     MEDIA_URL = '/media/'
     MEDIA_ROOT = BASE_DIR / 'media'
+ and to urls.py:
+
+    from django.conf import settings
+    from django.conf.urls.static import static
+    ...
+    
+    urlpatterns = [
+	...
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Nzc5MzQzODhdfQ==
+eyJoaXN0b3J5IjpbLTIyNDU1MDM2NV19
 -->
