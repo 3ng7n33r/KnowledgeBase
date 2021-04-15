@@ -784,7 +784,7 @@ export default {
 </script>
 ```
 the log in page will be almost identical.
-For the state management on the fron end side (logged in , logged out) we have to add an option to initializeStore to set the isAuthenticated state in the store/index.js file that checks if a session token is present. Also, we need a function to set the token. store/index.js:
+For the state management on the fron end side (logged in , logged out) we have to add an option to initializeStore to set the isAuthenticated state in the store/index.js file that checks if a session token is present. Also, we need a function to set and remove the token. store/index.js:
 ```js
   mutations: {
     initializeStore(state) {
@@ -801,8 +801,24 @@ For the state management on the fron end side (logged in , logged out) we have t
     setToken(state, token) {
       state.token = token
       state.isAuthenticated = true
+    },
+    removeToken(state) {
+      state.token = ''
+      state.isAuthenticated = false
     }
 ```
+
+to make the token available to our axios calls in our views, we add this bit to our App.vue file:
+```js
+      const token = this.$store.state.token
+
+      if (token) {
+        axios.defaults.headers.common['Authorization'] = 'Token ' + token
+      } else {
+        axios.defaults.headers.common['Authorization'] = ''
+      }
+```
+Done? Where is the BE implementation?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTczMTY3Nzg2XX0=
+eyJoaXN0b3J5IjpbMjA0NzQ1NTQ2OV19
 -->
