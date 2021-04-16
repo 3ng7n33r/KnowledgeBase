@@ -672,7 +672,7 @@ export default {
 Done!
 
 ## Signup
-### Frontend
+We only need to do the frontend part of this. The BE implementation is already done by importing djoser.
 Create a sign-up page on the frontend. This one has forms with simple validation and a connection to the backend:
 ```js
 <template>
@@ -818,7 +818,108 @@ to make the token available to our axios calls in our views, we add this bit to 
         axios.defaults.headers.common['Authorization'] = ''
       }
 ```
-Done? Where is the BE implementation?
+Done. BE implementation is done through djoser
+
+## Myaccount
+The myaccount page is a page where you can logout or see your order history. The page looks like this:
+```js
+<template>
+    <div class="page-my-account">
+        <div class="columns is-multiline">
+            <div class="column is-12">
+                <h1 class="title">My account</h1>
+            </div>
+
+            <div class="column is-12">
+                <button @click="logout()" class="button is-danger">Log out</button>
+            </div>
+
+            <hr>
+
+            <div class="column is-12">
+                <h2 class="subtitle">My orders</h2>
+
+                <OrderSummary
+                    v-for="order in orders"
+                    v-bind:key="order.id"
+                    v-bind:order="order" />
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+import axios from 'axios'
+import OrderSummary from '@/components/OrderSummary.vue'
+export default {
+    name: 'MyAccount',
+    components: {
+        OrderSummary
+    },
+    data() {
+        return {
+            orders: []
+        }
+    },
+    mounted() {
+        document.title = 'My account | Djackets'
+        this.getMyOrders()
+    },
+    methods: {
+        logout() {
+            axios.defaults.headers.common["Authorization"] = ""
+            localStorage.removeItem("token")
+            localStorage.removeItem("username")
+            localStorage.removeItem("userid")
+            this.$store.commit('removeToken')
+            this.$router.push('/')
+        },
+        async getMyOrders() {
+            this.$store.commit('setIsLoading', true)
+            await axios
+                .get('/api/v1/orders/')
+                .then(response => {
+                    this.orders = response.data
+                })
+                .catch(error => {
+                    console.log(error)
+                })
+            this.$store.commit('setIsLoading', false)
+        }
+    }
+}
+</script>
+```
+the important part here is the router implementation:
+```js
+...
+import store from '../store'
+...
+const routes = [
+...
+  {
+    path: '/my-account',
+    name: 'MyAccount',
+    component: MyAccount,
+    meta: {
+      requireLogin: true
+    }
+  },
+]
+
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes
+})
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.requireLogin) && !store.state.isAuthenticated) {// if the page that is about to be accessed has requireLogin true and isAuthenticated is false ...
+    next({ name: 'LogIn', query: { to: to.path } });//... you will be forwarded to the login page ...
+  } else {
+    next()//... if not you will be forwarded to the page that had been requested
+  }
+})
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NzQ1NTQ2OV19
+eyJoaXN0b3J5IjpbMTc1NDc1ODY0OF19
 -->
