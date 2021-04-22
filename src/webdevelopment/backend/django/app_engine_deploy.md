@@ -64,15 +64,28 @@ handlers:
 - url: /.*
   script: auto
 
-entrypoint: gunicorn -b :$PORT *djackets_django*.wsgi
+entrypoint: gunicorn -b :$PORT djackets_django.wsgi
 ```
 main.py
-```
-
+```py
+from djackets_django.wsgi import application
+# App Engine by default looks for a main.py file at the root of the app
+# directory with a WSGI-compatible object called app.
+# This file imports the WSGI-compatible object of the Django app,
+# application from mysite/wsgi.py and renames it app so it is
+# discoverable by App Engine without additional configuration.
+# Alternatively, you can add a custom entrypoint field in your app.yaml:
+# entrypoint: gunicorn -b :$PORT mysite.wsgi
+app = application
 ```
 settings (DB, static ...)
-```
-
+```py
+ALLOWED_HOSTS = ['django-test-311217.ew.r.appspot.com']
+...
+STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+STATIC_ROOT = 'static'
 ```
 requirements.txt (gunicorn, psycopg2 ...)
 ```
@@ -80,6 +93,6 @@ requirements.txt (gunicorn, psycopg2 ...)
 ```
 collectstatic ...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTQ3MDEyMSwtMTA0NjIzNjQ2NSwtMT
-kwNzc0MjA0NSwtNDUwMDQ2ODM2LDEzMjMxMDI3NjJdfQ==
+eyJoaXN0b3J5IjpbLTExNzQ2ODMyNDAsLTEwNDYyMzY0NjUsLT
+E5MDc3NDIwNDUsLTQ1MDA0NjgzNiwxMzIzMTAyNzYyXX0=
 -->
