@@ -46,7 +46,7 @@ if os.getenv('GAE_APPLICATION', None):
         }
     }
 ```
-
+You have now setup a new database connection for Django so don't forget to migrate and createsuperuser
 
 app.yaml
 main.py
@@ -54,6 +54,6 @@ settings (DB, static ...)
 requirements.txt (gunicorn, psycopg2 ...)
 collectstatic ...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5ODcyMTM3MywtMTkwNzc0MjA0NSwtND
-UwMDQ2ODM2LDEzMjMxMDI3NjJdfQ==
+eyJoaXN0b3J5IjpbLTEwNDYyMzY0NjUsLTE5MDc3NDIwNDUsLT
+Q1MDA0NjgzNiwxMzIzMTAyNzYyXX0=
 -->
