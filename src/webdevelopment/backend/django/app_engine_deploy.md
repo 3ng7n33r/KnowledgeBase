@@ -95,8 +95,9 @@ gunicorn==20.1.0
 psycopg2-binary==2.8.6 #if postgrsql is used
 ```
 
-collectstatic 
+	$ collectstatic
+	$ gcloud app deploy 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMDY2NzU0NCwtMTA0NjIzNjQ2NSwtMT
+eyJoaXN0b3J5IjpbMTI4OTAxOTA0MiwtMTA0NjIzNjQ2NSwtMT
 kwNzc0MjA0NSwtNDUwMDQ2ODM2LDEzMjMxMDI3NjJdfQ==
 -->
