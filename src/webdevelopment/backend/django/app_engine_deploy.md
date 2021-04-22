@@ -91,10 +91,12 @@ STATIC_ROOT = 'static'
 ```
 requirements.txt (gunicorn, psycopg2 ...)
 ```
-
+gunicorn==20.1.0
+psycopg2-binary==2.8.6 #if postgrsql is used
 ```
-collectstatic ...
+
+collectstatic 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MDA4ODkzNSwtMTA0NjIzNjQ2NSwtMT
+eyJoaXN0b3J5IjpbMTMwMDY2NzU0NCwtMTA0NjIzNjQ2NSwtMT
 kwNzc0MjA0NSwtNDUwMDQ2ODM2LDEzMjMxMDI3NjJdfQ==
 -->
