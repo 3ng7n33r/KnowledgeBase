@@ -15,7 +15,13 @@ Setup Cloud SQL Auth proxy:
     $ chmod +x cloud_sql_proxy
     $ ./cloud_sql_proxy -instances"[YOUR_INSTANCE_CONNECTION_NAME]"=tcp:3306
 
-This will connect the project in the sdk with the db, then the cloud sql proxy file is downloaded into the project folder and given the necessary rights and then the deamon is started to make
+This will connect the project in the sdk with the db, then the cloud sql proxy file is downloaded into the project folder and given the necessary rights and then the deamon is started to make the local version connect with the upstream db
+
+Modify settings.py so it automatically detects if it is accessed online or locally:
+```py
+
+```
+
 
 app.yaml
 main.py
@@ -23,6 +29,6 @@ settings (DB, static ...)
 requirements.txt (gunicorn, psycopg2 ...)
 collectstatic ...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NDk2NzY4MywtMTkwNzc0MjA0NSwtND
+eyJoaXN0b3J5IjpbMTQ4MzAwMDM2OSwtMTkwNzc0MjA0NSwtND
 UwMDQ2ODM2LDEzMjMxMDI3NjJdfQ==
 -->
