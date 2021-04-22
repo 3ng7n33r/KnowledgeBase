@@ -19,6 +19,8 @@ This will connect the project in the sdk with the db, then the cloud sql proxy f
 
 Modify settings.py so it automatically detects if it is accessed online or locally:
 ```py
+import os
+...
 if os.getenv('GAE_APPLICATION', None):
     # Running on production App Engine, so connect to Google Cloud SQL using
     # the unix socket at /cloudsql/<your-cloudsql-connection string>
@@ -93,6 +95,6 @@ requirements.txt (gunicorn, psycopg2 ...)
 ```
 collectstatic ...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzQ2ODMyNDAsLTEwNDYyMzY0NjUsLT
-E5MDc3NDIwNDUsLTQ1MDA0NjgzNiwxMzIzMTAyNzYyXX0=
+eyJoaXN0b3J5IjpbMTU0MDA4ODkzNSwtMTA0NjIzNjQ2NSwtMT
+kwNzc0MjA0NSwtNDUwMDQ2ODM2LDEzMjMxMDI3NjJdfQ==
 -->
