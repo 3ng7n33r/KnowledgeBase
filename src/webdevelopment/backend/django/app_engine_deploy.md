@@ -1,6 +1,7 @@
 # Deploy on Google App Engine
 
 Create project in GC
+Enable API: 
 create sql instance in GC project
 
 
@@ -10,5 +11,5 @@ settings (DB, static ...)
 requirements.txt (gunicorn, psycopg2 ...)
 collectstatic ...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4Njc4OTkyOSwxMzIzMTAyNzYyXX0=
+eyJoaXN0b3J5IjpbLTQ1MDA0NjgzNiwxMzIzMTAyNzYyXX0=
 -->
