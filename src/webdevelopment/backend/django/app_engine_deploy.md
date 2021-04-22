@@ -6,7 +6,12 @@
 -- Compute Engine API 
 -- Cloud SQL Admin API 
 - create sql instance in GC project
+
+Setup gcloud SDK and init project
 Setup Cloud SQL Auth proxy:
+
+
+    gcloud sql instances describe [YOUR_INSTANCE_NAME]
 
 
 app.yaml
@@ -15,6 +20,6 @@ settings (DB, static ...)
 requirements.txt (gunicorn, psycopg2 ...)
 collectstatic ...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjgxMTA2MTQsLTQ1MDA0NjgzNiwxMz
+eyJoaXN0b3J5IjpbLTE3Nzg5NzU3OTUsLTQ1MDA0NjgzNiwxMz
 IzMTAyNzYyXX0=
 -->
