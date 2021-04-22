@@ -19,7 +19,32 @@ This will connect the project in the sdk with the db, then the cloud sql proxy f
 
 Modify settings.py so it automatically detects if it is accessed online or locally:
 ```py
-
+if os.getenv('GAE_APPLICATION', None):
+    # Running on production App Engine, so connect to Google Cloud SQL using
+    # the unix socket at /cloudsql/<your-cloudsql-connection string>
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql', #or postgresql, sqlite3, oracle
+            'HOST': '/cloudsql/[YOUR-CONNECTION-NAME]',
+            'USER': '[YOUR-USERNAME]',
+            'PASSWORD': '[YOUR-PASSWORD]',
+            'NAME': '[YOUR-DATABASE]',
+        }
+    }else:
+    # Running locally so connect to either a local MySQL instance or connect 
+    # to Cloud SQL via the proxy.  To start the proxy via command line: 
+    #    $ cloud_sql_proxy -instances=[INSTANCE_CONNECTION_NAME]=tcp:3306 
+    # See https://cloud.google.com/sql/docs/mysql-connect-proxy
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql', #or postgresql, sqlite3, oracle
+            'HOST': '127.0.0.1',
+            'PORT': '3306',
+            'NAME': '[YOUR-DATABASE]',
+            'USER': '[YOUR-USERNAME]',
+            'PASSWORD': '[YOUR-PASSWORD]',
+        }
+    }
 ```
 
 
@@ -29,6 +54,6 @@ settings (DB, static ...)
 requirements.txt (gunicorn, psycopg2 ...)
 collectstatic ...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MzAwMDM2OSwtMTkwNzc0MjA0NSwtND
+eyJoaXN0b3J5IjpbLTI5ODcyMTM3MywtMTkwNzc0MjA0NSwtND
 UwMDQ2ODM2LDEzMjMxMDI3NjJdfQ==
 -->
