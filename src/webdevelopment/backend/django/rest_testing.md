@@ -11,10 +11,12 @@ puppies/:id 	|DELETE 	|DELETE 	|Delete a single puppy
 
 ## Postgres
 When checking with a Postgres DB, first make sure the local DB is running:
-	$ sudo -i -u postgres // switch bash to user postgres
-	$ psql // start local postgres server
-	
+
+    $ sudo -i -u postgres // switch bash to user postgres
+    $ psql // start local postgres server
+
+To make Django connect through the iden method (no PW if the user name is correct) there can be no PW, Host or PORT option in the Django DB setup
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4Nzk1NzQ3NSw2MTQ0NTk3MDYsLTc0OD
-gxNTkxXX0=
+eyJoaXN0b3J5IjpbLTE5NTY4MTQ0NjcsNjE0NDU5NzA2LC03ND
+g4MTU5MV19
 -->
