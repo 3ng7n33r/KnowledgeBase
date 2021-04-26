@@ -6,7 +6,7 @@
     coverage report
 
 ## Populate objects
-Try [this](https://pypi.org/project/model-bakery/)
+Try [Model bakery](https://pypi.org/project/model-bakery/) for automatic generation using the models file or [faker](https://github.com/joke2k/faker/) to generate more comprehensive data manually
 
 ## Structure
 To better structure the tests, we delete the tests.py file in the app folder that has been created with the startapp command and give each app its own testing folder. Within this folder, we need an \_\_init__.py file to make python recognize it as a module. Then, it makes sense to structure tests for each module (model, views, setup ...). The set up can be inherited. So the Structure should look something like this:
@@ -38,7 +38,7 @@ When checking with a Postgres DB, first make sure the local DB is running:
 To make Django connect through the iden method (no PW if the user name is correct) there can be no PW, Host or PORT option in the Django DB setup
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NTk1NjU5NCwxMDI5NzQwNzg3LDExMj
-M1MDMxNDIsLTE5NTY4MTQ0NjcsNjE0NDU5NzA2LC03NDg4MTU5
-MV19
+eyJoaXN0b3J5IjpbLTExMDgwNDk0ODQsLTk2NTk1NjU5NCwxMD
+I5NzQwNzg3LDExMjM1MDMxNDIsLTE5NTY4MTQ0NjcsNjE0NDU5
+NzA2LC03NDg4MTU5MV19
 -->
