@@ -19,7 +19,7 @@ To better structure the tests, we delete the tests.py file in the app folder tha
     --- test_model.py
     ...
   
-
+## Documentation
 Good Table to get an overview for the API structure:
 |Endpoint 	|HTTP Method| 	CRUD Method| 	Result
 |--|--|--|--|
@@ -38,7 +38,7 @@ When checking with a Postgres DB, first make sure the local DB is running:
 To make Django connect through the iden method (no PW if the user name is correct) there can be no PW, Host or PORT option in the Django DB setup
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDgwNDk0ODQsLTk2NTk1NjU5NCwxMD
-I5NzQwNzg3LDExMjM1MDMxNDIsLTE5NTY4MTQ0NjcsNjE0NDU5
-NzA2LC03NDg4MTU5MV19
+eyJoaXN0b3J5IjpbLTMxMTAyOTQ5MCwtMTEwODA0OTQ4NCwtOT
+Y1OTU2NTk0LDEwMjk3NDA3ODcsMTEyMzUwMzE0MiwtMTk1Njgx
+NDQ2Nyw2MTQ0NTk3MDYsLTc0ODgxNTkxXX0=
 -->
