@@ -1,5 +1,8 @@
 # Testing Rest Framework
 
+## Structure
+To better structure the tests, we delete the tests.py file in the app folder that has been created with the startapp command and give each app its own testing folder. Within this folder, we need an __ini
+
 Good Table to get an overview for the API structure:
 |Endpoint 	|HTTP Method| 	CRUD Method| 	Result
 |--|--|--|--|
@@ -17,6 +20,6 @@ When checking with a Postgres DB, first make sure the local DB is running:
 
 To make Django connect through the iden method (no PW if the user name is correct) there can be no PW, Host or PORT option in the Django DB setup
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTY4MTQ0NjcsNjE0NDU5NzA2LC03ND
-g4MTU5MV19
+eyJoaXN0b3J5IjpbNzMyMzEzNTEzLC0xOTU2ODE0NDY3LDYxND
+Q1OTcwNiwtNzQ4ODE1OTFdfQ==
 -->
