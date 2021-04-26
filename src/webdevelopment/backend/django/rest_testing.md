@@ -10,7 +10,6 @@ To better structure the tests, we delete the tests.py file in the app folder tha
     --- test_setup.py
     --- test_model.py
     ...
- The test setup needs a class with a setup and teardown method:
   
 
 Good Table to get an overview for the API structure:
@@ -30,6 +29,6 @@ When checking with a Postgres DB, first make sure the local DB is running:
 
 To make Django connect through the iden method (no PW if the user name is correct) there can be no PW, Host or PORT option in the Django DB setup
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMzUwMzE0MiwtMTk1NjgxNDQ2Nyw2MT
-Q0NTk3MDYsLTc0ODgxNTkxXX0=
+eyJoaXN0b3J5IjpbMTAzNDAxMzYwMiwxMTIzNTAzMTQyLC0xOT
+U2ODE0NDY3LDYxNDQ1OTcwNiwtNzQ4ODE1OTFdfQ==
 -->
