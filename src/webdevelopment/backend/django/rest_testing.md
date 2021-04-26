@@ -1,7 +1,14 @@
 # Testing Rest Framework
 
 ## Structure
-To better structure the tests, we delete the tests.py file in the app folder that has been created with the startapp command and give each app its own testing folder. Within this folder, we need an \_\_init__.py file to make python recognize it as a module. Then, it makes sense to structure tests for each module (model, views, setup ...). The set up can be inherited. So the Structure shoul 
+To better structure the tests, we delete the tests.py file in the app folder that has been created with the startapp command and give each app its own testing folder. Within this folder, we need an \_\_init__.py file to make python recognize it as a module. Then, it makes sense to structure tests for each module (model, views, setup ...). The set up can be inherited. So the Structure should look something like this:
+
+    Project folder
+    -  App folder
+    -- tests
+    --- __init__.py
+    --- test_setup.py
+    --- test_model.py 
 
 Good Table to get an overview for the API structure:
 |Endpoint 	|HTTP Method| 	CRUD Method| 	Result
@@ -20,6 +27,6 @@ When checking with a Postgres DB, first make sure the local DB is running:
 
 To make Django connect through the iden method (no PW if the user name is correct) there can be no PW, Host or PORT option in the Django DB setup
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIxOTIzNzcwLC0xOTU2ODE0NDY3LDYxND
-Q1OTcwNiwtNzQ4ODE1OTFdfQ==
+eyJoaXN0b3J5IjpbMTYzMzc0OTE0MCwtMTk1NjgxNDQ2Nyw2MT
+Q0NTk3MDYsLTc0ODgxNTkxXX0=
 -->
