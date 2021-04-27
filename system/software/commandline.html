@@ -191,6 +191,10 @@
 <pre><code>for VARIABLE in N; do command to $Variable; done
 </code></pre>
 <h3 id="random-stuff"><a class="header" href="#random-stuff">random stuff</a></h3>
+<p>xargs will perform an operation to every argument coming from the pipe operator. For example:</p>
+<pre><code>find . | xargs file
+</code></pre>
+<p>&quot;find .&quot; will return every file in the current directory (.), the pipe operator passes that co</p>
 <p>ctrl + r - reverse search (look through history of commands)</p>
 <p>history - see former commands</p>
 <p>cp (file) (destination) - copy files to destination, uses regex for files (*.jpg, [cf]at.exe …)</p>
@@ -296,8 +300,8 @@ If you want to chain or pipe commands in an alias you have to create a function 
 <p>Kernel modules - are modules that get added to the kernel. they can be loaded during runtime or added to modprobe to run them during startup. See <a href="https://linuxjourney.com/lesson/kernel-modules">here</a></p>
 <p>udev - a deamon that dynamically creates and removes device files according to the rules in etc/udev/rules.d the devices can be found in the dev folder and can be checked with the $ udevadm info --query=all --name=/dev/sda command</p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDY3NzI2NDAsLTQwODA1NTM5OCwxMj
-Y3MTEzMjYwXX0=
+eyJoaXN0b3J5IjpbMTcwMTczMDI3MCwtMTg0Njc3MjY0MCwtND
+A4MDU1Mzk4LDEyNjcxMTMyNjBdfQ==
 -->
                 </main>
 
