@@ -20,7 +20,7 @@ You can write for loops in bash. Example:
 xargs will perform an operation to every argument coming from the pipe operator. For example:
 
     find . | xargs file
-  "find ." will return every file in the current directory (.), the pipe operator passes that co
+  "find ." will return every file in the current directory (.), the pipe operator passes that command to xargs and xargs performs the file operation on every entry
 
 ctrl + r - reverse search (look through history of commands)
 
@@ -308,6 +308,6 @@ Kernel modules - are modules that get added to the kernel. they can be loaded du
 
 udev - a deamon that dynamically creates and removes device files according to the rules in etc/udev/rules.d the devices can be found in the dev folder and can be checked with the $ udevadm info --query=all --name=/dev/sda command
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMTczMDI3MCwtMTg0Njc3MjY0MCwtND
-A4MDU1Mzk4LDEyNjcxMTMyNjBdfQ==
+eyJoaXN0b3J5IjpbLTE1ODAyNjI5ODUsLTE4NDY3NzI2NDAsLT
+QwODA1NTM5OCwxMjY3MTEzMjYwXX0=
 -->
