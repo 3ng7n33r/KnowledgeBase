@@ -11,14 +11,10 @@ $ man -k /keyword/ - searches for a keyword inside the man pages
 ### Loops
 You can write for loops in bash. Example:
 
-    _for x in {0..9}; do file ./-file0$x; done_
+    for x in {0..9}; do file ./-file0$x; done
    The syntax is:
-   for VARIABLE in 1 2 3 4 5 .. N
-do
-	command1
-	command2
-	commandN
-done
+
+    for VARIABLE in N; do command to $Variable; done
 
 ### random stuff
 
@@ -308,6 +304,6 @@ Kernel modules - are modules that get added to the kernel. they can be loaded du
 
 udev - a deamon that dynamically creates and removes device files according to the rules in etc/udev/rules.d the devices can be found in the dev folder and can be checked with the $ udevadm info --query=all --name=/dev/sda command
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAxNjMxOTI5LC00MDgwNTUzOTgsMTI2Nz
-ExMzI2MF19
+eyJoaXN0b3J5IjpbLTE4NDY3NzI2NDAsLTQwODA1NTM5OCwxMj
+Y3MTEzMjYwXX0=
 -->
