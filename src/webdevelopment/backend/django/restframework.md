@@ -42,6 +42,15 @@ class ExampleView(generics.ListCreateAPIView):
 	...
 ```
 
+To change permissions on a project level, edit the projects settings.py. Options are:
+```py
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated', # new
+    ]
+}
+```
+
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -109,8 +118,8 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzU1NjA0NjYsLTE3NTI5NDE3NzgsMT
-YyOTc5NjI5MCwyNjcxODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1
-MDYwMSwtMTA4ODMzNjkzMiwzODM4MDcyMDMsLTE0Njk2OTU2OT
-YsNTI0OTIxODE0LC0yMDM1MjcxODg5XX0=
+eyJoaXN0b3J5IjpbODQzODU1NzU3LC0xMjM1NTYwNDY2LC0xNz
+UyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUz
+NDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5MzIsMzgzODA3MjAzLC
+0xNDY5Njk1Njk2LDUyNDkyMTgxNCwtMjAzNTI3MTg4OV19
 -->
