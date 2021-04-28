@@ -3,32 +3,25 @@ Cross origin resource  sharing is a security relevant aspect when Frontend and B
 
     $ pip install django-cors-headers
  and add it to the settings.py:
-
-     INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    # 3rd party
-    'rest_framework',
-    'corsheaders', # new
-    # Local
-    'todos',
-    ]
-    MIDDLEWARE = [
+```py
+ INSTALLED_APPS = [
 	...
-    'corsheaders.middleware.CorsMiddleware', # be sure to set it above 
-    'django.middleware.common.CommonMiddleware',
+	'rest_framework',
+	'corsheaders', # new
 	...
-    ]
+]
+MIDDLEWARE = [
+...
+'corsheaders.middleware.CorsMiddleware', # be sure to set it above Common
+'django.middleware.common.CommonMiddleware',
+...
+]
 
-    CORS_ORIGIN_WHITELIST = (
-    'http://localhost:3000',
-    'http://localhost:8000',
-    )
-
+CORS_ORIGIN_WHITELIST = (
+'http://localhost:3000',
+'http://localhost:8000',
+)
+```
 Rest - Representational state transfer
 Api - application programming interface
 
@@ -94,7 +87,7 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNjcyMjQ4NSwtMjAyMTI1MzQ3NCwxOT
+eyJoaXN0b3J5IjpbMTM1ODgzOTUyOSwtMjAyMTI1MzQ3NCwxOT
 A2NDUwNjAxLC0xMDg4MzM2OTMyLDM4MzgwNzIwMywtMTQ2OTY5
 NTY5Niw1MjQ5MjE4MTQsLTIwMzUyNzE4ODldfQ==
 -->
