@@ -38,7 +38,8 @@ Permissions can be granted on project, view and object level. So for example to 
 from rest_framework import generics, permissions
 
 class ExampleView(generics.ListCreateAPIView):
-	permissions = user('isAuthenticated'
+	permission_classes = ('per
+	...
 ```
 
 
@@ -108,7 +109,7 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2Njg2ODE0NiwxNjI5Nzk2MjkwLDI2Nz
+eyJoaXN0b3J5IjpbLTYwMzY5MjI3MiwxNjI5Nzk2MjkwLDI2Nz
 E4NzA5OSwtMjAyMTI1MzQ3NCwxOTA2NDUwNjAxLC0xMDg4MzM2
 OTMyLDM4MzgwNzIwMywtMTQ2OTY5NTY5Niw1MjQ5MjE4MTQsLT
 IwMzUyNzE4ODldfQ==
