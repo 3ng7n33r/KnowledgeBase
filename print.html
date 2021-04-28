@@ -654,7 +654,9 @@ class IsAuthorOrReadOnly(permissions.BasePermission):
         # Write permissions are only allowed to the author of a post
         return obj.author == request.user
 </code></pre>
-<p>Here, we inherit Djangos BasePermissions class and overwrite its has_object_permission method to only grant write access to the author of a piece. First we check if the request method is safe (aka read only aka GET, OPTIONS ). If yes, permission is granted. If not, it is checked if the user is the author</p>
+<p>Here, we inherit Djangos BasePermissions class and overwrite its has_object_permission method to only grant write access to the author of a piece. First we check if the request method is safe (aka read only aka GET, OPTIONS and HEAD). If yes, permission is granted. If not, it is checked if the user is the author. We then have to import this permission class into our views.py file to enforce it on a view level:</p>
+<pre><code class="language-py">
+</code></pre>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -719,11 +721,11 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MjUyNzc2LC0xNzcyODM2NzIwLC0xMj
-M1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3
-MDk5LC0yMDIxMjUzNDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5Mz
-IsMzgzODA3MjAzLC0xNDY5Njk1Njk2LDUyNDkyMTgxNCwtMjAz
-NTI3MTg4OV19
+eyJoaXN0b3J5IjpbLTEyMzQ2MjYzMjYsLTE3NzI4MzY3MjAsLT
+EyMzU1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcx
+ODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNj
+kzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0y
+MDM1MjcxODg5XX0=
 --><ul>
 <li><input disabled="" type="checkbox"/>
 create virtualenvironment: $ virtualenv envprojectname</li>
