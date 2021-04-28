@@ -209,6 +209,8 @@ CORS_ORIGIN_WHITELIST = (
     path('api-auth/', include('rest_framework.urls')), # adds authentication (the actual url is unimportant)
 ]
 </code></pre>
+<p>Permissions can be granted on project, view and object level. So for example to restrict permissions in a view to authenticated users this would have to be added:
+``</p>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -273,10 +275,10 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyOTc5NjI5MCwyNjcxODcwOTksLTIwMj
-EyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzODM4MDcy
-MDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1MjcxODg5XX
-0=
+eyJoaXN0b3J5IjpbLTE0NjM4MTE1NjEsMTYyOTc5NjI5MCwyNj
+cxODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMz
+NjkzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC
+0yMDM1MjcxODg5XX0=
 -->
                 </main>
 
