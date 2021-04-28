@@ -59,6 +59,8 @@ REST_FRAMEWORK = {
 }
 ```
 
+### Custom Permissions
+
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -126,9 +128,9 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzI4MzY3MjAsLTEyMzU1NjA0NjYsLT
-E3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcwOTksLTIwMjEy
-NTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzODM4MDcyMD
-MsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1MjcxODg5XX0=
-
+eyJoaXN0b3J5IjpbNTk0NzczNDY2LC0xNzcyODM2NzIwLC0xMj
+M1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3
+MDk5LC0yMDIxMjUzNDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5Mz
+IsMzgzODA3MjAzLC0xNDY5Njk1Njk2LDUyNDkyMTgxNCwtMjAz
+NTI3MTg4OV19
 -->
