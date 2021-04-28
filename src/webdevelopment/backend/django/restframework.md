@@ -23,6 +23,16 @@ CORS_ORIGIN_WHITELIST = (
 )
 ```
 
+## Authentication
+
+To add authentication to the api, the first step is to include the DRF urls into the projects url file. project/urls.py:
+
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path('api/v1/', include('posts.urls')), # new
+        path('api-auth/', include('rest_framework.urls')), # new
+    ]
+
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -90,7 +100,8 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY3MTg3MDk5LC0yMDIxMjUzNDc0LDE5MD
-Y0NTA2MDEsLTEwODgzMzY5MzIsMzgzODA3MjAzLC0xNDY5Njk1
-Njk2LDUyNDkyMTgxNCwtMjAzNTI3MTg4OV19
+eyJoaXN0b3J5IjpbLTcwNDI0MzI4NSwyNjcxODcwOTksLTIwMj
+EyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzODM4MDcy
+MDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1MjcxODg5XX
+0=
 -->
