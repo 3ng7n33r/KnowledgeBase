@@ -216,6 +216,13 @@ class ExampleView(generics.ListCreateAPIView):
 	permission_classes = (permissions.IsAuthenticated,) # The colon at the end is important
 	...
 </code></pre>
+<p>To change permissions on a project level, edit the projects settings.py. Options are:</p>
+<pre><code class="language-py">REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated', # new
+    ]
+}
+</code></pre>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -280,10 +287,10 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzU1NjA0NjYsLTE3NTI5NDE3NzgsMT
-YyOTc5NjI5MCwyNjcxODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1
-MDYwMSwtMTA4ODMzNjkzMiwzODM4MDcyMDMsLTE0Njk2OTU2OT
-YsNTI0OTIxODE0LC0yMDM1MjcxODg5XX0=
+eyJoaXN0b3J5IjpbODQzODU1NzU3LC0xMjM1NTYwNDY2LC0xNz
+UyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUz
+NDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5MzIsMzgzODA3MjAzLC
+0xNDY5Njk1Njk2LDUyNDkyMTgxNCwtMjAzNTI3MTg4OV19
 -->
                 </main>
 
