@@ -620,8 +620,12 @@ CORS_ORIGIN_WHITELIST = (
     path('api-auth/', include('rest_framework.urls')), # adds authentication (the actual url is unimportant)
 ]
 </code></pre>
-<p>Permissions can be granted on project, view and object level. So for example to restrict permissions in a view to authenticated users this would have to be added:
-``</p>
+<p>Permissions can be granted on project, view and object level. So for example to restrict permissions in a view to authenticated users this would have to be added:</p>
+<pre><code class="language-py">from rest_framework import generics, permissions
+
+class ExampleView(generics.ListCreateAPIView):
+	permissions = user('isAuthenticated'
+</code></pre>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -686,10 +690,10 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjM4MTE1NjEsMTYyOTc5NjI5MCwyNj
-cxODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMz
-NjkzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC
-0yMDM1MjcxODg5XX0=
+eyJoaXN0b3J5IjpbMTE2Njg2ODE0NiwxNjI5Nzk2MjkwLDI2Nz
+E4NzA5OSwtMjAyMTI1MzQ3NCwxOTA2NDUwNjAxLC0xMDg4MzM2
+OTMyLDM4MzgwNzIwMywtMTQ2OTY5NTY5Niw1MjQ5MjE4MTQsLT
+IwMzUyNzE4ODldfQ==
 --><ul>
 <li><input disabled="" type="checkbox"/>
 create virtualenvironment: $ virtualenv envprojectname</li>
