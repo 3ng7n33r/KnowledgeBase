@@ -662,7 +662,7 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (IsAuthorOrReadOnly,)
     ...
 </code></pre>
-<p>These methods work well for detail pages because it modifies the object permission. If it should be done for a lis</p>
+<p>These methods work well for detail pages because it modifies the object permission. If it should be done for a list or collection, the queryset has to be overridden. More on that <a href="https://www.django-rest-framework.org/api-guide/filtering/#overriding-the-initial-queryset">here</a></p>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -727,11 +727,11 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYzMTgzMzY2LC0xNzcyODM2NzIwLC0xMj
-M1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3
-MDk5LC0yMDIxMjUzNDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5Mz
-IsMzgzODA3MjAzLC0xNDY5Njk1Njk2LDUyNDkyMTgxNCwtMjAz
-NTI3MTg4OV19
+eyJoaXN0b3J5IjpbLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLT
+EyMzU1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcx
+ODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNj
+kzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0y
+MDM1MjcxODg5XX0=
 --><ul>
 <li><input disabled="" type="checkbox"/>
 create virtualenvironment: $ virtualenv envprojectname</li>
