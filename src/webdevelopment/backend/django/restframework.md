@@ -33,6 +33,9 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')), # adds authentication (the actual url is unimportant)
 ]
 ```
+Permissions can be granted on project, view and object level. So for example to restrict permissions in a view to authenticated users this would have to be added:
+``
+
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -100,8 +103,8 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyOTc5NjI5MCwyNjcxODcwOTksLTIwMj
-EyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzODM4MDcy
-MDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1MjcxODg5XX
-0=
+eyJoaXN0b3J5IjpbLTE0NjM4MTE1NjEsMTYyOTc5NjI5MCwyNj
+cxODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMz
+NjkzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC
+0yMDM1MjcxODg5XX0=
 -->
