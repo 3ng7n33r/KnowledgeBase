@@ -42,7 +42,15 @@ class ExampleView(generics.ListCreateAPIView):
 	...
 ```
 
-To change permissions on a project level, edit the projects settings.py. Options are:
+To change permissions on a project level, edit the projects settings.py. Options are
+
+ - AllowAny 68 - any user, authenticated or not, has full access
+ - IsAuthenticated - only authenticated, registered users have access
+ - IsAdminUser - only admins/superusers have access
+ - IsAuthenticatedOrReadOnly - unauthorized users can view any page,
+   but only authenti- cated users have write, edit, or delete
+   privileges:
+
 ```py
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
@@ -118,7 +126,7 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQzODU1NzU3LC0xMjM1NTYwNDY2LC0xNz
+eyJoaXN0b3J5IjpbMjI3MjE5NDQ1LC0xMjM1NTYwNDY2LC0xNz
 UyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUz
 NDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5MzIsMzgzODA3MjAzLC
 0xNDY5Njk1Njk2LDUyNDkyMTgxNCwtMjAzNTI3MTg4OV19
