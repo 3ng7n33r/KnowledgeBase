@@ -1,4 +1,4 @@
-### Cors
+## Cors
 Cross origin resource  sharing is a security relevant aspect when Frontend and Backend communicate with each other from different ressources (urls, ports etc.). This attack vector can be mitigated by including specific information in the http header. For DRF, the cors middleware is suggested.
 
     $ pip install django-cors-headers
@@ -18,10 +18,13 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = (
-'http://localhost:3000',
-'http://localhost:8000',
+'http://localhost:3000', # Frontend port, React in this case
+'http://localhost:8000', # Django port
 )
 ```
+
+
+## Tutorial summary
 Rest - Representational state transfer
 Api - application programming interface
 
@@ -87,7 +90,7 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1ODgzOTUyOSwtMjAyMTI1MzQ3NCwxOT
-A2NDUwNjAxLC0xMDg4MzM2OTMyLDM4MzgwNzIwMywtMTQ2OTY5
-NTY5Niw1MjQ5MjE4MTQsLTIwMzUyNzE4ODldfQ==
+eyJoaXN0b3J5IjpbMjY3MTg3MDk5LC0yMDIxMjUzNDc0LDE5MD
+Y0NTA2MDEsLTEwODgzMzY5MzIsMzgzODA3MjAzLC0xNDY5Njk1
+Njk2LDUyNDkyMTgxNCwtMjAzNTI3MTg4OV19
 -->
