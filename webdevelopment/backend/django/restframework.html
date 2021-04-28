@@ -244,7 +244,12 @@ class IsAuthorOrReadOnly(permissions.BasePermission):
         return obj.author == request.user
 </code></pre>
 <p>Here, we inherit Djangos BasePermissions class and overwrite its has_object_permission method to only grant write access to the author of a piece. First we check if the request method is safe (aka read only aka GET, OPTIONS and HEAD). If yes, permission is granted. If not, it is checked if the user is the author. We then have to import this permission class into our views.py file to enforce it on a view level:</p>
-<pre><code class="language-py">
+<pre><code class="language-py">from .permissions import IsAuthorOrReadOnly # new
+...
+
+class PostDetail(generics.RetrieveUpdateDestroyAPIView):
+    permission_classes = (IsAuthorOrReadOnly,)
+    ...
 </code></pre>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
@@ -310,7 +315,7 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzQ2MjYzMjYsLTE3NzI4MzY3MjAsLT
+eyJoaXN0b3J5IjpbLTEzOTMwNzQ1OTYsLTE3NzI4MzY3MjAsLT
 EyMzU1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcx
 ODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNj
 kzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0y
