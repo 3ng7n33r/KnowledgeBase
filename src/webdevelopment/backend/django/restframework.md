@@ -44,11 +44,11 @@ class ExampleView(generics.ListCreateAPIView):
 
 To change permissions on a project level, edit the projects settings.py. Options are
 
- - AllowAny 68 - any user, authenticated or not, has full access
+ - AllowAny (default)- any user, authenticated or not, has full access
  - IsAuthenticated - only authenticated, registered users have access
  - IsAdminUser - only admins/superusers have access
  - IsAuthenticatedOrReadOnly - unauthorized users can view any page,
-   but only authenti- cated users have write, edit, or delete
+   but only authenticated users have write, edit, or delete
    privileges:
 
 ```py
@@ -126,8 +126,9 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI3MjE5NDQ1LC0xMjM1NTYwNDY2LC0xNz
-UyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUz
-NDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5MzIsMzgzODA3MjAzLC
-0xNDY5Njk1Njk2LDUyNDkyMTgxNCwtMjAzNTI3MTg4OV19
+eyJoaXN0b3J5IjpbLTE3NzI4MzY3MjAsLTEyMzU1NjA0NjYsLT
+E3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcwOTksLTIwMjEy
+NTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzODM4MDcyMD
+MsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1MjcxODg5XX0=
+
 -->
