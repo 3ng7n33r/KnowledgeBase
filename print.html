@@ -627,7 +627,15 @@ class ExampleView(generics.ListCreateAPIView):
 	permission_classes = (permissions.IsAuthenticated,) # The colon at the end is important
 	...
 </code></pre>
-<p>To change permissions on a project level, edit the projects settings.py. Options are:</p>
+<p>To change permissions on a project level, edit the projects settings.py. Options are</p>
+<ul>
+<li>AllowAny 68 - any user, authenticated or not, has full access</li>
+<li>IsAuthenticated - only authenticated, registered users have access</li>
+<li>IsAdminUser - only admins/superusers have access</li>
+<li>IsAuthenticatedOrReadOnly - unauthorized users can view any page,
+but only authenti- cated users have write, edit, or delete
+privileges:</li>
+</ul>
 <pre><code class="language-py">REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated', # new
@@ -698,7 +706,7 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQzODU1NzU3LC0xMjM1NTYwNDY2LC0xNz
+eyJoaXN0b3J5IjpbMjI3MjE5NDQ1LC0xMjM1NTYwNDY2LC0xNz
 UyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUz
 NDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5MzIsMzgzODA3MjAzLC
 0xNDY5Njk1Njk2LDUyNDkyMTgxNCwtMjAzNTI3MTg4OV19
