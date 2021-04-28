@@ -201,6 +201,14 @@ CORS_ORIGIN_WHITELIST = (
 'http://localhost:8000', # Django port
 )
 </code></pre>
+<h2 id="authentication"><a class="header" href="#authentication">Authentication</a></h2>
+<p>To add authentication to the api, the first step is to include the DRF urls into the projects url file. project/urls.py:</p>
+<pre><code>urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/v1/', include('posts.urls')), # new
+    path('api-auth/', include('rest_framework.urls')), # new
+]
+</code></pre>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -265,9 +273,10 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY3MTg3MDk5LC0yMDIxMjUzNDc0LDE5MD
-Y0NTA2MDEsLTEwODgzMzY5MzIsMzgzODA3MjAzLC0xNDY5Njk1
-Njk2LDUyNDkyMTgxNCwtMjAzNTI3MTg4OV19
+eyJoaXN0b3J5IjpbLTcwNDI0MzI4NSwyNjcxODcwOTksLTIwMj
+EyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzODM4MDcy
+MDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1MjcxODg5XX
+0=
 -->
                 </main>
 
