@@ -183,22 +183,15 @@
 <pre><code>$ pip install django-cors-headers
 </code></pre>
 <p>and add it to the settings.py:</p>
-<pre><code> INSTALLED_APPS = [
-'django.contrib.admin',
-'django.contrib.auth',
-'django.contrib.contenttypes',
-'django.contrib.sessions',
-'django.contrib.messages',
-'django.contrib.staticfiles',
-# 3rd party
-'rest_framework',
-'corsheaders', # new
-# Local
-'todos',
+<pre><code class="language-py"> INSTALLED_APPS = [
+	...
+	'rest_framework',
+	'corsheaders', # new
+	...
 ]
 MIDDLEWARE = [
 ...
-'corsheaders.middleware.CorsMiddleware', # be sure to set it above 
+'corsheaders.middleware.CorsMiddleware', # be sure to set it above Common
 'django.middleware.common.CommonMiddleware',
 ...
 ]
@@ -271,7 +264,7 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNjcyMjQ4NSwtMjAyMTI1MzQ3NCwxOT
+eyJoaXN0b3J5IjpbMTM1ODgzOTUyOSwtMjAyMTI1MzQ3NCwxOT
 A2NDUwNjAxLC0xMDg4MzM2OTMyLDM4MzgwNzIwMywtMTQ2OTY5
 NTY5Niw1MjQ5MjE4MTQsLTIwMzUyNzE4ODldfQ==
 -->
