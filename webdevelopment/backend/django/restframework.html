@@ -213,7 +213,7 @@ CORS_ORIGIN_WHITELIST = (
 <pre><code class="language-py">from rest_framework import generics, permissions
 
 class ExampleView(generics.ListCreateAPIView):
-	permission_classes = ('per
+	permission_classes = (permissions.IsAuthenticated,)
 	...
 </code></pre>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
@@ -280,10 +280,10 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMzY5MjI3MiwxNjI5Nzk2MjkwLDI2Nz
-E4NzA5OSwtMjAyMTI1MzQ3NCwxOTA2NDUwNjAxLC0xMDg4MzM2
-OTMyLDM4MzgwNzIwMywtMTQ2OTY5NTY5Niw1MjQ5MjE4MTQsLT
-IwMzUyNzE4ODldfQ==
+eyJoaXN0b3J5IjpbLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNj
+cxODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMz
+NjkzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC
+0yMDM1MjcxODg5XX0=
 -->
                 </main>
 
