@@ -1,3 +1,6 @@
+### Cors
+Cross origin resource  sharing is a security relevant aspect when Frontend and Backend communicate with each other from different ressources (
+
 Rest - Representational state transfer
 Api - application programming interface
 
@@ -63,7 +66,7 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMT
-A4ODMzNjkzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIx
-ODE0LC0yMDM1MjcxODg5XX0=
+eyJoaXN0b3J5IjpbLTE2NTEyMDY5MTIsLTIwMjEyNTM0NzQsMT
+kwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzODM4MDcyMDMsLTE0Njk2
+OTU2OTYsNTI0OTIxODE0LC0yMDM1MjcxODg5XX0=
 -->
