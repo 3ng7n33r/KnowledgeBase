@@ -68,10 +68,11 @@ class IsAuthorOrReadOnly(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
         # Read-only permissions are allowed for any request
         if request.method in permissions.SAFE_METHODS:
-        return True
+	        return True
         # Write permissions are only allowed to the author of a post
         return obj.author == request.user
 ```
+Here, we inherit Djangos Base
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -139,9 +140,9 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDUyOTMyODcsLTE3NzI4MzY3MjAsLT
-EyMzU1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcx
-ODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNj
-kzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0y
-MDM1MjcxODg5XX0=
+eyJoaXN0b3J5IjpbOTI1MzQ1NjI1LC0xNzcyODM2NzIwLC0xMj
+M1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3
+MDk5LC0yMDIxMjUzNDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5Mz
+IsMzgzODA3MjAzLC0xNDY5Njk1Njk2LDUyNDkyMTgxNCwtMjAz
+NTI3MTg4OV19
 -->
