@@ -84,7 +84,7 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
 These methods work well for detail pages because it modifies the object permission. If it should be done for a list or collection, the queryset has to be overridden. More on that [here](https://www.django-rest-framework.org/api-guide/filtering/#overriding-the-initial-queryset)
 
 ## Authentication
-While Authorizations manage permissions, Authentication manages login, logout and user management (create delete etc.). While Django uses a session based cookie, this is not possible for a REST API as the S in Rest stands for stateless. Therefore, every request has to be fully independent. The solution is to add a unique identifier into the request. This can be a token of any kind. DRF offers: 
+While Authorizations manage permissions, Authentication manages login, logout and user management (create delete etc.). While Django uses a session based cookie, this is not possible for a REST API as the S in Rest stands for stateless. Therefore, every request has to be fully independent. The solution is to add a unique identifier into the request. This can be a token of any kind. DRF offers: basic, session, token, and default.
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -152,7 +152,7 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5ODY0NTE5NSwtMTgxOTQ3MTIxMywtMT
+eyJoaXN0b3J5IjpbLTQ1NDAyMzUyMiwtMTgxOTQ3MTIxMywtMT
 c3MjgzNjcyMCwtMTIzNTU2MDQ2NiwtMTc1Mjk0MTc3OCwxNjI5
 Nzk2MjkwLDI2NzE4NzA5OSwtMjAyMTI1MzQ3NCwxOTA2NDUwNj
 AxLC0xMDg4MzM2OTMyLDM4MzgwNzIwMywtMTQ2OTY5NTY5Niw1
