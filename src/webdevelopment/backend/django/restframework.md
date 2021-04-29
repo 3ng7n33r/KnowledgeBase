@@ -152,7 +152,7 @@ urlpatterns = [
 ]
 ```
 
-## Viewsets and 
+## Viewsets and Routers
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -220,7 +220,7 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzcwMjE4NDIsLTEwNTIzNTg2MTksLT
+eyJoaXN0b3J5IjpbLTExNjI0Mjc4MjgsLTEwNTIzNTg2MTksLT
 czNTkwMTAwMiwtOTM5NDM0MzAyLDE2MzUyMjkxMDIsNjIxNjky
 NzExLC0xOTQyNzIxMjk1LC00NTQwMjM1MjIsLTE4MTk0NzEyMT
 MsLTE3NzI4MzY3MjAsLTEyMzU1NjA0NjYsLTE3NTI5NDE3Nzgs
