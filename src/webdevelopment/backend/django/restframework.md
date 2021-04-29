@@ -254,7 +254,8 @@ urlpatterns = [
 ]
 ```
 
-### documentation
+### Documentation
+To make it more human friendly, we install [drf-yasg](https://drf-yasg.readthedocs.io/en/stable/) (however [SwaggerUI](https://swagger.io/tools/swagger-ui/) and [ReDoc](https://github.com/Rebilly/ReDoc) are viable alternatives).
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -322,11 +323,11 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODQ4MTc0NTEsLTExOTYwMjQ3MTQsLT
-EwNDY4NTQ0ODEsLTEyOTA2NTgyODcsMzgxMjk1OTUyLC0xMTYy
-NDI3ODI4LC0xMDUyMzU4NjE5LC03MzU5MDEwMDIsLTkzOTQzND
-MwMiwxNjM1MjI5MTAyLDYyMTY5MjcxMSwtMTk0MjcyMTI5NSwt
-NDU0MDIzNTIyLC0xODE5NDcxMjEzLC0xNzcyODM2NzIwLC0xMj
-M1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3
-MDk5LC0yMDIxMjUzNDc0XX0=
+eyJoaXN0b3J5IjpbLTY2NzIwNzUxOSwtMTE5NjAyNDcxNCwtMT
+A0Njg1NDQ4MSwtMTI5MDY1ODI4NywzODEyOTU5NTIsLTExNjI0
+Mjc4MjgsLTEwNTIzNTg2MTksLTczNTkwMTAwMiwtOTM5NDM0Mz
+AyLDE2MzUyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00
+NTQwMjM1MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMz
+U1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcw
+OTksLTIwMjEyNTM0NzRdfQ==
 -->
