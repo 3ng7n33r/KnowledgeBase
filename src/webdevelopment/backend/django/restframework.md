@@ -102,6 +102,8 @@ While Authorizations manage permissions, Authentication manages login, logout an
 	}
 	```
 
+### User Endpoints
+
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -169,10 +171,10 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNTIyOTEwMiw2MjE2OTI3MTEsLTE5ND
-I3MjEyOTUsLTQ1NDAyMzUyMiwtMTgxOTQ3MTIxMywtMTc3Mjgz
-NjcyMCwtMTIzNTU2MDQ2NiwtMTc1Mjk0MTc3OCwxNjI5Nzk2Mj
-kwLDI2NzE4NzA5OSwtMjAyMTI1MzQ3NCwxOTA2NDUwNjAxLC0x
-MDg4MzM2OTMyLDM4MzgwNzIwMywtMTQ2OTY5NTY5Niw1MjQ5Mj
-E4MTQsLTIwMzUyNzE4ODldfQ==
+eyJoaXN0b3J5IjpbLTQwMjk1Mzg4NCwxNjM1MjI5MTAyLDYyMT
+Y5MjcxMSwtMTk0MjcyMTI5NSwtNDU0MDIzNTIyLC0xODE5NDcx
+MjEzLC0xNzcyODM2NzIwLC0xMjM1NTYwNDY2LC0xNzUyOTQxNz
+c4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUzNDc0LDE5
+MDY0NTA2MDEsLTEwODgzMzY5MzIsMzgzODA3MjAzLC0xNDY5Nj
+k1Njk2LDUyNDkyMTgxNCwtMjAzNTI3MTg4OV19
 -->
