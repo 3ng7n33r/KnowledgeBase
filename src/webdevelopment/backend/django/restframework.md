@@ -89,6 +89,7 @@ While Authorizations manage permissions, Authentication manages login, logout an
  - **Basic**: The string username:password is encoded into base64 and send under "Authorization" in the header. This should only be done through a secure https connection because the credentials can easily be stolen and reused.
  - **Session**: After basic authentication, a cookie is generated *on both sides* that will further on be used to generate an ID which will be sent in the header. The database is only hit once for credentials and they are only in the first request, however managing these sessions for multiple front ends and many users is challenging and it is a stateful approach which violates the REST principle. This is therefore not advised.
  - **Token**: Upon login, a token is created and stored only on the user side. It can be stored either in localstorage or as a cookie. The current best practice is to save it as a cooke with the httponly and Secure flags. Localstorage does not automatically add the token to the header and keeping it in both is vurlnerable for XSS attacks. The token is not stored server side. Additional features like token expiration can be set. This is currently considered the best approach.
+ - **Default**: The defa
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -156,10 +157,10 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTk2NjMwNjYsLTE5NDI3MjEyOTUsLT
-Q1NDAyMzUyMiwtMTgxOTQ3MTIxMywtMTc3MjgzNjcyMCwtMTIz
-NTU2MDQ2NiwtMTc1Mjk0MTc3OCwxNjI5Nzk2MjkwLDI2NzE4Nz
-A5OSwtMjAyMTI1MzQ3NCwxOTA2NDUwNjAxLC0xMDg4MzM2OTMy
-LDM4MzgwNzIwMywtMTQ2OTY5NTY5Niw1MjQ5MjE4MTQsLTIwMz
-UyNzE4ODldfQ==
+eyJoaXN0b3J5IjpbMTk0ODA5MTA5LC0xOTQyNzIxMjk1LC00NT
+QwMjM1MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMzU1
+NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcwOT
+ksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwz
+ODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1Mj
+cxODg5XX0=
 -->
