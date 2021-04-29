@@ -147,6 +147,7 @@ SITE_ID = 1 # allauth uses djangos sites framework (host multiple sites from one
 # urls.py
 urlpatterns = [
 	...
+	path('api/v1/dj-rest-auth/', include('dj_rest_auth.urls')),
 	path('api/v1/dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')),
 ]
 ```
@@ -217,11 +218,11 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNTkwMTAwMiwtOTM5NDM0MzAyLDE2Mz
-UyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00NTQwMjM1
-MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMzU1NjA0Nj
-YsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcwOTksLTIw
-MjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzODM4MD
-cyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1MjcxODg5
-XX0=
+eyJoaXN0b3J5IjpbLTEwNTIzNTg2MTksLTczNTkwMTAwMiwtOT
+M5NDM0MzAyLDE2MzUyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIx
+Mjk1LC00NTQwMjM1MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3Mj
+AsLTEyMzU1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwy
+NjcxODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4OD
+MzNjkzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0
+LC0yMDM1MjcxODg5XX0=
 -->
