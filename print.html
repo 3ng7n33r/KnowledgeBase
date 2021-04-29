@@ -612,8 +612,8 @@ CORS_ORIGIN_WHITELIST = (
 'http://localhost:8000', # Django port
 )
 </code></pre>
-<h2 id="authentication"><a class="header" href="#authentication">Authentication</a></h2>
-<p>To add authentication to the api, the first step is to include the DRF urls into the projects url file. project/urls.py:</p>
+<h2 id="authorization"><a class="header" href="#authorization">Authorization</a></h2>
+<p>To manage authorizations in the api, the first step is to include the DRF urls into the projects url file. project/urls.py:</p>
 <pre><code class="language-py">urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('posts.urls')), # versioned API endpoint
@@ -663,6 +663,8 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
     ...
 </code></pre>
 <p>These methods work well for detail pages because it modifies the object permission. If it should be done for a list or collection, the queryset has to be overridden. More on that <a href="https://www.django-rest-framework.org/api-guide/filtering/#overriding-the-initial-queryset">here</a></p>
+<h2 id="authentication"><a class="header" href="#authentication">Authentication</a></h2>
+<p>While Authorizations manage permissions, Authentication manages login, logout and user managem</p>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -727,11 +729,11 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLT
-EyMzU1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcx
-ODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNj
-kzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0y
-MDM1MjcxODg5XX0=
+eyJoaXN0b3J5IjpbMjI3MDMxNDksLTE4MTk0NzEyMTMsLTE3Nz
+I4MzY3MjAsLTEyMzU1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5
+NjI5MCwyNjcxODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMS
+wtMTA4ODMzNjkzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0
+OTIxODE0LC0yMDM1MjcxODg5XX0=
 --><ul>
 <li><input disabled="" type="checkbox"/>
 create virtualenvironment: $ virtualenv envprojectname</li>
