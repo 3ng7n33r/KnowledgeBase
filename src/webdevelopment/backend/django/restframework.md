@@ -205,7 +205,7 @@ class UserViewSet(viewsets.ModelViewSet): # new
 	queryset = get_user_model().objects.all()
 	serializer_class = UserSerializer
 ```
-This will create problems as the routes to the views have now changed. Therefore, we need to adapt the urls.py file.
+Just like viewsets unify list and detail views, routers can simplify url routes. 
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -273,11 +273,11 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTA2NTgyODcsMzgxMjk1OTUyLC0xMT
-YyNDI3ODI4LC0xMDUyMzU4NjE5LC03MzU5MDEwMDIsLTkzOTQz
-NDMwMiwxNjM1MjI5MTAyLDYyMTY5MjcxMSwtMTk0MjcyMTI5NS
-wtNDU0MDIzNTIyLC0xODE5NDcxMjEzLC0xNzcyODM2NzIwLC0x
-MjM1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MT
-g3MDk5LC0yMDIxMjUzNDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5
-MzIsMzgzODA3MjAzXX0=
+eyJoaXN0b3J5IjpbLTEzNDkzNTcwODksLTEyOTA2NTgyODcsMz
+gxMjk1OTUyLC0xMTYyNDI3ODI4LC0xMDUyMzU4NjE5LC03MzU5
+MDEwMDIsLTkzOTQzNDMwMiwxNjM1MjI5MTAyLDYyMTY5MjcxMS
+wtMTk0MjcyMTI5NSwtNDU0MDIzNTIyLC0xODE5NDcxMjEzLC0x
+NzcyODM2NzIwLC0xMjM1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mj
+k3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUzNDc0LDE5MDY0NTA2
+MDEsLTEwODgzMzY5MzJdfQ==
 -->
