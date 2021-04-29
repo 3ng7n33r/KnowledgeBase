@@ -823,7 +823,7 @@ urlpatterns = [
 ]
 </code></pre>
 <h3 id="documentation"><a class="header" href="#documentation">Documentation</a></h3>
-<p>To make it more human friendly, we install <a href="https://drf-yasg.readthedocs.io/en/stable/">drf-yasg</a> (however <a href="https://swagger.io/tools/swagger-ui/">SwaggerUI</a> and <a href="https://github.com/Rebilly/ReDoc">ReDoc</a> are viable alternatives) and add it to our settings.py and urls.py</p>
+<p>To make it more human friendly, we install <a href="https://drf-yasg.readthedocs.io/en/stable/">drf-yasg</a> (however <a href="https://swagger.io/tools/swagger-ui/">SwaggerUI</a> and <a href="https://github.com/Rebilly/ReDoc">ReDoc</a> are viable alternatives) and add it to our settings.py and urls.py:</p>
 <pre><code class="language-py">$ pip install drf-yasg
 # config/settings.py
 INSTALLED_APPS = [
@@ -832,6 +832,37 @@ INSTALLED_APPS = [
 	...
 	'drf_yasg', # new
 	...
+]
+
+# config/urls.py
+from django.contrib import admin
+from django.urls import include, path
+from rest_framework import permissions # new
+from drf_yasg.views import get_schema_view # new
+from drf_yasg import openapi # new
+schema_view = get_schema_view( # new
+openapi.Info(
+title=&quot;Blog API&quot;,
+default_version=&quot;v1&quot;,
+description=&quot;A sample API for learning DRF&quot;,
+terms_of_service=&quot;https://www.google.com/policies/terms/&quot;,
+contact=openapi.Contact(email=&quot;hello@example.com&quot;),
+license=openapi.License(name=&quot;BSD License&quot;),
+),
+public=True,
+permission_classes=(permissions.AllowAny,),
+)
+urlpatterns = [
+path('admin/', admin.site.urls),
+path('api/v1/', include('posts.urls')),
+path('api-auth/', include('rest_framework.urls')),
+path('api/v1/dj-rest-auth/', include('dj_rest_auth.urls')),
+path('api/v1/dj-rest-auth/registration/',
+include('dj_rest_auth.registration.urls')),
+path('swagger/', schema_view.with_ui( # new
+'swagger', cache_timeout=0), name='schema-swagger-ui'),
+path('redoc/', schema_view.with_ui( # new
+'redoc', cache_timeout=0), name='schema-redoc'),
 ]
 </code></pre>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
@@ -898,13 +929,13 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzE0NTI5OTAsLTExOTYwMjQ3MTQsLT
-EwNDY4NTQ0ODEsLTEyOTA2NTgyODcsMzgxMjk1OTUyLC0xMTYy
-NDI3ODI4LC0xMDUyMzU4NjE5LC03MzU5MDEwMDIsLTkzOTQzND
-MwMiwxNjM1MjI5MTAyLDYyMTY5MjcxMSwtMTk0MjcyMTI5NSwt
-NDU0MDIzNTIyLC0xODE5NDcxMjEzLC0xNzcyODM2NzIwLC0xMj
-M1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3
-MDk5LC0yMDIxMjUzNDc0XX0=
+eyJoaXN0b3J5IjpbLTQ0OTUyMTg2MCwtMTE5NjAyNDcxNCwtMT
+A0Njg1NDQ4MSwtMTI5MDY1ODI4NywzODEyOTU5NTIsLTExNjI0
+Mjc4MjgsLTEwNTIzNTg2MTksLTczNTkwMTAwMiwtOTM5NDM0Mz
+AyLDE2MzUyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00
+NTQwMjM1MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMz
+U1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcw
+OTksLTIwMjEyNTM0NzRdfQ==
 --><ul>
 <li><input disabled="" type="checkbox"/>
 create virtualenvironment: $ virtualenv envprojectname</li>
