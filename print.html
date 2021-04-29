@@ -804,6 +804,9 @@ routers. Until then, keep things simple.</p>
 <p>To add this, we have to install <a href="https://pyyaml.org/">PyYAML</a> and <a href="https://github.com/python-hyper/uritemplate">uritemplate</a></p>
 <pre><code>$ pip install pyyaml uritemplate
 </code></pre>
+<p>then create a computer readable schema with:</p>
+<pre><code>$ python manage.py generateschema &gt; openapi-schema.yml
+</code></pre>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -868,7 +871,7 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNTY3NjAyNSwtMTE5NjAyNDcxNCwtMT
+eyJoaXN0b3J5IjpbMTc2NDQ1NTYzOSwtMTE5NjAyNDcxNCwtMT
 A0Njg1NDQ4MSwtMTI5MDY1ODI4NywzODEyOTU5NTIsLTExNjI0
 Mjc4MjgsLTEwNTIzNTg2MTksLTczNTkwMTAwMiwtOTM5NDM0Mz
 AyLDE2MzUyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00
