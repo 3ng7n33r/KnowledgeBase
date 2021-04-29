@@ -23,9 +23,9 @@ CORS_ORIGIN_WHITELIST = (
 )
 ```
 
-## Authentication
+## Authorization
 
-To add authentication to the api, the first step is to include the DRF urls into the projects url file. project/urls.py:
+To manage authorizations in the api, the first step is to include the DRF urls into the projects url file. project/urls.py:
 ```py
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -82,6 +82,9 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
     ...
 ```
 These methods work well for detail pages because it modifies the object permission. If it should be done for a list or collection, the queryset has to be overridden. More on that [here](https://www.django-rest-framework.org/api-guide/filtering/#overriding-the-initial-queryset)
+
+## Authentication
+While Authorizations manage permissions, Authentication manages login, logout and user managem
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -149,9 +152,9 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLT
-EyMzU1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcx
-ODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNj
-kzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0y
-MDM1MjcxODg5XX0=
+eyJoaXN0b3J5IjpbMjI3MDMxNDksLTE4MTk0NzEyMTMsLTE3Nz
+I4MzY3MjAsLTEyMzU1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5
+NjI5MCwyNjcxODcwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMS
+wtMTA4ODMzNjkzMiwzODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0
+OTIxODE0LC0yMDM1MjcxODg5XX0=
 -->
