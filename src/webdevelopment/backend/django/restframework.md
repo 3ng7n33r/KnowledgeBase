@@ -153,6 +153,7 @@ urlpatterns = [
 ```
 
 ## Viewsets and Routers
+Now that we can authenticate, we ant to add a user endpoint to our api to list all and individual users. Adding an endpoint always involves creating the serializer, creating the view, creating the url route.
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -220,11 +221,11 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjI0Mjc4MjgsLTEwNTIzNTg2MTksLT
-czNTkwMTAwMiwtOTM5NDM0MzAyLDE2MzUyMjkxMDIsNjIxNjky
-NzExLC0xOTQyNzIxMjk1LC00NTQwMjM1MjIsLTE4MTk0NzEyMT
-MsLTE3NzI4MzY3MjAsLTEyMzU1NjA0NjYsLTE3NTI5NDE3Nzgs
-MTYyOTc5NjI5MCwyNjcxODcwOTksLTIwMjEyNTM0NzQsMTkwNj
-Q1MDYwMSwtMTA4ODMzNjkzMiwzODM4MDcyMDMsLTE0Njk2OTU2
-OTYsNTI0OTIxODE0XX0=
+eyJoaXN0b3J5IjpbNDE2MjExNzk2LC0xMTYyNDI3ODI4LC0xMD
+UyMzU4NjE5LC03MzU5MDEwMDIsLTkzOTQzNDMwMiwxNjM1MjI5
+MTAyLDYyMTY5MjcxMSwtMTk0MjcyMTI5NSwtNDU0MDIzNTIyLC
+0xODE5NDcxMjEzLC0xNzcyODM2NzIwLC0xMjM1NTYwNDY2LC0x
+NzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMj
+UzNDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5MzIsMzgzODA3MjAz
+LC0xNDY5Njk1Njk2XX0=
 -->
