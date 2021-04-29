@@ -88,7 +88,7 @@ While Authorizations manage permissions, Authentication manages login, logout an
 
  - **Basic**: The string username:password is encoded into base64 and send under "Authorization" in the header. This should only be done through a secure https connection because the credentials can easily be stolen and reused.
  - **Session**: After basic authentication, a cookie is generated *on both sides* that will further on be used to generate an ID which will be sent in the header. The database is only hit once for credentials and they are only in the first request, however managing these sessions for multiple front ends and many users is challenging and it is a stateful approach which violates the REST principle. This is therefore not advised.
- - **Token**: Upon login, a token is created and stored only on the user side. It can be stored either in localstorage or as a cookie. The current best practice is to save it as a cooke with the httponly and Secure flags. Localstorage does not automatically add the token to the header and keeping it in both is vurlnerable for XSS attacks. The token is not stored server side. Additional features like token expiration can be set. This is currently considered the best approach.
+ - **Token**: Upon login, a token is created and stored only on the user side. It can be stored either in localstorage or as a cookie. The current best practice is to save it as a cooke with the httponly and Secure flags. Localstorage does not automatically add the token to the header and keeping it in both is vurlnerable for XSS attacks. The token is not stored server side. Additional features like token expiration can be set. This is currently considered the best approach. To add it 'rest_framework.authentication.TokenAuthentication', has to be added to the DEFAULT_AUTHENTICATION_CLASSES in settings.py and 'rest_framework.authtoken', has to be added to the 
  - **Default**: The default for DRF is Session and Basic. The session is used for the browsable API while basic is used for the API itself. If we would add the default class to the settings.py file to make it explicit, it would look like this: 
 	 ```py
 	REST_FRAMEWORK = {
@@ -169,10 +169,10 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00NT
-QwMjM1MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMzU1
-NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcwOT
-ksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwz
-ODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1Mj
-cxODg5XX0=
+eyJoaXN0b3J5IjpbNDE4MTgyMzkxLDYyMTY5MjcxMSwtMTk0Mj
+cyMTI5NSwtNDU0MDIzNTIyLC0xODE5NDcxMjEzLC0xNzcyODM2
+NzIwLC0xMjM1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mjk3OTYyOT
+AsMjY3MTg3MDk5LC0yMDIxMjUzNDc0LDE5MDY0NTA2MDEsLTEw
+ODgzMzY5MzIsMzgzODA3MjAzLC0xNDY5Njk1Njk2LDUyNDkyMT
+gxNCwtMjAzNTI3MTg4OV19
 -->
