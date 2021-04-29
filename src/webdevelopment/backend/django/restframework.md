@@ -190,8 +190,22 @@ urlpatterns = [
 ## Viewsets and Routers
 At this point we can see quite a bit of repetition. The detail view and the list view look exactly identical. We can use viewsets which combine these funtionalities for the sake of a worse readability. To replace the views we have so far, we rewrite views.py like this: 
 ```py
+# posts/views.py
+from django.contrib.auth import get_user_model
+from rest_framework import viewsets # new
+from .models import Post
+from .permissions import IsAuthorOrReadOnly
+from .serializers import PostSerializer, UserSerializer
 
-``
+class PostViewSet(viewsets.ModelViewSet): # new
+	permission_classes = (IsAuthorOrReadOnly,)
+	queryset = Post.objects.all()
+	serializer_class = PostSerializer
+class UserViewSet(viewsets.ModelViewSet): # new
+	queryset = get_user_model().objects.all()
+	serializer_class = UserSerializer
+```
+This will create problems as the routes to the views have now changed. Therefore, we need to adapt the urls.py file.
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -259,11 +273,11 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg1ODA2MDk3LDM4MTI5NTk1MiwtMTE2Mj
-QyNzgyOCwtMTA1MjM1ODYxOSwtNzM1OTAxMDAyLC05Mzk0MzQz
-MDIsMTYzNTIyOTEwMiw2MjE2OTI3MTEsLTE5NDI3MjEyOTUsLT
-Q1NDAyMzUyMiwtMTgxOTQ3MTIxMywtMTc3MjgzNjcyMCwtMTIz
-NTU2MDQ2NiwtMTc1Mjk0MTc3OCwxNjI5Nzk2MjkwLDI2NzE4Nz
-A5OSwtMjAyMTI1MzQ3NCwxOTA2NDUwNjAxLC0xMDg4MzM2OTMy
-LDM4MzgwNzIwM119
+eyJoaXN0b3J5IjpbLTEyOTA2NTgyODcsMzgxMjk1OTUyLC0xMT
+YyNDI3ODI4LC0xMDUyMzU4NjE5LC03MzU5MDEwMDIsLTkzOTQz
+NDMwMiwxNjM1MjI5MTAyLDYyMTY5MjcxMSwtMTk0MjcyMTI5NS
+wtNDU0MDIzNTIyLC0xODE5NDcxMjEzLC0xNzcyODM2NzIwLC0x
+MjM1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MT
+g3MDk5LC0yMDIxMjUzNDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5
+MzIsMzgzODA3MjAzXX0=
 -->
