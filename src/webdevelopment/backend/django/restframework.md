@@ -126,7 +126,28 @@ urlpatterns = [
 The login can then be found under http://127.0.0.1:8000/api/v1/dj-rest-auth/login/ Further there are .../logout, .../password/reset and password/reset/confirm.
 
 ### django-allauth (User Registration)
+```
+$ pip install django-allauth
 
+# settings.py
+INSTALLED_APPS = [
+
+'django.contrib.sites', # new
+# 3rd-party apps
+'rest_framework',
+'rest_framework.authtoken',
+'allauth', # new
+'allauth.account', # new
+'allauth.socialaccount', # new
+'dj_rest_auth',Chapter 7: User Authentication
+116
+'dj_rest_auth.registration', # new
+# Local
+'posts',
+]
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # new
+SITE_ID = 1 # new
+```
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -194,11 +215,11 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA5MTEwODYzLC05Mzk0MzQzMDIsMTYzNT
-IyOTEwMiw2MjE2OTI3MTEsLTE5NDI3MjEyOTUsLTQ1NDAyMzUy
-MiwtMTgxOTQ3MTIxMywtMTc3MjgzNjcyMCwtMTIzNTU2MDQ2Ni
-wtMTc1Mjk0MTc3OCwxNjI5Nzk2MjkwLDI2NzE4NzA5OSwtMjAy
-MTI1MzQ3NCwxOTA2NDUwNjAxLC0xMDg4MzM2OTMyLDM4MzgwNz
-IwMywtMTQ2OTY5NTY5Niw1MjQ5MjE4MTQsLTIwMzUyNzE4ODld
-fQ==
+eyJoaXN0b3J5IjpbMTkwNjQ0NzM5NSwtOTM5NDM0MzAyLDE2Mz
+UyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00NTQwMjM1
+MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMzU1NjA0Nj
+YsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcwOTksLTIw
+MjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzODM4MD
+cyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1MjcxODg5
+XX0=
 -->
