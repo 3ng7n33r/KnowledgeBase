@@ -141,8 +141,8 @@ INSTALLED_APPS = [
 	...
 	'dj_rest_auth.registration',
 ]
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-SITE_ID = 1 # new
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # this setting will send emails to the console during development
+SITE_ID = 1 #
 ```
 
 ## Tutorial summary
@@ -211,11 +211,11 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU5Nzk2MzYyLC05Mzk0MzQzMDIsMTYzNT
-IyOTEwMiw2MjE2OTI3MTEsLTE5NDI3MjEyOTUsLTQ1NDAyMzUy
-MiwtMTgxOTQ3MTIxMywtMTc3MjgzNjcyMCwtMTIzNTU2MDQ2Ni
-wtMTc1Mjk0MTc3OCwxNjI5Nzk2MjkwLDI2NzE4NzA5OSwtMjAy
-MTI1MzQ3NCwxOTA2NDUwNjAxLC0xMDg4MzM2OTMyLDM4MzgwNz
-IwMywtMTQ2OTY5NTY5Niw1MjQ5MjE4MTQsLTIwMzUyNzE4ODld
-fQ==
+eyJoaXN0b3J5IjpbLTY0NjY2NTEyNSwtOTM5NDM0MzAyLDE2Mz
+UyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00NTQwMjM1
+MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMzU1NjA0Nj
+YsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcwOTksLTIw
+MjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzODM4MD
+cyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1MjcxODg5
+XX0=
 -->
