@@ -87,7 +87,7 @@ These methods work well for detail pages because it modifies the object permissi
 While Authorizations manage permissions, Authentication manages login, logout and user management (create delete etc.). While Django uses a session based cookie, this is not possible for a REST API as the S in Rest stands for stateless. Therefore, every request has to be fully independent. The solution is to add a unique identifier into the request. This can be a token of any kind. DRF offers: basic, session, token, and default.
 
  - **Basic**: The string username:password is encoded into base64 and send under "Authorization" in the header. This should only be done through a secure https connection because the credentials can easily be stolen and reused.
- - **Session**: After basic authentication, a cookie is generated on both sides that will further on be used to generate an ID which will be sent in the header. The database is only hit once for credentials and they are only in the first request, however managing these sessions for multiple front ends and many users is challenging and it is a stateful approach which violates the REST principle. This is therefore not advised.
+ - **Session**: After basic authentication, a cookie is generated *on both sides* that will further on be used to generate an ID which will be sent in the header. The database is only hit once for credentials and they are only in the first request, however managing these sessions for multiple front ends and many users is challenging and it is a stateful approach which violates the REST principle. This is therefore not advised.
  - **Token**:
 
 ## Tutorial summary
@@ -156,7 +156,7 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTEyNjUxNDMsLTQ1NDAyMzUyMiwtMT
+eyJoaXN0b3J5IjpbLTE5NDI3MjEyOTUsLTQ1NDAyMzUyMiwtMT
 gxOTQ3MTIxMywtMTc3MjgzNjcyMCwtMTIzNTU2MDQ2NiwtMTc1
 Mjk0MTc3OCwxNjI5Nzk2MjkwLDI2NzE4NzA5OSwtMjAyMTI1Mz
 Q3NCwxOTA2NDUwNjAxLC0xMDg4MzM2OTMyLDM4MzgwNzIwMywt
