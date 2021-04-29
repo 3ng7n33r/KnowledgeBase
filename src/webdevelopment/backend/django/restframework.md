@@ -176,6 +176,16 @@ class UserList(generics.ListCreateAPIView): # new
 class UserDetail(generics.RetrieveUpdateDestroyAPIView): # new
 	queryset = get_user_model().objects.all()
 	serializer_class = UserSerializer
+
+# posts/urls.py
+from django.urls import path
+from .views import UserList, UserDetail, PostList, PostDetail # new
+urlpatterns = [
+path('users/', UserList.as_view()), # new
+path('users/<int:pk>/', UserDetail.as_view()), # new
+path('', PostList.as_view()),
+path('<int:pk>/', PostDetail.as_view()),
+]
 ```
 
 ## Tutorial summary
@@ -244,11 +254,11 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNTM2MTUsLTExNjI0Mjc4MjgsLTEwNT
-IzNTg2MTksLTczNTkwMTAwMiwtOTM5NDM0MzAyLDE2MzUyMjkx
-MDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00NTQwMjM1MjIsLT
-E4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMzU1NjA0NjYsLTE3
-NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcwOTksLTIwMjEyNT
-M0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzODM4MDcyMDMs
-LTE0Njk2OTU2OTZdfQ==
+eyJoaXN0b3J5IjpbLTIwMDI0NTI3MSwtMTE2MjQyNzgyOCwtMT
+A1MjM1ODYxOSwtNzM1OTAxMDAyLC05Mzk0MzQzMDIsMTYzNTIy
+OTEwMiw2MjE2OTI3MTEsLTE5NDI3MjEyOTUsLTQ1NDAyMzUyMi
+wtMTgxOTQ3MTIxMywtMTc3MjgzNjcyMCwtMTIzNTU2MDQ2Niwt
+MTc1Mjk0MTc3OCwxNjI5Nzk2MjkwLDI2NzE4NzA5OSwtMjAyMT
+I1MzQ3NCwxOTA2NDUwNjAxLC0xMDg4MzM2OTMyLDM4MzgwNzIw
+MywtMTQ2OTY5NTY5Nl19
 -->
