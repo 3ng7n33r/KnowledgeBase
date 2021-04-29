@@ -287,9 +287,10 @@ INSTALLED_APPS = [
 #urls.py
 urlpatterns = [
 	...
-	include('dj_rest_auth.urls')),
+	path('api/v1/dj-rest-auth/', include('dj_rest_auth.urls')), # new
 ]
 </code></pre>
+<p>The login can then be found under http://127.0.0.1:8000/api/v1/dj-rest-auth/login/ and logout respectively.</p>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -354,7 +355,7 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MzM5MjM3NiwxNjM1MjI5MTAyLDYyMT
+eyJoaXN0b3J5IjpbMTc0NjMwMDUzNiwxNjM1MjI5MTAyLDYyMT
 Y5MjcxMSwtMTk0MjcyMTI5NSwtNDU0MDIzNTIyLC0xODE5NDcx
 MjEzLC0xNzcyODM2NzIwLC0xMjM1NTYwNDY2LC0xNzUyOTQxNz
 c4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUzNDc0LDE5
