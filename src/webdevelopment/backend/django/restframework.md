@@ -234,9 +234,10 @@ routers. Until then, keep things simple.
 To add this, we have to install [PyYAML](https://pyyaml.org/) and [uritemplate](https://github.com/python-hyper/uritemplate)
 
     $ pip install pyyaml uritemplate
-then create a computer readable schema with:
+then create a static computer readable schema with:
 
     $ python manage.py generateschema > openapi-schema.yml
+or we create a dynami
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -304,7 +305,7 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NDQ1NTYzOSwtMTE5NjAyNDcxNCwtMT
+eyJoaXN0b3J5IjpbMTY3MjExNDI4NSwtMTE5NjAyNDcxNCwtMT
 A0Njg1NDQ4MSwtMTI5MDY1ODI4NywzODEyOTU5NTIsLTExNjI0
 Mjc4MjgsLTEwNTIzNTg2MTksLTczNTkwMTAwMiwtOTM5NDM0Mz
 AyLDE2MzUyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00
