@@ -255,7 +255,7 @@ urlpatterns = [
 ```
 
 ### Documentation
-To make it more human friendly, we install [drf-yasg](https://drf-yasg.readthedocs.io/en/stable/) (however [SwaggerUI](https://swagger.io/tools/swagger-ui/) and [ReDoc](https://github.com/Rebilly/ReDoc) are viable alternatives) and add it to our settings.py and urls.py
+To make it more human friendly, we install [drf-yasg](https://drf-yasg.readthedocs.io/en/stable/) (however [SwaggerUI](https://swagger.io/tools/swagger-ui/) and [ReDoc](https://github.com/Rebilly/ReDoc) are viable alternatives) and add it to our settings.py and urls.py:
 ```py
 $ pip install drf-yasg
 # config/settings.py
@@ -265,6 +265,37 @@ INSTALLED_APPS = [
 	...
 	'drf_yasg', # new
 	...
+]
+
+# config/urls.py
+from django.contrib import admin
+from django.urls import include, path
+from rest_framework import permissions # new
+from drf_yasg.views import get_schema_view # new
+from drf_yasg import openapi # new
+schema_view = get_schema_view( # new
+openapi.Info(
+title="Blog API",
+default_version="v1",
+description="A sample API for learning DRF",
+terms_of_service="https://www.google.com/policies/terms/",
+contact=openapi.Contact(email="hello@example.com"),
+license=openapi.License(name="BSD License"),
+),
+public=True,
+permission_classes=(permissions.AllowAny,),
+)
+urlpatterns = [
+path('admin/', admin.site.urls),
+path('api/v1/', include('posts.urls')),
+path('api-auth/', include('rest_framework.urls')),
+path('api/v1/dj-rest-auth/', include('dj_rest_auth.urls')),
+path('api/v1/dj-rest-auth/registration/',
+include('dj_rest_auth.registration.urls')),
+path('swagger/', schema_view.with_ui( # new
+'swagger', cache_timeout=0), name='schema-swagger-ui'),
+path('redoc/', schema_view.with_ui( # new
+'redoc', cache_timeout=0), name='schema-redoc'),
 ]
 ```
 
@@ -334,11 +365,11 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzE0NTI5OTAsLTExOTYwMjQ3MTQsLT
-EwNDY4NTQ0ODEsLTEyOTA2NTgyODcsMzgxMjk1OTUyLC0xMTYy
-NDI3ODI4LC0xMDUyMzU4NjE5LC03MzU5MDEwMDIsLTkzOTQzND
-MwMiwxNjM1MjI5MTAyLDYyMTY5MjcxMSwtMTk0MjcyMTI5NSwt
-NDU0MDIzNTIyLC0xODE5NDcxMjEzLC0xNzcyODM2NzIwLC0xMj
-M1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3
-MDk5LC0yMDIxMjUzNDc0XX0=
+eyJoaXN0b3J5IjpbLTQ0OTUyMTg2MCwtMTE5NjAyNDcxNCwtMT
+A0Njg1NDQ4MSwtMTI5MDY1ODI4NywzODEyOTU5NTIsLTExNjI0
+Mjc4MjgsLTEwNTIzNTg2MTksLTczNTkwMTAwMiwtOTM5NDM0Mz
+AyLDE2MzUyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00
+NTQwMjM1MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMz
+U1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcw
+OTksLTIwMjEyNTM0NzRdfQ==
 -->
