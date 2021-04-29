@@ -762,83 +762,94 @@ urlpatterns = [
 </code></pre>
 <h2 id="viewsets-and-routers"><a class="header" href="#viewsets-and-routers">Viewsets and Routers</a></h2>
 <p>At this point we can see quite a bit of repetition. The detail view and the list view look exactly identical. We can use viewsets which combine these funtionalities for the sake of a worse readability. To replace the views we have so far, we rewrite views.py like this: </p>
-<pre><code class="language-py">
-``
+<pre><code class="language-py"># posts/views.py
+from django.contrib.auth import get_user_model
+from rest_framework import viewsets # new
+from .models import Post
+from .permissions import IsAuthorOrReadOnly
+from .serializers import PostSerializer, UserSerializer
 
-## Tutorial summary
-Rest - Representational state transfer
-Api - application programming interface
-
+class PostViewSet(viewsets.ModelViewSet): # new
+	permission_classes = (IsAuthorOrReadOnly,)
+	queryset = Post.objects.all()
+	serializer_class = PostSerializer
+class UserViewSet(viewsets.ModelViewSet): # new
+	queryset = get_user_model().objects.all()
+	serializer_class = UserSerializer
 </code></pre>
-<p>pip install djangorestframework</p>
-<pre><code>
-and add it to the Installed apps in settings.py:
+<p>This will create problems as the routes to the views have now changed. Therefore, we need to adapt the urls.py file.</p>
+<h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
+<p>Rest - Representational state transfer
+Api - application programming interface</p>
+<pre><code>pip install djangorestframework
+</code></pre>
+<p>and add it to the Installed apps in settings.py:</p>
+<pre><code>INSTALLED_APPS = [
+     ....
+    'rest_framework',
+    ....
+]
+</code></pre>
+<ol>
+<li>
+<p>The rest framework needs a serializer. The serializer explains how to format the db data into formats like json etc. in a get request or how to format a post request for data that goes into the db. 
+The normal serializer class is written the same way as the model class with special methods to handle requests (get, post etc.). Because of these similarities in structure and API duties, the class can be simplified with Modelserializers. This can be as simple as: </p>
+<pre><code class="language-python">from rest_framework import serializers
+from app.models import Modelname
 
-    INSTALLED_APPS = [
-         ....
-        'rest_framework',
-        ....
-    ]
+class  AppSerializer(serializers.ModelSerializer):
+	class  Meta:
+		model = App
+		fields = ['id', 'title', 'other', 'important', 'fields']
+</code></pre>
+<p>The implementation can be checked in the django shell by importing the serializer and calling <em>$ print(repr(Serializername()))</em></p>
+</li>
+<li>
+<p>Just like the Serializer often has similar tasks, the API IO is also normally fairly similar. Therefore, the view necessary to make the api connect with the outer world, can be simplified using generic class based views. An API that retrieves all elements of a database with a get request can be implemented like this:</p>
+<pre><code class="language-python">from App.models import Modelname
+from app.serializers import AppSerializer
+from rest_framework import generics
 
-
-1. The rest framework needs a serializer. The serializer explains how to format the db data into formats like json etc. in a get request or how to format a post request for data that goes into the db. 
-The normal serializer class is written the same way as the model class with special methods to handle requests (get, post etc.). Because of these similarities in structure and API duties, the class can be simplified with Modelserializers. This can be as simple as: 
-	```python
-	from rest_framework import serializers
-	from app.models import Modelname
-
-	class  AppSerializer(serializers.ModelSerializer):
-		class  Meta:
-			model = App
-			fields = ['id', 'title', 'other', 'important', 'fields']
-	```
-	The implementation can be checked in the django shell by importing the serializer and calling *$ print(repr(Serializername()))*
-
-2. Just like the Serializer often has similar tasks, the API IO is also normally fairly similar. Therefore, the view necessary to make the api connect with the outer world, can be simplified using generic class based views. An API that retrieves all elements of a database with a get request can be implemented like this:
-	```python
-	from App.models import Modelname
-	from app.serializers import AppSerializer
-	from rest_framework import generics
-	
-	class SnippetList(generics.ListCreateAPIView):
-	   queryset = App.objects.all()
-	   serializer_class = AppSerializer
-	```
-	and an API that retrieves, stores or deletes a single db entry:
-	```python
-	class AppDetail(generics.RetrieveUpdateDestroyAPIView):
-	    queryset = App.objects.all()
-	    serializer_class = AppSerializer
-	```
-	More about generic views can be found [here](https://www.django-rest-framework.org/api-guide/generic-views/).
-	Note: in the urls file, class based views need the .asview method attached. To be able to use api suffixes (.json, .api) remember to modify the urlpatterns with
-	```python 
-	urlpatterns = format_suffix_patterns(urlpatterns)
-	```
-	3. Permissions can be handled with the [permission classes](https://www.django-rest-framework.org/api-guide/permissions/#api-reference) in the generic views (rest_framework permissions need to be imported):
-	```python
-	class  SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
-		permission_classes = [permissions.IsAuthenticatedOrReadOnly,
-		IsOwnerOrReadOnly]
-	```
-	In this example, &quot;IsownerOrReadOnly&quot; is a custom method defined in a permissions.py file. Documentation can be found [here](https://www.django-rest-framework.org/tutorial/4-authentication-and-permissions/#object-level-permissions)
-	Authentication is built into the Rest framework and just needs to be included into the project level urls.py file:
-	```python
-	urlpatterns += [
-	    path('anypath/', include('rest_framework.urls')),
-	]
-	```
-	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
-&lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg1ODA2MDk3LDM4MTI5NTk1MiwtMTE2Mj
-QyNzgyOCwtMTA1MjM1ODYxOSwtNzM1OTAxMDAyLC05Mzk0MzQz
-MDIsMTYzNTIyOTEwMiw2MjE2OTI3MTEsLTE5NDI3MjEyOTUsLT
-Q1NDAyMzUyMiwtMTgxOTQ3MTIxMywtMTc3MjgzNjcyMCwtMTIz
-NTU2MDQ2NiwtMTc1Mjk0MTc3OCwxNjI5Nzk2MjkwLDI2NzE4Nz
-A5OSwtMjAyMTI1MzQ3NCwxOTA2NDUwNjAxLC0xMDg4MzM2OTMy
-LDM4MzgwNzIwM119
---&gt;</code></pre>
-<ul>
+class SnippetList(generics.ListCreateAPIView):
+   queryset = App.objects.all()
+   serializer_class = AppSerializer
+</code></pre>
+<p>and an API that retrieves, stores or deletes a single db entry:</p>
+<pre><code class="language-python">class AppDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = App.objects.all()
+    serializer_class = AppSerializer
+</code></pre>
+<p>More about generic views can be found <a href="https://www.django-rest-framework.org/api-guide/generic-views/">here</a>.
+Note: in the urls file, class based views need the .asview method attached. To be able to use api suffixes (.json, .api) remember to modify the urlpatterns with</p>
+<pre><code class="language-python">urlpatterns = format_suffix_patterns(urlpatterns)
+</code></pre>
+<ol start="3">
+<li>Permissions can be handled with the <a href="https://www.django-rest-framework.org/api-guide/permissions/#api-reference">permission classes</a> in the generic views (rest_framework permissions need to be imported):</li>
+</ol>
+<pre><code class="language-python">class  SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
+	permission_classes = [permissions.IsAuthenticatedOrReadOnly,
+	IsOwnerOrReadOnly]
+</code></pre>
+<p>In this example, &quot;IsownerOrReadOnly&quot; is a custom method defined in a permissions.py file. Documentation can be found <a href="https://www.django-rest-framework.org/tutorial/4-authentication-and-permissions/#object-level-permissions">here</a>
+Authentication is built into the Rest framework and just needs to be included into the project level urls.py file:</p>
+<pre><code class="language-python">urlpatterns += [
+    path('anypath/', include('rest_framework.urls')),
+]
+</code></pre>
+<ol start="3">
+<li><a href="https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/">Pagination and Hyperlinking</a> in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.</li>
+</ol>
+</li>
+</ol>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyOTA2NTgyODcsMzgxMjk1OTUyLC0xMT
+YyNDI3ODI4LC0xMDUyMzU4NjE5LC03MzU5MDEwMDIsLTkzOTQz
+NDMwMiwxNjM1MjI5MTAyLDYyMTY5MjcxMSwtMTk0MjcyMTI5NS
+wtNDU0MDIzNTIyLC0xODE5NDcxMjEzLC0xNzcyODM2NzIwLC0x
+MjM1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MT
+g3MDk5LC0yMDIxMjUzNDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5
+MzIsMzgzODA3MjAzXX0=
+--><ul>
 <li><input disabled="" type="checkbox"/>
 create virtualenvironment: $ virtualenv envprojectname</li>
 <li><input disabled="" type="checkbox"/>
