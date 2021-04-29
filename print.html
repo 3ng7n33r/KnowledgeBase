@@ -807,7 +807,20 @@ routers. Until then, keep things simple.</p>
 <p>then create a static computer readable schema with:</p>
 <pre><code>$ python manage.py generateschema &gt; openapi-schema.yml
 </code></pre>
-<p>or we create a dynami</p>
+<p>or we create a dynamic version that will be served to a url. For this, we have to change our projects urls.py like this:</p>
+<pre><code class="language-py">...
+from rest_framework.schemas import get_schema_view # new
+
+
+urlpatterns = [
+	...
+    path('openapi', get_schema_view( # new
+        title=&quot;Blog API&quot;,
+        description=&quot;A sample API for learning DRF&quot;,
+        version=&quot;1.0.0&quot;
+    ), name='openapi-schema'),
+]
+</code></pre>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -872,7 +885,7 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MjExNDI4NSwtMTE5NjAyNDcxNCwtMT
+eyJoaXN0b3J5IjpbMTI1ODY5MDUwNywtMTE5NjAyNDcxNCwtMT
 A0Njg1NDQ4MSwtMTI5MDY1ODI4NywzODEyOTU5NTIsLTExNjI0
 Mjc4MjgsLTEwNTIzNTg2MTksLTczNTkwMTAwMiwtOTM5NDM0Mz
 AyLDE2MzUyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00
