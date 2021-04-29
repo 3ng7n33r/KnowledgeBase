@@ -237,7 +237,21 @@ To add this, we have to install [PyYAML](https://pyyaml.org/) and [uritemplate](
 then create a static computer readable schema with:
 
     $ python manage.py generateschema > openapi-schema.yml
-or we create a dynami
+or we create a dynamic version that will be served to a url. For this, we have to change our projects urls.py like this:
+```py
+...
+from rest_framework.schemas import get_schema_view # new
+
+
+urlpatterns = [
+	...
+    path('openapi', get_schema_view( # new
+        title="Blog API",
+        description="A sample API for learning DRF",
+        version="1.0.0"
+    ), name='openapi-schema'),
+]
+```
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -305,7 +319,7 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MjExNDI4NSwtMTE5NjAyNDcxNCwtMT
+eyJoaXN0b3J5IjpbMTI1ODY5MDUwNywtMTE5NjAyNDcxNCwtMT
 A0Njg1NDQ4MSwtMTI5MDY1ODI4NywzODEyOTU5NTIsLTExNjI0
 Mjc4MjgsLTEwNTIzNTg2MTksLTczNTkwMTAwMiwtOTM5NDM0Mz
 AyLDE2MzUyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00
