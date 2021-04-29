@@ -703,6 +703,27 @@ urlpatterns = [
 </code></pre>
 <p>The login can then be found under http://127.0.0.1:8000/api/v1/dj-rest-auth/login/ Further there are .../logout, .../password/reset and password/reset/confirm.</p>
 <h3 id="django-allauth-user-registration"><a class="header" href="#django-allauth-user-registration">django-allauth (User Registration)</a></h3>
+<pre><code>$ pip install django-allauth
+
+# settings.py
+INSTALLED_APPS = [
+
+'django.contrib.sites', # new
+# 3rd-party apps
+'rest_framework',
+'rest_framework.authtoken',
+'allauth', # new
+'allauth.account', # new
+'allauth.socialaccount', # new
+'dj_rest_auth',Chapter 7: User Authentication
+116
+'dj_rest_auth.registration', # new
+# Local
+'posts',
+]
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # new
+SITE_ID = 1 # new
+</code></pre>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -767,13 +788,13 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA5MTEwODYzLC05Mzk0MzQzMDIsMTYzNT
-IyOTEwMiw2MjE2OTI3MTEsLTE5NDI3MjEyOTUsLTQ1NDAyMzUy
-MiwtMTgxOTQ3MTIxMywtMTc3MjgzNjcyMCwtMTIzNTU2MDQ2Ni
-wtMTc1Mjk0MTc3OCwxNjI5Nzk2MjkwLDI2NzE4NzA5OSwtMjAy
-MTI1MzQ3NCwxOTA2NDUwNjAxLC0xMDg4MzM2OTMyLDM4MzgwNz
-IwMywtMTQ2OTY5NTY5Niw1MjQ5MjE4MTQsLTIwMzUyNzE4ODld
-fQ==
+eyJoaXN0b3J5IjpbMTkwNjQ0NzM5NSwtOTM5NDM0MzAyLDE2Mz
+UyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00NTQwMjM1
+MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMzU1NjA0Nj
+YsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcwOTksLTIw
+MjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzODM4MD
+cyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1MjcxODg5
+XX0=
 --><ul>
 <li><input disabled="" type="checkbox"/>
 create virtualenvironment: $ virtualenv envprojectname</li>
