@@ -142,7 +142,17 @@ INSTALLED_APPS = [
 	'dj_rest_auth.registration',
 ]
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # this setting will send emails to the console during development
-SITE_ID = 1 #
+SITE_ID = 1 # allauth uses djangos sites framework (host multiple sites from one project), we only host one site but specification is needed anyway
+
+# urls.py
+urlpatterns = [
+path('admin/', admin.site.urls),
+path('api/v1/', include('posts.urls')),
+path('api-auth/', include('rest_framework.urls')),
+path('api/v1/dj-rest-auth/', include('dj_rest_auth.urls')),
+path('api/v1/dj-rest-auth/registration/', # new
+include('dj_rest_auth.registration.urls')),
+]
 ```
 
 ## Tutorial summary
@@ -211,7 +221,7 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NjY2NTEyNSwtOTM5NDM0MzAyLDE2Mz
+eyJoaXN0b3J5IjpbMTE1MzkyOTEwNSwtOTM5NDM0MzAyLDE2Mz
 UyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00NTQwMjM1
 MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMzU1NjA0Nj
 YsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcwOTksLTIw
