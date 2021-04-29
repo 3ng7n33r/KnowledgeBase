@@ -226,7 +226,11 @@ router.register('users', UserViewSet, basename='users')
 router.register('', PostViewSet, basename='posts')
 urlpatterns = router.urls
 ```
-It's not really clear if writing a little less code is worth the tradeoff in readability and customization
+It's not really clear if writing a little less code is worth the tradeoff in readability and customization. A good rule of thumb is to start with views and URLs. As your API grows in complexity if you find
+yourself repeating the same endpoint patterns over and over again, then look to viewsets and
+routers. Until then, keep things simple.
+
+## Schemas and documentation
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -294,11 +298,11 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MzQyMTAzMiwtMTA0Njg1NDQ4MSwtMT
-I5MDY1ODI4NywzODEyOTU5NTIsLTExNjI0Mjc4MjgsLTEwNTIz
-NTg2MTksLTczNTkwMTAwMiwtOTM5NDM0MzAyLDE2MzUyMjkxMD
-IsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00NTQwMjM1MjIsLTE4
-MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMzU1NjA0NjYsLTE3NT
-I5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcwOTksLTIwMjEyNTM0
-NzQsMTkwNjQ1MDYwMV19
+eyJoaXN0b3J5IjpbLTExOTYwMjQ3MTQsLTEwNDY4NTQ0ODEsLT
+EyOTA2NTgyODcsMzgxMjk1OTUyLC0xMTYyNDI3ODI4LC0xMDUy
+MzU4NjE5LC03MzU5MDEwMDIsLTkzOTQzNDMwMiwxNjM1MjI5MT
+AyLDYyMTY5MjcxMSwtMTk0MjcyMTI5NSwtNDU0MDIzNTIyLC0x
+ODE5NDcxMjEzLC0xNzcyODM2NzIwLC0xMjM1NTYwNDY2LC0xNz
+UyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUz
+NDc0LDE5MDY0NTA2MDFdfQ==
 -->
