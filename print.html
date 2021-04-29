@@ -727,7 +727,7 @@ urlpatterns = [
 	path('api/v1/dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')),
 ]
 </code></pre>
-<h2 id="viewsets-and-routers"><a class="header" href="#viewsets-and-routers">Viewsets and Routers</a></h2>
+<h3 id="user-api-endpoint"><a class="header" href="#user-api-endpoint">User API endpoint</a></h3>
 <p>Now that we can authenticate, we ant to add a user endpoint to our api to list all and individual users. Adding an endpoint always involves creating the serializer, creating the view, creating the url route. To add djangos usr model to the serializer, we write it like this (app/serializers.py):</p>
 <pre><code class="language-py"># app/serializers.py
 from django.contrib.auth import get_user_model # new
@@ -760,6 +760,8 @@ urlpatterns = [
 	...
 ]
 </code></pre>
+<h2 id="viewsets-and-routers"><a class="header" href="#viewsets-and-routers">Viewsets and Routers</a></h2>
+<p>At this point we can see quite a bit of repetition. The detail view and the list view look exactly identical for user and posts. So</p>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -824,13 +826,13 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgxMjk1OTUyLC0xMTYyNDI3ODI4LC0xMD
-UyMzU4NjE5LC03MzU5MDEwMDIsLTkzOTQzNDMwMiwxNjM1MjI5
-MTAyLDYyMTY5MjcxMSwtMTk0MjcyMTI5NSwtNDU0MDIzNTIyLC
-0xODE5NDcxMjEzLC0xNzcyODM2NzIwLC0xMjM1NTYwNDY2LC0x
-NzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMj
-UzNDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5MzIsMzgzODA3MjAz
-LC0xNDY5Njk1Njk2XX0=
+eyJoaXN0b3J5IjpbMTI0NzI1OTAxNywzODEyOTU5NTIsLTExNj
+I0Mjc4MjgsLTEwNTIzNTg2MTksLTczNTkwMTAwMiwtOTM5NDM0
+MzAyLDE2MzUyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC
+00NTQwMjM1MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEy
+MzU1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxOD
+cwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkz
+MiwzODM4MDcyMDNdfQ==
 --><ul>
 <li><input disabled="" type="checkbox"/>
 create virtualenvironment: $ virtualenv envprojectname</li>
