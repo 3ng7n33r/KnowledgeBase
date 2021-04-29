@@ -163,6 +163,7 @@ class UserSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = get_user_model()
 		fields = ('id', 'username',)
+# 
 ```
 
 ## Tutorial summary
@@ -231,11 +232,11 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcyNzgwNjg5LC0xMTYyNDI3ODI4LC0xMD
-UyMzU4NjE5LC03MzU5MDEwMDIsLTkzOTQzNDMwMiwxNjM1MjI5
-MTAyLDYyMTY5MjcxMSwtMTk0MjcyMTI5NSwtNDU0MDIzNTIyLC
-0xODE5NDcxMjEzLC0xNzcyODM2NzIwLC0xMjM1NTYwNDY2LC0x
-NzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMj
-UzNDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5MzIsMzgzODA3MjAz
-LC0xNDY5Njk1Njk2XX0=
+eyJoaXN0b3J5IjpbMTYzMzQzMzYwMCwtMTE2MjQyNzgyOCwtMT
+A1MjM1ODYxOSwtNzM1OTAxMDAyLC05Mzk0MzQzMDIsMTYzNTIy
+OTEwMiw2MjE2OTI3MTEsLTE5NDI3MjEyOTUsLTQ1NDAyMzUyMi
+wtMTgxOTQ3MTIxMywtMTc3MjgzNjcyMCwtMTIzNTU2MDQ2Niwt
+MTc1Mjk0MTc3OCwxNjI5Nzk2MjkwLDI2NzE4NzA5OSwtMjAyMT
+I1MzQ3NCwxOTA2NDUwNjAxLC0xMDg4MzM2OTMyLDM4MzgwNzIw
+MywtMTQ2OTY5NTY5Nl19
 -->
