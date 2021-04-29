@@ -231,6 +231,8 @@ yourself repeating the same endpoint patterns over and over again, then look to 
 routers. Until then, keep things simple.
 
 ## Schemas and documentation
+To add this, we have to install [PyYAML](https://pyyaml.org/) and [uritemplate](https://github.com/python-hyper/uritemplate)
+$ pip
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -298,11 +300,11 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTYwMjQ3MTQsLTEwNDY4NTQ0ODEsLT
-EyOTA2NTgyODcsMzgxMjk1OTUyLC0xMTYyNDI3ODI4LC0xMDUy
-MzU4NjE5LC03MzU5MDEwMDIsLTkzOTQzNDMwMiwxNjM1MjI5MT
-AyLDYyMTY5MjcxMSwtMTk0MjcyMTI5NSwtNDU0MDIzNTIyLC0x
-ODE5NDcxMjEzLC0xNzcyODM2NzIwLC0xMjM1NTYwNDY2LC0xNz
-UyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUz
-NDc0LDE5MDY0NTA2MDFdfQ==
+eyJoaXN0b3J5IjpbLTE0NzQ1NzU1NzIsLTExOTYwMjQ3MTQsLT
+EwNDY4NTQ0ODEsLTEyOTA2NTgyODcsMzgxMjk1OTUyLC0xMTYy
+NDI3ODI4LC0xMDUyMzU4NjE5LC03MzU5MDEwMDIsLTkzOTQzND
+MwMiwxNjM1MjI5MTAyLDYyMTY5MjcxMSwtMTk0MjcyMTI5NSwt
+NDU0MDIzNTIyLC0xODE5NDcxMjEzLC0xNzcyODM2NzIwLC0xMj
+M1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3
+MDk5LC0yMDIxMjUzNDc0XX0=
 -->
