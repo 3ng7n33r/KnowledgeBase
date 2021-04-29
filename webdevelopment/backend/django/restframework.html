@@ -274,7 +274,18 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
 <h2 id="user-endpoints"><a class="header" href="#user-endpoints">User Endpoints</a></h2>
 <p>To have safe user endpoints to log in and out, we will use the third party packages <a href="https://github.com/jazzband/dj-rest-auth">dj-rest-auth</a> and <a href="https://github.com/pennersr/django-allauth">django-allauth</a>.</p>
 <h3 id="dj-rest-auth"><a class="header" href="#dj-rest-auth">dj-rest-auth</a></h3>
-<p>pip install dj-rest-auth</p>
+<pre><code>$ pip install dj-rest-auth
+
+#settings.py
+INSTALLED_APPS = [
+	...
+    # 3rd party
+    ...
+    'dj_rest_auth',
+]
+
+#
+</code></pre>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -339,7 +350,7 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NDU1NzMxOCwxNjM1MjI5MTAyLDYyMT
+eyJoaXN0b3J5IjpbLTY0MzkxMDk0MCwxNjM1MjI5MTAyLDYyMT
 Y5MjcxMSwtMTk0MjcyMTI5NSwtNDU0MDIzNTIyLC0xODE5NDcx
 MjEzLC0xNzcyODM2NzIwLC0xMjM1NTYwNDY2LC0xNzUyOTQxNz
 c4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUzNDc0LDE5
