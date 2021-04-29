@@ -690,12 +690,16 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
 #settings.py
 INSTALLED_APPS = [
 	...
-    # 3rd party
-    ...
-    'dj_rest_auth',
+	# 3rd party
+	...
+	'dj_rest_auth',
 ]
 
-#
+#urls.py
+urlpatterns = [
+	...
+	include('dj_rest_auth.urls')),
+]
 </code></pre>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
@@ -761,7 +765,7 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MzkxMDk0MCwxNjM1MjI5MTAyLDYyMT
+eyJoaXN0b3J5IjpbMTA1MzM5MjM3NiwxNjM1MjI5MTAyLDYyMT
 Y5MjcxMSwtMTk0MjcyMTI5NSwtNDU0MDIzNTIyLC0xODE5NDcx
 MjEzLC0xNzcyODM2NzIwLC0xMjM1NTYwNDY2LC0xNzUyOTQxNz
 c4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUzNDc0LDE5
