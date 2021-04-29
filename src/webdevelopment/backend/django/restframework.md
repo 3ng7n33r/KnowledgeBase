@@ -205,7 +205,28 @@ class UserViewSet(viewsets.ModelViewSet): # new
 	queryset = get_user_model().objects.all()
 	serializer_class = UserSerializer
 ```
-Just like viewsets unify list and detail views, routers can simplify url routes. 
+Just like viewsets unify list and detail views, routers can simplify url routes.
+```py
+#before
+from django.urls import path
+from .views import UserList, UserDetail, PostList, PostDetail 
+
+urlpatterns = [
+    path('users/', UserList.as_view()), 
+    path('users/<int:pk>/', UserDetail.as_view()), 
+    path('', PostList.as_view()),
+    path('<int:pk>/', PostDetail.as_view()),
+# after
+from django.urls import path
+from rest_framework.routers import SimpleRouter
+from .views import UserViewSet, PostViewSet
+
+router = SimpleRouter()
+router.register('users', UserViewSet, basename='users')
+router.register('', PostViewSet, basename='posts')
+urlpatterns = router.urls
+
+```
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -273,7 +294,7 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDkzNTcwODksLTEyOTA2NTgyODcsMz
+eyJoaXN0b3J5IjpbLTEwNDY4NTQ0ODEsLTEyOTA2NTgyODcsMz
 gxMjk1OTUyLC0xMTYyNDI3ODI4LC0xMDUyMzU4NjE5LC03MzU5
 MDEwMDIsLTkzOTQzNDMwMiwxNjM1MjI5MTAyLDYyMTY5MjcxMS
 wtMTk0MjcyMTI5NSwtNDU0MDIzNTIyLC0xODE5NDcxMjEzLC0x
