@@ -318,7 +318,7 @@ urlpatterns = [
 </code></pre>
 <h2 id="viewsets-and-routers"><a class="header" href="#viewsets-and-routers">Viewsets and Routers</a></h2>
 <p>Now that we can authenticate, we ant to add a user endpoint to our api to list all and individual users. Adding an endpoint always involves creating the serializer, creating the view, creating the url route. To add djangos usr model to the serializer, we write it like this (app/serializers.py):</p>
-<pre><code class="language-py"># posts/serializers.py
+<pre><code class="language-py"># app/serializers.py
 from django.contrib.auth import get_user_model # new
 ...
 
@@ -326,7 +326,19 @@ class UserSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = get_user_model()
 		fields = ('id', 'username',)
-# 
+
+
+# app/views.py
+from django.contrib.auth import get_user_model # new
+from .serializers import PostSerializer, UserSerializer # new
+
+...
+class UserList(generics.ListCreateAPIView): # new
+	queryset = get_user_model().objects.all()
+	serializer_class = UserSerializer
+class UserDetail(generics.RetrieveUpdateDestroyAPIView): # new
+	queryset = get_user_model().objects.all()
+	serializer_class = UserSerializer
 </code></pre>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
@@ -392,13 +404,13 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMzQzMzYwMCwtMTE2MjQyNzgyOCwtMT
-A1MjM1ODYxOSwtNzM1OTAxMDAyLC05Mzk0MzQzMDIsMTYzNTIy
-OTEwMiw2MjE2OTI3MTEsLTE5NDI3MjEyOTUsLTQ1NDAyMzUyMi
-wtMTgxOTQ3MTIxMywtMTc3MjgzNjcyMCwtMTIzNTU2MDQ2Niwt
-MTc1Mjk0MTc3OCwxNjI5Nzk2MjkwLDI2NzE4NzA5OSwtMjAyMT
-I1MzQ3NCwxOTA2NDUwNjAxLC0xMDg4MzM2OTMyLDM4MzgwNzIw
-MywtMTQ2OTY5NTY5Nl19
+eyJoaXN0b3J5IjpbLTkxNTM2MTUsLTExNjI0Mjc4MjgsLTEwNT
+IzNTg2MTksLTczNTkwMTAwMiwtOTM5NDM0MzAyLDE2MzUyMjkx
+MDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00NTQwMjM1MjIsLT
+E4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMzU1NjA0NjYsLTE3
+NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcwOTksLTIwMjEyNT
+M0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzODM4MDcyMDMs
+LTE0Njk2OTU2OTZdfQ==
 -->
                 </main>
 
