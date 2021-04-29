@@ -188,7 +188,10 @@ urlpatterns = [
 ```
 
 ## Viewsets and Routers
-At this point we can see quite a bit of repetition. The detail view and the list view look exactly identical for user and posts. So  
+At this point we can see quite a bit of repetition. The detail view and the list view look exactly identical. We can use viewsets which combine these funtionalities for the sake of a worse readability. To replace the views we have so far, we rewrite views.py like this: 
+```py
+
+``
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -256,11 +259,11 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NzI1OTAxNywzODEyOTU5NTIsLTExNj
-I0Mjc4MjgsLTEwNTIzNTg2MTksLTczNTkwMTAwMiwtOTM5NDM0
-MzAyLDE2MzUyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC
-00NTQwMjM1MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEy
-MzU1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxOD
-cwOTksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkz
-MiwzODM4MDcyMDNdfQ==
+eyJoaXN0b3J5IjpbNTg1ODA2MDk3LDM4MTI5NTk1MiwtMTE2Mj
+QyNzgyOCwtMTA1MjM1ODYxOSwtNzM1OTAxMDAyLC05Mzk0MzQz
+MDIsMTYzNTIyOTEwMiw2MjE2OTI3MTEsLTE5NDI3MjEyOTUsLT
+Q1NDAyMzUyMiwtMTgxOTQ3MTIxMywtMTc3MjgzNjcyMCwtMTIz
+NTU2MDQ2NiwtMTc1Mjk0MTc3OCwxNjI5Nzk2MjkwLDI2NzE4Nz
+A5OSwtMjAyMTI1MzQ3NCwxOTA2NDUwNjAxLC0xMDg4MzM2OTMy
+LDM4MzgwNzIwM119
 -->
