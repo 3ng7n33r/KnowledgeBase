@@ -366,7 +366,7 @@ class UserViewSet(viewsets.ModelViewSet): # new
 	queryset = get_user_model().objects.all()
 	serializer_class = UserSerializer
 </code></pre>
-<p>This will create problems as the routes to the views have now changed. Therefore, we need to adapt the urls.py file.</p>
+<p>Just like viewsets unify list and detail views, routers can simplify url routes. </p>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -431,13 +431,13 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTA2NTgyODcsMzgxMjk1OTUyLC0xMT
-YyNDI3ODI4LC0xMDUyMzU4NjE5LC03MzU5MDEwMDIsLTkzOTQz
-NDMwMiwxNjM1MjI5MTAyLDYyMTY5MjcxMSwtMTk0MjcyMTI5NS
-wtNDU0MDIzNTIyLC0xODE5NDcxMjEzLC0xNzcyODM2NzIwLC0x
-MjM1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MT
-g3MDk5LC0yMDIxMjUzNDc0LDE5MDY0NTA2MDEsLTEwODgzMzY5
-MzIsMzgzODA3MjAzXX0=
+eyJoaXN0b3J5IjpbLTEzNDkzNTcwODksLTEyOTA2NTgyODcsMz
+gxMjk1OTUyLC0xMTYyNDI3ODI4LC0xMDUyMzU4NjE5LC03MzU5
+MDEwMDIsLTkzOTQzNDMwMiwxNjM1MjI5MTAyLDYyMTY5MjcxMS
+wtMTk0MjcyMTI5NSwtNDU0MDIzNTIyLC0xODE5NDcxMjEzLC0x
+NzcyODM2NzIwLC0xMjM1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mj
+k3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUzNDc0LDE5MDY0NTA2
+MDEsLTEwODgzMzY5MzJdfQ==
 -->
                 </main>
 
