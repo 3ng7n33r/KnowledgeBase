@@ -102,9 +102,11 @@ While Authorizations manage permissions, Authentication manages login, logout an
 	}
 	```
 
-### User Endpoints
+## User Endpoints
 To have safe user endpoints to log in and out, we will use the third party packages [dj-rest-auth](https://github.com/jazzband/dj-rest-auth) and [django-allauth](https://github.com/pennersr/django-allauth).
 
+### dj-rest-auth
+pip install dj-rest-auth
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -172,10 +174,10 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjAwNDEyMjgsMTYzNTIyOTEwMiw2Mj
-E2OTI3MTEsLTE5NDI3MjEyOTUsLTQ1NDAyMzUyMiwtMTgxOTQ3
-MTIxMywtMTc3MjgzNjcyMCwtMTIzNTU2MDQ2NiwtMTc1Mjk0MT
-c3OCwxNjI5Nzk2MjkwLDI2NzE4NzA5OSwtMjAyMTI1MzQ3NCwx
-OTA2NDUwNjAxLC0xMDg4MzM2OTMyLDM4MzgwNzIwMywtMTQ2OT
-Y5NTY5Niw1MjQ5MjE4MTQsLTIwMzUyNzE4ODldfQ==
+eyJoaXN0b3J5IjpbLTQ0NDU1NzMxOCwxNjM1MjI5MTAyLDYyMT
+Y5MjcxMSwtMTk0MjcyMTI5NSwtNDU0MDIzNTIyLC0xODE5NDcx
+MjEzLC0xNzcyODM2NzIwLC0xMjM1NTYwNDY2LC0xNzUyOTQxNz
+c4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUzNDc0LDE5
+MDY0NTA2MDEsLTEwODgzMzY5MzIsMzgzODA3MjAzLC0xNDY5Nj
+k1Njk2LDUyNDkyMTgxNCwtMjAzNTI3MTg4OV19
 -->
