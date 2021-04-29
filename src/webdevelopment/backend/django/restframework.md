@@ -123,7 +123,7 @@ urlpatterns = [
 	path('api/v1/dj-rest-auth/', include('dj_rest_auth.urls')), # new
 ]
 ```
-The login can then be found under http://127.0.0.1:8000/api/v1/dj-rest-auth/login/ and logout respectively.
+The login can then be found under http://127.0.0.1:8000/api/v1/dj-rest-auth/login/ Further there are .../logout, .../password/reset and password/reset/confirm.
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -191,7 +191,7 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NjMwMDUzNiwxNjM1MjI5MTAyLDYyMT
+eyJoaXN0b3J5IjpbLTkzOTQzNDMwMiwxNjM1MjI5MTAyLDYyMT
 Y5MjcxMSwtMTk0MjcyMTI5NSwtNDU0MDIzNTIyLC0xODE5NDcx
 MjEzLC0xNzcyODM2NzIwLC0xMjM1NTYwNDY2LC0xNzUyOTQxNz
 c4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUzNDc0LDE5
