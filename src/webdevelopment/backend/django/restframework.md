@@ -86,7 +86,7 @@ These methods work well for detail pages because it modifies the object permissi
 ## Authentication
 While Authorizations manage permissions, Authentication manages login, logout and user management (create delete etc.). While Django uses a session based cookie, this is not possible for a REST API as the S in Rest stands for stateless. Therefore, every request has to be fully independent. The solution is to add a unique identifier into the request. This can be a token of any kind. DRF offers: basic, session, token, and default.
 
- - **Basic**: The string username:password is encoded into base
+ - **Basic**: The string username:password is encoded into base64 and send under "Authorization" in the header. This should only be done through a secure https connection because the credentials can easily be stolen and reused.
 
 ## Tutorial summary
 Rest - Representational state transfer
@@ -154,9 +154,9 @@ The normal serializer class is written the same way as the model class with spec
 	```
 	3. [Pagination and Hyperlinking](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/) in a nutshell: Let the serializer do the work. Make sure URL names fit and let the serialiser class inherit the HyperlinkedModelSerializer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MjAyNTExOSwtNDU0MDIzNTIyLC0xOD
-E5NDcxMjEzLC0xNzcyODM2NzIwLC0xMjM1NTYwNDY2LC0xNzUy
-OTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3MDk5LC0yMDIxMjUzND
-c0LDE5MDY0NTA2MDEsLTEwODgzMzY5MzIsMzgzODA3MjAzLC0x
-NDY5Njk1Njk2LDUyNDkyMTgxNCwtMjAzNTI3MTg4OV19
+eyJoaXN0b3J5IjpbLTg3Mjk2MTQzLC00NTQwMjM1MjIsLTE4MT
+k0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMzU1NjA0NjYsLTE3NTI5
+NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcwOTksLTIwMjEyNTM0Nz
+QsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwzODM4MDcyMDMsLTE0
+Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1MjcxODg5XX0=
 -->
