@@ -257,7 +257,7 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
 <ul>
 <li><strong>Basic</strong>: The string username:password is encoded into base64 and send under &quot;Authorization&quot; in the header. This should only be done through a secure https connection because the credentials can easily be stolen and reused.</li>
 <li><strong>Session</strong>: After basic authentication, a cookie is generated <em>on both sides</em> that will further on be used to generate an ID which will be sent in the header. The database is only hit once for credentials and they are only in the first request, however managing these sessions for multiple front ends and many users is challenging and it is a stateful approach which violates the REST principle. This is therefore not advised.</li>
-<li><strong>Token</strong>:</li>
+<li><strong>Token</strong>: </li>
 </ul>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
@@ -323,11 +323,12 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDI3MjEyOTUsLTQ1NDAyMzUyMiwtMT
-gxOTQ3MTIxMywtMTc3MjgzNjcyMCwtMTIzNTU2MDQ2NiwtMTc1
-Mjk0MTc3OCwxNjI5Nzk2MjkwLDI2NzE4NzA5OSwtMjAyMTI1Mz
-Q3NCwxOTA2NDUwNjAxLC0xMDg4MzM2OTMyLDM4MzgwNzIwMywt
-MTQ2OTY5NTY5Niw1MjQ5MjE4MTQsLTIwMzUyNzE4ODldfQ==
+eyJoaXN0b3J5IjpbNTY1Mjk0NzA3LC0xOTQyNzIxMjk1LC00NT
+QwMjM1MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMzU1
+NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcwOT
+ksLTIwMjEyNTM0NzQsMTkwNjQ1MDYwMSwtMTA4ODMzNjkzMiwz
+ODM4MDcyMDMsLTE0Njk2OTU2OTYsNTI0OTIxODE0LC0yMDM1Mj
+cxODg5XX0=
 -->
                 </main>
 
