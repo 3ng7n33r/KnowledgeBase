@@ -412,7 +412,17 @@ urlpatterns = [
 ]
 </code></pre>
 <h3 id="documentation"><a class="header" href="#documentation">Documentation</a></h3>
-<p>To make it more human friendly, we install <a href="https://drf-yasg.readthedocs.io/en/stable/">drf-yasg</a> (however <a href="https://swagger.io/tools/swagger-ui/">SwaggerUI</a> and <a href="https://github.com/Rebilly/ReDoc">ReDoc</a> are viable alternatives).</p>
+<p>To make it more human friendly, we install <a href="https://drf-yasg.readthedocs.io/en/stable/">drf-yasg</a> (however <a href="https://swagger.io/tools/swagger-ui/">SwaggerUI</a> and <a href="https://github.com/Rebilly/ReDoc">ReDoc</a> are viable alternatives) and add it to our settings.py and urls.py</p>
+<pre><code class="language-py">$ pip install drf-yasg
+# config/settings.py
+INSTALLED_APPS = [
+	...
+	# 3rd-party apps
+	...
+	'drf_yasg', # new
+	...
+]
+</code></pre>
 <h2 id="tutorial-summary"><a class="header" href="#tutorial-summary">Tutorial summary</a></h2>
 <p>Rest - Representational state transfer
 Api - application programming interface</p>
@@ -477,13 +487,13 @@ Authentication is built into the Rest framework and just needs to be included in
 </li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NzIwNzUxOSwtMTE5NjAyNDcxNCwtMT
-A0Njg1NDQ4MSwtMTI5MDY1ODI4NywzODEyOTU5NTIsLTExNjI0
-Mjc4MjgsLTEwNTIzNTg2MTksLTczNTkwMTAwMiwtOTM5NDM0Mz
-AyLDE2MzUyMjkxMDIsNjIxNjkyNzExLC0xOTQyNzIxMjk1LC00
-NTQwMjM1MjIsLTE4MTk0NzEyMTMsLTE3NzI4MzY3MjAsLTEyMz
-U1NjA0NjYsLTE3NTI5NDE3NzgsMTYyOTc5NjI5MCwyNjcxODcw
-OTksLTIwMjEyNTM0NzRdfQ==
+eyJoaXN0b3J5IjpbLTIwMzE0NTI5OTAsLTExOTYwMjQ3MTQsLT
+EwNDY4NTQ0ODEsLTEyOTA2NTgyODcsMzgxMjk1OTUyLC0xMTYy
+NDI3ODI4LC0xMDUyMzU4NjE5LC03MzU5MDEwMDIsLTkzOTQzND
+MwMiwxNjM1MjI5MTAyLDYyMTY5MjcxMSwtMTk0MjcyMTI5NSwt
+NDU0MDIzNTIyLC0xODE5NDcxMjEzLC0xNzcyODM2NzIwLC0xMj
+M1NTYwNDY2LC0xNzUyOTQxNzc4LDE2Mjk3OTYyOTAsMjY3MTg3
+MDk5LC0yMDIxMjUzNDc0XX0=
 -->
                 </main>
 
