@@ -2,14 +2,15 @@ mkdir
 virtualenv
 pip install django
 django-admin startproject config .
-python manage.py startapp appname
 
-add app to installed apps: 'appname.apps.AppnameConfig',
 
 (from app_engine_deploy)
 Create GCP project
 add PostgreSQL server 
 setup Cloud SQL Proxy
+
+python manage.py startapp appname
+add app to installed apps: 'appname.apps.AppnameConfig',
 
 create model
 ```py
@@ -116,6 +117,6 @@ class UserSerializer(serializers.ModelSerializer):
 		fields = ('id', 'username',)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMxNTIyNTQ4LC00NTY5NjQ4MTUsLTE1ND
-UzMDEwMTNdfQ==
+eyJoaXN0b3J5IjpbLTkxNDUyMjk3NCw4MzE1MjI1NDgsLTQ1Nj
+k2NDgxNSwtMTU0NTMwMTAxM119
 -->
