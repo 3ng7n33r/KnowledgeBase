@@ -81,29 +81,38 @@ add:
 ```py
 # appname/urls.py
 from django.urls import path
-from rest_framework.routers import SimpleRouter
-from .views import UserViewSet, PostViewSet
+from .views import UserList, UserDetail, PostList, PostDetail
 
-router = SimpleRouter()
-router.register('users', UserViewSet, basename='users')
-router.register('', PostViewSet, basename='posts')
-urlpatterns = router.urls
+urlpatterns = [
+	path('users/', UserList.as_view()),
+	path('users/<int:pk>/', UserDetail.as_view()),
+	path('', PostList.as_view()),
+	path('<int:pk>/', PostDetail.as_view()),
+]
 
 #views.py
-from django.contrib.auth import get_user_model
-from rest_framework import viewsets # new
+from django.contrib.auth import get_user_model # new
+from rest_framework import generics
 from .models import Post
 from .permissions import IsAuthorOrReadOnly
 from .serializers import PostSerializer, UserSerializer
 
-class PostViewSet(viewsets.ModelViewSet): # new
-    permission_classes = (IsAuthorOrReadOnly,)
-    queryset = Post.objects.all()
-    serializer_class = PostSerializer
-    
-class UserViewSet(viewsets.ModelViewSet): # new
-    queryset = get_user_model().objects.all()
-    serializer_class = UserSerializer
+class PostList(generics.ListCreateAPIView):
+	queryset = Post.objects.all()
+	serializer_class = PostSerializer
+	
+class PostDetail(generics.RetrieveUpdateDestroyAPIView):
+	permission_classes = (IsAuthorOrReadOnly,)
+	queryset = Post.objects.all()
+	serializer_class = PostSerializer
+	
+class UserList(generics.ListCreateAPIView): # new
+	queryset = get_user_model().objects.all()
+	serializer_class = UserSerializer
+	
+class UserDetail(generics.RetrieveUpdateDestroyAPIView): # new
+	queryset = get_user_model().objects.all()
+	serializer_class = UserSerializer
 
 #serializers.py
 from rest_framework import serializers
@@ -123,8 +132,8 @@ class UserSerializer(serializers.ModelSerializer):
 		fields = ('id', 'username',)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MzA4MDcxMywzNzgyMDYzNjYsMTAzMT
-AyNzc2NCwtMTcwMzQzNzk2LC01NDQxNTY4NTcsLTIwMDU1Njk3
-MTksLTkxNDUyMjk3NCw4MzE1MjI1NDgsLTQ1Njk2NDgxNSwtMT
-U0NTMwMTAxM119
+eyJoaXN0b3J5IjpbLTk4ODg2OTMzMSwtOTgzMDgwNzEzLDM3OD
+IwNjM2NiwxMDMxMDI3NzY0LC0xNzAzNDM3OTYsLTU0NDE1Njg1
+NywtMjAwNTU2OTcxOSwtOTE0NTIyOTc0LDgzMTUyMjU0OCwtND
+U2OTY0ODE1LC0xNTQ1MzAxMDEzXX0=
 -->
