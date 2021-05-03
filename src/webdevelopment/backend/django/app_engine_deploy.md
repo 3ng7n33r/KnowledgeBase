@@ -19,7 +19,7 @@ Setup Cloud SQL Auth proxy:
     $ gcloud sql instances describe [YOUR_INSTANCE_NAME] // last part of connection name
     $ wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
     $ chmod +x cloud_sql_proxy
-    $ ./cloud_sql_proxy -instances"[YOUR_INSTANCE_CONNECTION_NAME]"=tcp:3306
+    $ ./cloud_sql_proxy -instances [YOUR_INSTANCE_CONNECTION_NAME]=tcp:3306
 
 This will connect the project in the sdk with the db, then the cloud sql proxy file is downloaded into the project folder and given the necessary rights and then the deamon is started to make the local version connect with the upstream db
 
@@ -104,7 +104,7 @@ psycopg2-binary==2.8.6 #if postgrsql is used
 	$ collectstatic
 	$ gcloud app deploy 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwODk1MDAxOSwxMjg5MDE5MDQyLC0xMD
-Q2MjM2NDY1LC0xOTA3NzQyMDQ1LC00NTAwNDY4MzYsMTMyMzEw
-Mjc2Ml19
+eyJoaXN0b3J5IjpbMTk0ODA3NDQ5NSwxMzA4OTUwMDE5LDEyOD
+kwMTkwNDIsLTEwNDYyMzY0NjUsLTE5MDc3NDIwNDUsLTQ1MDA0
+NjgzNiwxMzIzMTAyNzYyXX0=
 -->
