@@ -38,7 +38,8 @@ if os.getenv('GAE_APPLICATION', None):
             'PASSWORD': '[YOUR-PASSWORD]',
             'NAME': '[YOUR-DATABASE]',
         }
-    }else:
+    }
+else:
     # Running locally so connect to either a local MySQL instance or connect 
     # to Cloud SQL via the proxy.  To start the proxy via command line: 
     #    $ cloud_sql_proxy -instances=[INSTANCE_CONNECTION_NAME]=tcp:3306 
@@ -54,6 +55,7 @@ if os.getenv('GAE_APPLICATION', None):
         }
     }
 ```
+Install psycopg
 You have now setup a new database connection for Django so don't forget to migrate and createsuperuser
 
 app.yaml
@@ -104,7 +106,7 @@ psycopg2-binary==2.8.6 #if postgrsql is used
 	$ collectstatic
 	$ gcloud app deploy 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MjkzMDI1MSwxOTQ4MDc0NDk1LDEzMD
+eyJoaXN0b3J5IjpbLTM3OTUzNDU3NSwxOTQ4MDc0NDk1LDEzMD
 g5NTAwMTksMTI4OTAxOTA0MiwtMTA0NjIzNjQ2NSwtMTkwNzc0
 MjA0NSwtNDUwMDQ2ODM2LDEzMjMxMDI3NjJdfQ==
 -->
