@@ -1,6 +1,6 @@
 mkdir and git init and git set upstream (or clone repo)
 virtualenv
-gitignore (add virtualenv)
+[gitignore](https://gist.github.com/3ng7n33r/68dd8d0d45a3436423d1c417eef83190) (add virtualenv)
 pip install django
 django-admin startproject config .
 
@@ -123,7 +123,8 @@ class UserSerializer(serializers.ModelSerializer):
 		fields = ('id', 'username',)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMTAyNzc2NCwtMTcwMzQzNzk2LC01ND
-QxNTY4NTcsLTIwMDU1Njk3MTksLTkxNDUyMjk3NCw4MzE1MjI1
-NDgsLTQ1Njk2NDgxNSwtMTU0NTMwMTAxM119
+eyJoaXN0b3J5IjpbMzc4MjA2MzY2LDEwMzEwMjc3NjQsLTE3MD
+M0Mzc5NiwtNTQ0MTU2ODU3LC0yMDA1NTY5NzE5LC05MTQ1MjI5
+NzQsODMxNTIyNTQ4LC00NTY5NjQ4MTUsLTE1NDUzMDEwMTNdfQ
+==
 -->
