@@ -1,5 +1,6 @@
 mkdir
 virtualenv
+giti
 pip install django
 django-admin startproject config .
 
@@ -39,7 +40,7 @@ add to app/admin.py:
 createsuperuser
 create dummy db entries
 delete test.py
-create __init__.py in appname/tests
+create __init__.py in appname/test
 create first assert test for db in test_models.py
 ```py
 from django.test import TestCase
@@ -122,7 +123,7 @@ class UserSerializer(serializers.ModelSerializer):
 		fields = ('id', 'username',)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NDE1Njg1NywtMjAwNTU2OTcxOSwtOT
-E0NTIyOTc0LDgzMTUyMjU0OCwtNDU2OTY0ODE1LC0xNTQ1MzAx
-MDEzXX0=
+eyJoaXN0b3J5IjpbLTMxODk0NzY3MywtNTQ0MTU2ODU3LC0yMD
+A1NTY5NzE5LC05MTQ1MjI5NzQsODMxNTIyNTQ4LC00NTY5NjQ4
+MTUsLTE1NDUzMDEwMTNdfQ==
 -->
