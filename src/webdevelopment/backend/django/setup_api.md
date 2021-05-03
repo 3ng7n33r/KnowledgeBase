@@ -21,11 +21,19 @@ python manage.py test
 
 pip install django-rest-framework
 add rest_framework to settings.py
-add path('api/v1/', include('posts.urls')), into config/urls.py
-
+add path('api/v1/', include('appname.urls')), into config/urls.py
+add to appname/urls.py:
+```py
+    from django.urls import path
+    from rest_framework.routers import SimpleRouter
+    from .views import UserViewSet, PostViewSet
+    
+    router = SimpleRouter()
+    router.register('users', UserViewSet, basename='users')
+    router.register('', PostViewSet, basename='posts')
+    urlpatterns = router.urls
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzY5NzA2NjMsLTE1NDUzMDEwMTNdfQ
-==
+eyJoaXN0b3J5IjpbMjEzMzU0NzYzNSwtMTU0NTMwMTAxM119
 -->
