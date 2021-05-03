@@ -6,7 +6,9 @@ python manage.py startapp appname
 
 add app to installed apps: 'appname.apps.AppnameConfig',
 
-migrate
+Create GCP project
+add PostgreSQL server 
+setup serverlink thingy
 
 create model
 ```py
@@ -113,5 +115,6 @@ class UserSerializer(serializers.ModelSerializer):
 		fields = ('id', 'username',)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1Njk2NDgxNSwtMTU0NTMwMTAxM119
+eyJoaXN0b3J5IjpbNTUxOTgzMDkyLC00NTY5NjQ4MTUsLTE1ND
+UzMDEwMTNdfQ==
 -->
