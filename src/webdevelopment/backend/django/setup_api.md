@@ -1,4 +1,4 @@
-mkdir
+mkdir and git init and git set upstream (or clone repo)
 virtualenv
 gitignore (add virtualenv)
 pip install django
@@ -123,7 +123,7 @@ class UserSerializer(serializers.ModelSerializer):
 		fields = ('id', 'username',)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDM0Mzc5NiwtNTQ0MTU2ODU3LC0yMD
-A1NTY5NzE5LC05MTQ1MjI5NzQsODMxNTIyNTQ4LC00NTY5NjQ4
-MTUsLTE1NDUzMDEwMTNdfQ==
+eyJoaXN0b3J5IjpbMTAzMTAyNzc2NCwtMTcwMzQzNzk2LC01ND
+QxNTY4NTcsLTIwMDU1Njk3MTksLTkxNDUyMjk3NCw4MzE1MjI1
+NDgsLTQ1Njk2NDgxNSwtMTU0NTMwMTAxM119
 -->
