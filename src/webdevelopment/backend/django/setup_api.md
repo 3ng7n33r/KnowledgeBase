@@ -74,11 +74,9 @@ class BlogTests(TestCase):
 ```
 python manage.py test
 
-pip install django-rest-framework django-cors-headers 
-(mitigate 
+pip install django-rest-framework 
 add rest_framework to settings.py
-add path('api/v1/', include('appname.urls')), into config/urls.py
-add:
+add this for a basic setup:
 ```py
 # urls.py
 from django.contrib import admin
@@ -141,8 +139,10 @@ class UserSerializer(serializers.ModelSerializer):
 		model = get_user_model()
 		fields = ('id', 'username',)
 ```
+
+con
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MDI2NDI4MywtOTgzMDgwNzEzLDM3OD
+eyJoaXN0b3J5IjpbLTM5NjgwNzg0MSwtOTgzMDgwNzEzLDM3OD
 IwNjM2NiwxMDMxMDI3NzY0LC0xNzAzNDM3OTYsLTU0NDE1Njg1
 NywtMjAwNTU2OTcxOSwtOTE0NTIyOTc0LDgzMTUyMjU0OCwtND
 U2OTY0ODE1LC0xNTQ1MzAxMDEzXX0=
