@@ -9,9 +9,11 @@
 
 Setup gcloud SDK and init project
 useful commands herefore:
-$ gcloud config get-value project
-$ gcloud projects list
-$ gcloud 
+
+    $ gcloud config get-value project
+    $ gcloud projects list
+    $ gcloud config set project my-project-id
+
 Setup Cloud SQL Auth proxy:
 
     $ gcloud sql instances describe [YOUR_INSTANCE_NAME]
@@ -102,7 +104,7 @@ psycopg2-binary==2.8.6 #if postgrsql is used
 	$ collectstatic
 	$ gcloud app deploy 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY0Nzc0OTI1LDEyODkwMTkwNDIsLTEwND
-YyMzY0NjUsLTE5MDc3NDIwNDUsLTQ1MDA0NjgzNiwxMzIzMTAy
-NzYyXX0=
+eyJoaXN0b3J5IjpbLTQzNjc2NDc3MiwxMjg5MDE5MDQyLC0xMD
+Q2MjM2NDY1LC0xOTA3NzQyMDQ1LC00NTAwNDY4MzYsMTMyMzEw
+Mjc2Ml19
 -->
