@@ -55,7 +55,10 @@ else:
         }
     }
 ```
-Install psycopg
+
+    $ pip Install psycopg2-binary
+
+ to make the connection from django to postgres
 You have now setup a new database connection for Django so don't forget to migrate and createsuperuser
 
 app.yaml
@@ -106,7 +109,7 @@ psycopg2-binary==2.8.6 #if postgrsql is used
 	$ collectstatic
 	$ gcloud app deploy 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3OTUzNDU3NSwxOTQ4MDc0NDk1LDEzMD
-g5NTAwMTksMTI4OTAxOTA0MiwtMTA0NjIzNjQ2NSwtMTkwNzc0
-MjA0NSwtNDUwMDQ2ODM2LDEzMjMxMDI3NjJdfQ==
+eyJoaXN0b3J5IjpbLTE5OTYwNDk2NTksMTk0ODA3NDQ5NSwxMz
+A4OTUwMDE5LDEyODkwMTkwNDIsLTEwNDYyMzY0NjUsLTE5MDc3
+NDIwNDUsLTQ1MDA0NjgzNiwxMzIzMTAyNzYyXX0=
 -->
