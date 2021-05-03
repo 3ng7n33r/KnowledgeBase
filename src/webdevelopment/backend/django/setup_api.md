@@ -6,6 +6,7 @@ python manage.py startapp appname
 
 add app to installed apps: 'appname.apps.AppnameConfig',
 
+(from app_engine_deploy)
 Create GCP project
 add PostgreSQL server 
 setup Cloud SQL Proxy
@@ -115,6 +116,6 @@ class UserSerializer(serializers.ModelSerializer):
 		fields = ('id', 'username',)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDM4MTUzLC00NTY5NjQ4MTUsLTE1ND
+eyJoaXN0b3J5IjpbODMxNTIyNTQ4LC00NTY5NjQ4MTUsLTE1ND
 UzMDEwMTNdfQ==
 -->
