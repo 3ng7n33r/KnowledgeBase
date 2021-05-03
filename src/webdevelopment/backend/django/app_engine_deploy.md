@@ -16,7 +16,7 @@ useful commands herefore:
 
 Setup Cloud SQL Auth proxy:
 
-    $ gcloud sql instances describe [YOUR_INSTANCE_NAME]
+    $ gcloud sql instances describe [YOUR_INSTANCE_NAME] // last part of connection name
     $ wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
     $ chmod +x cloud_sql_proxy
     $ ./cloud_sql_proxy -instances"[YOUR_INSTANCE_CONNECTION_NAME]"=tcp:3306
@@ -104,7 +104,7 @@ psycopg2-binary==2.8.6 #if postgrsql is used
 	$ collectstatic
 	$ gcloud app deploy 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNjc2NDc3MiwxMjg5MDE5MDQyLC0xMD
+eyJoaXN0b3J5IjpbMTMwODk1MDAxOSwxMjg5MDE5MDQyLC0xMD
 Q2MjM2NDY1LC0xOTA3NzQyMDQ1LC00NTAwNDY4MzYsMTMyMzEw
 Mjc2Ml19
 -->
