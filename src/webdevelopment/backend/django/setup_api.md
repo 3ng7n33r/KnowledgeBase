@@ -31,7 +31,11 @@ class Post(models.Model):
 ```
 makemigrations
 migrate
-add to admin: admin.site.register(Appname)
+add to app/admin.py: 
+
+    from .models import Modelname
+    admin.site.register(Modelname)
+
 createsuperuser
 create dummy db entries
 delete test.py
@@ -118,6 +122,7 @@ class UserSerializer(serializers.ModelSerializer):
 		fields = ('id', 'username',)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDU1Njk3MTksLTkxNDUyMjk3NCw4Mz
-E1MjI1NDgsLTQ1Njk2NDgxNSwtMTU0NTMwMTAxM119
+eyJoaXN0b3J5IjpbLTU0NDE1Njg1NywtMjAwNTU2OTcxOSwtOT
+E0NTIyOTc0LDgzMTUyMjU0OCwtNDU2OTY0ODE1LC0xNTQ1MzAx
+MDEzXX0=
 -->
