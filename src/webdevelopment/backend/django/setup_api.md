@@ -74,7 +74,7 @@ class BlogTests(TestCase):
 ```
 python manage.py test
 
-pip install django-rest-framework
+pip install django-rest-framework, corshead
 add rest_framework to settings.py
 add path('api/v1/', include('appname.urls')), into config/urls.py
 add:
@@ -85,7 +85,7 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/', include('[AP.urls')),
+    path('api/v1/', include('[APPNAME].urls')),
 ]
 
 # appname/urls.py
@@ -141,7 +141,7 @@ class UserSerializer(serializers.ModelSerializer):
 		fields = ('id', 'username',)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3Njg2MTIyNSwtOTgzMDgwNzEzLDM3OD
+eyJoaXN0b3J5IjpbLTc3ODAwNzUyOCwtOTgzMDgwNzEzLDM3OD
 IwNjM2NiwxMDMxMDI3NzY0LC0xNzAzNDM3OTYsLTU0NDE1Njg1
 NywtMjAwNTU2OTcxOSwtOTE0NTIyOTc0LDgzMTUyMjU0OCwtND
 U2OTY0ODE1LC0xNTQ1MzAxMDEzXX0=
