@@ -15,10 +15,14 @@ add to admin admin.site.register(Appname)
 createsuperuser
 create dummy db entries
 delete test.py
-create __init__.py in 
+create __init__.py in appname/tests
+create first assert test for db in test_models.py
+python manage.py test
 
 pip install django-rest-framework
+add rest_framework to settings.py
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMjg0NTU2Nl19
+eyJoaXN0b3J5IjpbNTM5NTY4OTI5XX0=
 -->
