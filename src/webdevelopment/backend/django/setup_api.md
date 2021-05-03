@@ -8,6 +8,7 @@ django-admin startproject config .
 Create GCP project
 add PostgreSQL server 
 setup Cloud SQL Proxy
+migrate
 
 python manage.py startapp appname
 add app to installed apps: 'appname.apps.AppnameConfig',
@@ -117,6 +118,6 @@ class UserSerializer(serializers.ModelSerializer):
 		fields = ('id', 'username',)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNDUyMjk3NCw4MzE1MjI1NDgsLTQ1Nj
-k2NDgxNSwtMTU0NTMwMTAxM119
+eyJoaXN0b3J5IjpbLTIwMDU1Njk3MTksLTkxNDUyMjk3NCw4Mz
+E1MjI1NDgsLTQ1Njk2NDgxNSwtMTU0NTMwMTAxM119
 -->
