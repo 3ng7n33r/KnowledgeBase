@@ -24,6 +24,8 @@ add rest_framework to settings.py
 add path('api/v1/', include('posts.urls')), into config/urls.py
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDUzMDEwMTNdfQ==
+eyJoaXN0b3J5IjpbLTEyMzY5NzA2NjMsLTE1NDUzMDEwMTNdfQ
+==
 -->
