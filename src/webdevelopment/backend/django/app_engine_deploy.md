@@ -32,7 +32,7 @@ if os.getenv('GAE_APPLICATION', None):
     # the unix socket at /cloudsql/<your-cloudsql-connection string>
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql', #or postgresql, sqlite3, oracle
+            'ENGINE': 'django.db.backends.postgresql', #or postgresql, sqlite3, oracle
             'HOST': '/cloudsql/[YOUR-CONNECTION-NAME]',
             'USER': '[YOUR-USERNAME]',
             'PASSWORD': '[YOUR-PASSWORD]',
@@ -45,7 +45,7 @@ if os.getenv('GAE_APPLICATION', None):
     # See https://cloud.google.com/sql/docs/mysql-connect-proxy
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql', #or postgresql, sqlite3, oracle
+            'ENGINE': 'django.db.backends.postgresql', #or postgresql, sqlite3, oracle
             'HOST': '127.0.0.1',
             'PORT': '3306',
             'NAME': '[YOUR-DATABASE]',
@@ -104,7 +104,7 @@ psycopg2-binary==2.8.6 #if postgrsql is used
 	$ collectstatic
 	$ gcloud app deploy 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0ODA3NDQ5NSwxMzA4OTUwMDE5LDEyOD
-kwMTkwNDIsLTEwNDYyMzY0NjUsLTE5MDc3NDIwNDUsLTQ1MDA0
-NjgzNiwxMzIzMTAyNzYyXX0=
+eyJoaXN0b3J5IjpbLTI5MjkzMDI1MSwxOTQ4MDc0NDk1LDEzMD
+g5NTAwMTksMTI4OTAxOTA0MiwtMTA0NjIzNjQ2NSwtMTkwNzc0
+MjA0NSwtNDUwMDQ2ODM2LDEzMjMxMDI3NjJdfQ==
 -->
