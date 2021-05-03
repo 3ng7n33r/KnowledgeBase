@@ -21,8 +21,9 @@ python manage.py test
 
 pip install django-rest-framework
 add rest_framework to settings.py
+add path('api/v1/', include('posts.urls')), into config/urls.py
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5NTY4OTI5XX0=
+eyJoaXN0b3J5IjpbLTE1NDUzMDEwMTNdfQ==
 -->
