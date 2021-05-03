@@ -8,6 +8,10 @@
 - create sql instance in GC project
 
 Setup gcloud SDK and init project
+useful commands herefore:
+$ gcloud config get-value project
+$ gcloud projects list
+$ gcloud 
 Setup Cloud SQL Auth proxy:
 
     $ gcloud sql instances describe [YOUR_INSTANCE_NAME]
@@ -98,6 +102,7 @@ psycopg2-binary==2.8.6 #if postgrsql is used
 	$ collectstatic
 	$ gcloud app deploy 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4OTAxOTA0MiwtMTA0NjIzNjQ2NSwtMT
-kwNzc0MjA0NSwtNDUwMDQ2ODM2LDEzMjMxMDI3NjJdfQ==
+eyJoaXN0b3J5IjpbNTY0Nzc0OTI1LDEyODkwMTkwNDIsLTEwND
+YyMzY0NjUsLTE5MDc3NDIwNDUsLTQ1MDA0NjgzNiwxMzIzMTAy
+NzYyXX0=
 -->
