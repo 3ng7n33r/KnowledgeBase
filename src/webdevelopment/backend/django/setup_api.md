@@ -45,7 +45,7 @@ create first assert test for db in test_models.py
 ```py
 from django.test import TestCase
 from django.contrib.auth.models import User
-from posts.models import Post
+from [APPNAME].models import Post
 
 
 class BlogTests(TestCase):
@@ -123,8 +123,8 @@ class UserSerializer(serializers.ModelSerializer):
 		fields = ('id', 'username',)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc4MjA2MzY2LDEwMzEwMjc3NjQsLTE3MD
-M0Mzc5NiwtNTQ0MTU2ODU3LC0yMDA1NTY5NzE5LC05MTQ1MjI5
-NzQsODMxNTIyNTQ4LC00NTY5NjQ4MTUsLTE1NDUzMDEwMTNdfQ
-==
+eyJoaXN0b3J5IjpbLTk4MzA4MDcxMywzNzgyMDYzNjYsMTAzMT
+AyNzc2NCwtMTcwMzQzNzk2LC01NDQxNTY4NTcsLTIwMDU1Njk3
+MTksLTkxNDUyMjk3NCw4MzE1MjI1NDgsLTQ1Njk2NDgxNSwtMT
+U0NTMwMTAxM119
 -->
