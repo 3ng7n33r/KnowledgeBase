@@ -22,12 +22,15 @@
         - [NGINX](./webdevelopment/backend/server/nginx.md)
         - [GUnicorn](./webdevelopment/backend/server/gunicorn.md)
       - [Django](./webdevelopment/backend/django/django.md)
+        - [Django](./webdevelopment/backend/django/django.md)
+	        - [Testing](./webdevelopment/backend/django/drf/rest_testing.md)
+	        - [Rest Framework](./webdevelopment/backend/django/drf/restframework.md)
+	        - [Setup API](./webdevelopment/backend/django/drf/setup_api.md)
 		- [Models](./webdevelopment/backend/django/model.md)
 		- [Ecommerce Tutorial](./webdevelopment/backend/django/ecomm_tut.md)
 		- [Fixtures](./webdevelopment/backend/django/fixtures.md)
 		- [heroku](./webdevelopment/backend/django/heroku.md)
         - [Views](./webdevelopment/backend/django/view.md)
-        - [Rest Framework](./webdevelopment/backend/django/restframework.md)
         - [Setup](./webdevelopment/backend/django/projectstartchecklist.md)
       - [DOM](./webdevelopment/backend/.md)
       - [Sustainability / Scalability](./webdevelopment/backend/sustainability.md)
@@ -78,7 +81,7 @@
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNzgwOTY1OSwxNTc4NDA3NDg5LC0xMD
+eyJoaXN0b3J5IjpbMTI4MDAwMTgyOSwxNTc4NDA3NDg5LC0xMD
 EzOTI0MjU2LC0xMzE1NTk4NDI1LC0xMTQ2Mjg5Njc0LC0xNDc5
 MzY0ODIyXX0=
 -->
