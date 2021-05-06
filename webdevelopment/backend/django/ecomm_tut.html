@@ -1050,21 +1050,8 @@ router.beforeEach((to, from, next) =&gt; {
   }
 })
 </code></pre>
-<h2 id="add-stripe-payment"><a class="header" href="#add-stripe-payment">Add stripe payment</a></h2>
-<p>Setup a <a href="https://dashboard.stripe.com/test/dashboard">stripe</a> account and add the api key to the BE. settings.py. Also, create a new app to manage payments (python manage.py startapp order):</p>
-<pre><code class="language-py">STRIPE_SECRET_KEY = 'IANGOIEANGOIENGOIEANGOIIN'
-...
-INSTALLED_APPS = {
-....
-'order',
-}
-</code></pre>
-<p>on the frontend side, don't forget to add the stripe import to the public/index.html file:</p>
-<pre><code class="language-html">   &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
-</code></pre>
-<p>use the secret key for the backend and the publishable key for the frontend</p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxOTc1NTg3MF19
+eyJoaXN0b3J5IjpbMTc1NDc1ODY0OF19
 -->
                 </main>
 
