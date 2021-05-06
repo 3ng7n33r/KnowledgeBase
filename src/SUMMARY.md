@@ -22,7 +22,7 @@
         - [NGINX](./webdevelopment/backend/server/nginx.md)
         - [GUnicorn](./webdevelopment/backend/server/gunicorn.md)
       - [Django](./webdevelopment/backend/django/django.md)
-        - [Django](./webdevelopment/backend/django/django.md)
+        - [drf](./webdevelopment/backend/django/drf/drf.md)
 	        - [Testing](./webdevelopment/backend/django/drf/rest_testing.md)
 	        - [Rest Framework](./webdevelopment/backend/django/drf/restframework.md)
 	        - [Setup API](./webdevelopment/backend/django/drf/setup_api.md)
@@ -81,7 +81,7 @@
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MDAwMTgyOSwxNTc4NDA3NDg5LC0xMD
+eyJoaXN0b3J5IjpbMTc5NjM5MDMzNCwxNTc4NDA3NDg5LC0xMD
 EzOTI0MjU2LC0xMzE1NTk4NDI1LC0xMTQ2Mjg5Njc0LC0xNDc5
 MzY0ODIyXX0=
 -->
