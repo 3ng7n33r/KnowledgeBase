@@ -23,6 +23,9 @@
         - [GUnicorn](./webdevelopment/backend/server/gunicorn.md)
       - [Django](./webdevelopment/backend/django/django.md)
 		- [Models](./webdevelopment/backend/django/model.md)
+		- [Ecommerce Tutorial](./webdevelopment/backend/django/ecomm_tut.md)
+		- [Fixtures](./webdevelopment/backend/django/fixtures.md)
+		- [heroku](./webdevelopment/backend/django/heroku.md)
         - [Views](./webdevelopment/backend/django/view.md)
         - [Rest Framework](./webdevelopment/backend/django/restframework.md)
         - [Setup](./webdevelopment/backend/django/projectstartchecklist.md)
@@ -75,6 +78,7 @@
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3ODQwNzQ4OSwtMTAxMzkyNDI1NiwtMT
-MxNTU5ODQyNSwtMTE0NjI4OTY3NCwtMTQ3OTM2NDgyMl19
+eyJoaXN0b3J5IjpbLTgyNzgwOTY1OSwxNTc4NDA3NDg5LC0xMD
+EzOTI0MjU2LC0xMzE1NTk4NDI1LC0xMTQ2Mjg5Njc0LC0xNDc5
+MzY0ODIyXX0=
 -->
