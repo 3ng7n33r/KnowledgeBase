@@ -30,7 +30,9 @@
 		- [Ecommerce Tutorial](./webdevelopment/backend/django/ecomm_tut.md)
 		- [Fixtures](./webdevelopment/backend/django/fixtures.md)
 		- [heroku](./webdevelopment/backend/django/heroku.md)
+		- [Testing](./webdevelopment/backend/django/testing.md)
         - [Views](./webdevelopment/backend/django/view.md)
+        - [App engine](./webdevelopment/backend/django/app_engine_deploy.md)
         - [Setup](./webdevelopment/backend/django/projectstartchecklist.md)
       - [DOM](./webdevelopment/backend/.md)
       - [Sustainability / Scalability](./webdevelopment/backend/sustainability.md)
@@ -81,7 +83,7 @@
   - [Legal](./organisational/legal/legal.md)
     - [Licenses](./organisational/legal/licenses.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NjM5MDMzNCwxNTc4NDA3NDg5LC0xMD
-EzOTI0MjU2LC0xMzE1NTk4NDI1LC0xMTQ2Mjg5Njc0LC0xNDc5
-MzY0ODIyXX0=
+eyJoaXN0b3J5IjpbLTIwNTQ4MDY0MzcsMTU3ODQwNzQ4OSwtMT
+AxMzkyNDI1NiwtMTMxNTU5ODQyNSwtMTE0NjI4OTY3NCwtMTQ3
+OTM2NDgyMl19
 -->
